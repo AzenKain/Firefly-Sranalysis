@@ -1,0 +1,7 @@
+services:
+  sranalysis:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sranalysis
+    restart: unless-stopped

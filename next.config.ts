@@ -5,6 +5,25 @@ import type { NextConfig } from "next";
 
 const withNextIntl = createNextIntlPlugin()
 const nextConfig: NextConfig = {
+  reactStrictMode: false,
+  output: 'standalone',
+  images: {
+      remotePatterns: [
+          {
+              protocol: 'https',
+              hostname: 'localhost',
+              pathname: '**',
+          },
+          {
+              protocol: 'http',
+              hostname: 'localhost',
+              pathname: '**',
+          }
+      ],
+  },
+  eslint: {
+      ignoreDuringBuilds: true,
+  },
   async rewrites() {
     return [
       {
