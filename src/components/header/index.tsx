@@ -46,7 +46,11 @@ export default function Header() {
         if (cookieLocale) {
             setLocale(cookieLocale)
         } else {
-            const browserLocale = navigator.language.slice(0, 2);
+            let browserLocale = navigator.language.slice(0, 2);
+            const listCurrentLanguage = ["jp", "kr", "en", "vi", "zh", "cn"]
+            if(!listCurrentLanguage.includes(browserLocale)) {
+                browserLocale = "en"
+            }
             setLocale(browserLocale);
             document.cookie = `MYNEXTAPP_LOCALE=${browserLocale};`
             router.refresh()
