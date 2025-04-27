@@ -55,7 +55,7 @@
 		"noDamageDetail": "Không có chi tiết sát thương",
 		"noCharactersInLineup": "Không có nhân vật trong đội hình",
 		"noTurns": "Chưa có lượt hành động",
-        "style": "Kiểu",
+        "type": "Loại",
         "warrior": "Hủy Diệt",
         "knight": "Bảo Hộ",
         "mage": "Tri Thức",

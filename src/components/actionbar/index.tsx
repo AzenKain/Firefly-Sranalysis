@@ -19,13 +19,9 @@ export default function ActionBar() {
     const transI18n = useTranslations("DataAnalysisPage");
     const turnListRef = useRef<HTMLDivElement>(null);
 
-    const parallelogramStyle: React.CSSProperties = {
-        transform: 'skew(-9deg)',
-        overflow: 'hidden',
-    };
 
     const contentStyle: React.CSSProperties = {
-        transform: 'skew(9deg)',
+      
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -71,7 +67,7 @@ export default function ActionBar() {
     }, [turnHistory.length]);
 
     return (
-        <div className="p-4 rounded-lg shadow-lg w-full h-full min-h-[74vh]">
+        <div className="p-4 md:p-1 rounded-lg shadow-lg w-full h-full">
             <motion.h2
                 className="text-center text-xl lg:text-2xl mb-2 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500"
                 initial={{ opacity: 0, y: -20 }}
@@ -82,43 +78,43 @@ export default function ActionBar() {
             </motion.h2>
             <div
                 ref={turnListRef}
-                className="flex px-2 w-full max-h-[90vh] pt-2 border-t-2 border-accent overflow-y-auto custom-scrollbar overflow-x-hidden"
+                className="flex md:block px-2 md:px-0 w-full pt-2 border-t-2 border-accent overflow-x-auto md:overflow-x-hidden md:overflow-y-auto max-h-[90vh] custom-scrollbar"
             >
                 <style jsx>{`
                     .custom-scrollbar {
-                        scrollbar-width: thin;
-                        scrollbar-color: hsl(var(--p)) hsl(var(--b3));
+                    scrollbar-width: thin;
+                    scrollbar-color: hsl(var(--p)) hsl(var(--b3));
                     }
 
                     .custom-scrollbar::-webkit-scrollbar {
-                        width: 8px;
-                        height: 8px;
+                    width: 8px;
+                    height: 8px;
                     }
 
                     .custom-scrollbar::-webkit-scrollbar-track {
-                        background: hsl(var(--b3));
-                        border-radius: 10px;
+                    background: hsl(var(--b3));
+                    border-radius: 10px;
                     }
 
                     .custom-scrollbar::-webkit-scrollbar-thumb {
-                        background: hsl(var(--p));
-                        border-radius: 10px;
+                    background: hsl(var(--p));
+                    border-radius: 10px;
                     }
 
                     .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-                        background: hsl(var(--pf));
+                    background: hsl(var(--pf));
                     }
 
                     .custom-scrollbar::-webkit-scrollbar-button {
-                        display: none;
-                        height: 0;
-                        width: 0;
+                    display: none;
+                    height: 0;
+                    width: 0;
                     }
                 `}</style>
 
-                <div className="w-full h-fit grid grid-cols-1 gap-1 ">
+                <div className="flex flex-nowrap md:grid md:grid-cols-1 gap-2 w-fit md:w-full">
                     {turnHistory.length === 0 ? (
-                        <div className="flex items-center justify-center h-full">
+                        <div className="flex items-center justify-center h-full w-full">
                             <p className="text-base-content opacity-50">{transI18n("noTurns")}</p>
                         </div>
                     ) : (
@@ -128,45 +124,48 @@ export default function ActionBar() {
                             const text = getNameChar(locale, data);
 
                             return (
-                                <div key={index}>
+                                <div key={index} className="h-full md:w-full">
                                     <div
                                         onClick={() => handleShow("action_detail_modal", data, turn)}
-                                        style={parallelogramStyle}
-                                        className="flex border bg-base-100 w-full hover:bg-base-200 transition-colors duration-200 border-cyan-400 border-l-4 cursor-pointer"
+                                        className="h-full grid grid-cols-2 gap-2 border bg-base-100 w-full hover:bg-base-200 transition-colors duration-200 border-cyan-400 border-l-4 cursor-pointer min-w-[200px] sm:min-w-[250px] md:min-w-0"
                                     >
                                         <div
                                             style={contentStyle}
-                                            className="flex flex-col items-center justify-center py-2 px-3"
+                                            className="lg:col-span-1 grid grid-cols-1 items-center justify-center py-2"
                                         >
                                             <div className="avatar">
                                                 <div className="w-12 h-12 rounded-full border-2 flex items-center justify-center bg-base-300 border-cyan-400 border-l-4">
                                                     <img
                                                         src={`https://api.hakush.in/hsr/UI/avatarshopicon/${data.id}.webp`}
                                                         alt={text}
+                                                        loading="lazy"
                                                         className="w-8 h-8 object-contain"
                                                     />
                                                 </div>
                                             </div>
-                                            <div className="text-base-content text-sm mt-1 font-medium">{text}</div>
+                                           
+                                            <div className="text-base-content text-center text-sm mt-1 font-medium">{getNameChar(locale, data)}</div>
                                         </div>
-                                        <div className="flex flex-col justify-center gap-2 px-3 py-2">
-                                            <div className="text-primary text-xs">
-                                                {`${transI18n("useSkill")}: ${turn.skillType}`}
+                                        <div className="grid grid-cols-1 justify-center gap-2 py-2 w-full">
+                                            <div className="bg-local text-primary text-xs  max-w-full">
+                                                {`${transI18n("useSkill")}: ${transI18n(turn.skillType.toLowerCase())}`}
                                             </div>
-                                            <div className="text-primary text-xs">
+                                            <div className="text-primary text-xs max-w-full">
                                                 {`${transI18n("totalDamage")}: ${turn.totalDamage.toFixed(2)}`}
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             );
+                            
                         })
                     )}
                 </div>
             </div>
 
+
             {/* Character Detail Modal */}
-            <dialog id="action_detail_modal" className="modal modal-bottom sm:modal-middle backdrop-blur-sm">
+            <dialog id="action_detail_modal" className="modal sm:modal-middle backdrop-blur-sm">
                 <div className="modal-box w-11/12 max-w-7xl bg-base-100 text-base-content border border-purple-500/50 shadow-lg shadow-purple-500/20">
                     <div className="sticky top-0 z-10">
                         <motion.button
@@ -181,7 +180,7 @@ export default function ActionBar() {
 
                     <div className="border-b border-purple-500/30 px-6 py-4 mb-4">
                         <h3 className="font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-cyan-400">
-                        {transI18n("turnDetail").toUpperCase()}
+                            {transI18n("turnDetail").toUpperCase()}
                         </h3>
                     </div>
 
@@ -207,6 +206,7 @@ export default function ActionBar() {
                                     </div>
                                     <div className="flex justify-center items-center">
                                         <img
+                                            loading="lazy"
                                             src={`https://api.hakush.in/hsr/UI/avatarshopicon/${selectAvatar.id}.webp`}
                                             alt={getNameChar(locale, selectAvatar)}
                                             className="h-20 w-20 object-cover rounded-full border-2 border-purple-500 shadow-lg shadow-purple-500/20"

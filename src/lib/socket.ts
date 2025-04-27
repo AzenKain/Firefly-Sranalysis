@@ -77,12 +77,16 @@ export const connectSocket = (): Socket => {
 
     socket.on("SetBattleLineup", (json) => onSetBattleLineupService(JSON.parse(json)));
     socket.on("TurnEnd", (json) => onTurnEndService(JSON.parse(json)));
+    socket.on("OnTurnEnd", (json) => onTurnEndService(JSON.parse(json)));
     socket.on("OnUseSkill", (json) => onUseSkillService(JSON.parse(json)));
     socket.on("OnKill", (json) => onKillService(JSON.parse(json)));
     socket.on("OnDamage", (json) => onDamageService(JSON.parse(json)));
     socket.on('BattleBegin', () => onBattleBegin());
+    socket.on('OnBattleBegin', () => onBattleBegin());
     socket.on('TurnBegin', (json) => onTurnBeginService(JSON.parse(json)));
+    socket.on('OnTurnBegin', (json) => onTurnBeginService(JSON.parse(json)));
     socket.on('BattleEnd', (json) => onBattleEndService(JSON.parse(json)));
+    socket.on('OnBattleEnd', (json) => onBattleEndService(JSON.parse(json)));
 
     socket.on("Error", (msg: string) => {
         console.error("Server Error:", msg);
@@ -104,12 +108,16 @@ export const disconnectSocket = (): void => {
     if (socket) {
         socket.off("SetBattleLineup", (json) => onSetBattleLineupService(JSON.parse(json)));
         socket.off("TurnEnd", (json) => onTurnEndService(JSON.parse(json)));
+        socket.off("OnTurnEnd", (json) => onTurnEndService(JSON.parse(json)));
         socket.off("OnUseSkill", (json) => onUseSkillService(JSON.parse(json)));
         socket.off("OnKill", (json) => onKillService(JSON.parse(json)));
         socket.off("OnDamage", (json) => onDamageService(JSON.parse(json)));
         socket.off('BattleBegin', () => onBattleBegin());
+        socket.off('OnBattleBegin', () => onBattleBegin());
         socket.off('TurnBegin', (json) => onTurnBeginService(JSON.parse(json)));
+        socket.off('OnTurnBegin', (json) => onTurnBeginService(JSON.parse(json)));
         socket.off('BattleEnd', (json) => onBattleEndService(JSON.parse(json)));
+        socket.off('OnBattleEnd', (json) => onBattleEndService(JSON.parse(json)));
         socket.offAny();
         socket.disconnect();
         useSocketStore.getState().setStatus(false);

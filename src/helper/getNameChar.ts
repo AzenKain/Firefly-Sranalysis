@@ -1,3 +1,4 @@
+import { listCurrentLanguage } from "@/lib/constant";
 import { AvatarType } from "@/types";
 
 
@@ -5,7 +6,11 @@ export function getNameChar(locale: string, data: AvatarType | undefined): strin
     if (!data) {
         return ""
     }
-    let text = data.lang.get(locale) ?? "";
+    if (!listCurrentLanguage.hasOwnProperty(locale)) {
+        return ""
+    }
+
+    let text = data.lang.get(listCurrentLanguage[locale as keyof typeof listCurrentLanguage].toLowerCase()) ?? "";
     if (!text) {
     text = data.lang.get("en") ?? "";
     }

@@ -2,6 +2,7 @@
 import { exportBattleData, importBattleData } from "@/helper";
 import { useChangeTheme } from "@/hooks/useChangeTheme";
 import { checkConnectTcpApi } from "@/lib/api";
+import { listCurrentLanguage } from "@/lib/constant";
 import { connectSocket, disconnectSocket, getSocket, isSocketConnected } from "@/lib/socket";
 import useBattleDataStore from "@/stores/battleDataStore";
 import useLocaleStore from "@/stores/localeStore";
@@ -38,7 +39,9 @@ export default function Header() {
     const [message, setMessage] = useState({ text: '', type: '' });
     const [isModalOpen, setIsModalOpen] = useState(false);
 
+
     useEffect(() => {
+        console.log(navigator.language.slice(0, 2))
         const cookieLocale = document.cookie.split("; ")
             .find((row) => row.startsWith("MYNEXTAPP_LOCALE"))
             ?.split("=")[1];
@@ -47,8 +50,8 @@ export default function Header() {
             setLocale(cookieLocale)
         } else {
             let browserLocale = navigator.language.slice(0, 2);
-            const listCurrentLanguage = ["jp", "kr", "en", "vi", "zh", "cn"]
-            if(!listCurrentLanguage.includes(browserLocale)) {
+
+            if (!listCurrentLanguage.hasOwnProperty(browserLocale)) {
                 browserLocale = "en"
             }
             setLocale(browserLocale);
@@ -167,15 +170,33 @@ export default function Header() {
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow-md border border-base-200"
                     >
                         <li>
-                            <button
-                                className="px-3 py-2 hover:bg-base-200 rounded-md transition-all duration-200 font-medium"
-                            >
-                                {transI18n("loadData")}
-                            </button>
+                            <>
+                                <input
+                                    type="file"
+                                    accept="application/json"
+                                    id="battle-data-upload"
+                                    className="hidden"
+                                    onChange={(e) => {
+                                        const file = e.target.files?.[0];
+                                        if (file) {
+                                            importBattleData(file, loadBattleDataFromJSON)
+                                                .then(() => console.log('Data loaded'))
+                                                .catch(err => alert('Failed to load data: ' + err.message));
+                                        }
+                                    }}
+                                />
+                                <button
+                                    className="px-3 py-2 hover:bg-base-200 rounded-md transition-all duration-200 font-medium"
+                                    onClick={() => document.getElementById('battle-data-upload')?.click()}
+                                >
+                                    {transI18n("loadData")}
+                                </button>
+                            </>
                         </li>
                         <li>
                             <button
                                 className="px-3 py-2 hover:bg-base-200 rounded-md transition-all duration-200 font-medium"
+                                onClick={() => exportBattleData({ totalAV, totalDamage, turnHistory, damagePerAV, lineup } as BattleDataStateJson)}
                             >
                                 {transI18n("exportData")}
                             </button>
@@ -193,7 +214,7 @@ export default function Header() {
 
                 {/* Logo */}
 
-                <a className=" flex flex-col items-start text-left gap-0 hover:scale-105 px-2">
+                <a className="hidden sm:grid sm:grid-cols-1 items-start text-left gap-0 hover:scale-105 px-2">
                     <h1 className="text-xl font-bold">
                         <span className="text-emerald-500">Firefly Analy</span>
                         <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-orange-500 to-red-500">
@@ -256,12 +277,13 @@ export default function Header() {
             <div className="navbar-end gap-2">
                 <div className="px-2">
                     <div className="flex items-center space-x-2 p-1.5 rounded-full shadow-md">
-                        <div className={`text-sm italic ${status ? 'text-green-500' : 'text-red-500'}`}>
+                        <div className={`hidden lg:block text-sm italic ${status ? 'text-green-500' : 'text-red-500'}`}>
                             {status ? transI18n("connected") : transI18n("unconnected")}
                         </div>
                         <div className={`w-3 h-3 rounded-full ${status ? 'bg-green-500' : 'bg-red-500'}`}></div>
                     </div>
                 </div>
+
                 {/* Language selector - REFINED */}
                 <div className="dropdown dropdown-end">
                     <div className="flex items-center gap-1 border border-base-300 rounded text-sm px-1.5 py-0.5 hover:bg-base-200 cursor-pointer transition-all duration-200">
@@ -274,11 +296,10 @@ export default function Header() {
                             value={locale}
                             onChange={(e) => changeLocale(e.target.value)}
                         >
-                            <option value="vi">VI</option>
-                            <option value="en">EN</option>
-                            <option value="cn">CN</option>
-                            <option value="jp">JP</option>
-                            <option value="kr">KR</option>
+                            {Object.entries(listCurrentLanguage).map(([key, value]) => (
+                                <option key={key} value={key}>{value}</option>
+                            ))}
+
                         </select>
                     </div>
                 </div>
@@ -347,7 +368,7 @@ export default function Header() {
 
                 {/* GitHub Link */}
                 <Link
-                    className='btn btn-ghost btn-sm btn-circle hover:bg-base-200 transition-all duration-200'
+                    className='hidden sm:block btn btn-ghost btn-sm btn-circle hover:bg-base-200 transition-all duration-200'
                     href={"https://github.com/AzenKain/SR-Analysis"}
                     target="_blank"
                     rel="noopener noreferrer"

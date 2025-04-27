@@ -66,7 +66,7 @@ export default function LineupBar() {
     }, [isModalOpen]);
 
     return (
-        <div className="p-4 rounded-lg shadow-lg w-full h-full min-h-[74vh]">
+        <div className="p-4 md:p-1 rounded-lg shadow-lg w-full h-full">
             <motion.h2
                 className="text-center text-xl lg:text-2xl pb-2 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500"
                 initial={{ opacity: 0, y: -20 }}
@@ -82,39 +82,40 @@ export default function LineupBar() {
                         <p className="text-base-content opacity-50">{transI18n("noCharactersInLineup")}</p>
                     </div>
                 ) : (
-                    <div className="h-full w-full overflow-y-auto overflow-x-hidden custom-scrollbar rounded-lg">
+                    <div className="h-full w-full overflow-x-auto md:overflow-x-hidden md:overflow-y-auto custom-scrollbar rounded-lg">
                         <style jsx>{`
-                    .custom-scrollbar {
-                        scrollbar-width: thin;
-                        scrollbar-color: hsl(var(--p)) hsl(var(--b3));
-                    }
+                            .custom-scrollbar {
+                            scrollbar-width: thin;
+                            scrollbar-color: hsl(var(--p)) hsl(var(--b3));
+                            }
 
-                    .custom-scrollbar::-webkit-scrollbar {
-                        width: 8px;
-                        height: 8px;
-                    }
+                            .custom-scrollbar::-webkit-scrollbar {
+                            width: 8px;
+                            height: 8px;
+                            }
 
-                    .custom-scrollbar::-webkit-scrollbar-track {
-                        background: hsl(var(--b3));
-                        border-radius: 10px;
-                    }
+                            .custom-scrollbar::-webkit-scrollbar-track {
+                            background: hsl(var(--b3));
+                            border-radius: 10px;
+                            }
 
-                    .custom-scrollbar::-webkit-scrollbar-thumb {
-                        background: hsl(var(--p));
-                        border-radius: 10px;
-                    }
+                            .custom-scrollbar::-webkit-scrollbar-thumb {
+                            background: hsl(var(--p));
+                            border-radius: 10px;
+                            }
 
-                    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-                        background: hsl(var(--pf));
-                    }
+                            .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+                            background: hsl(var(--pf));
+                            }
 
-                    .custom-scrollbar::-webkit-scrollbar-button {
-                        display: none;
-                        height: 0;
-                        width: 0;
-                    }
-                `}</style>
-                        <div className="grid grid-cols-1 w-full justify-items-center items-start">
+                            .custom-scrollbar::-webkit-scrollbar-button {
+                            display: none;
+                            height: 0;
+                            width: 0;
+                            }
+                        `}</style>
+
+                        <div className="flex flex-nowrap md:grid md:grid-cols-1 w-fit md:w-full justify-items-center items-start gap-2">
                             {lineupAvatars.map((item, index) => (
                                 <motion.div
                                     key={item.id}
@@ -122,7 +123,7 @@ export default function LineupBar() {
                                     animate={{ opacity: 1, scale: 1 }}
                                     transition={{ duration: 0.3, delay: index * 0.1 }}
                                     whileHover={{ scale: 1.05 }}
-                                    className="cursor-pointer"
+                                    className="cursor-pointer flex-shrink-0 md:w-full justify-items-center"
                                     onClick={() => handleShow("character_detail_modal", item)}
                                 >
                                     <CharacterCard data={item} />
@@ -130,6 +131,7 @@ export default function LineupBar() {
                             ))}
                         </div>
                     </div>
+
                 )}
 
                 {/* Character Detail Modal */}
@@ -165,7 +167,7 @@ export default function LineupBar() {
                                         <div className="grid grid-cols-1 sm:grid-cols-2">
                                             <div className="flex flex-col space-y-2 relative">
                                                 <p>
-                                                {transI18n("id")}: <span className="font-bold">{selectedCharacter.id}</span>
+                                                    {transI18n("id")}: <span className="font-bold">{selectedCharacter.id}</span>
                                                 </p>
                                                 <p className="flex items-center space-x-2">
                                                     <span>{transI18n("path")}:</span>
@@ -180,7 +182,7 @@ export default function LineupBar() {
                                                     )}
                                                 </p>
                                                 <p>
-                                                {transI18n("rarity")}: <span className="font-bold">{selectedCharacter.rank === "CombatPowerAvatarRarityType5" ? "5*" : "4*"}</span>
+                                                    {transI18n("rarity")}: <span className="font-bold">{selectedCharacter.rank === "CombatPowerAvatarRarityType5" ? "5*" : "4*"}</span>
                                                 </p>
                                                 <p className="flex items-center space-x-2">
                                                     <span>{transI18n("element")}:</span>
@@ -232,7 +234,7 @@ export default function LineupBar() {
                                                     onClick={() => setModeLine(m as 0 | 1)}
                                                     className={`btn btn-sm ${modeLine === m ? "btn-accent" : "btn-ghost"}`}
                                                 >
-                                                    {transI18n("style")} {m}
+                                                    {transI18n("type")} {m}
                                                 </button>
                                             ))}
                                         </div>
@@ -256,7 +258,7 @@ export default function LineupBar() {
                                                     onClick={() => setModeBar(m as 0 | 1 | 2)}
                                                     className={`btn btn-sm ${modeBar === m ? "btn-accent" : "btn-ghost"}`}
                                                 >
-                                                    {transI18n("style")} {m}
+                                                    {transI18n("type")} {m}
                                                 </button>
                                             ))}
                                         </div>

@@ -55,7 +55,7 @@
 		"noDamageDetail": "데미지 세부 정보가 없습니다",
 		"noCharactersInLineup": "라인업에 캐릭터가 없습니다",
 		"noTurns": "아직 턴이 없습니다",
-		"style": "스타일",
+		"type": "타입 ",
 		"warrior": "파괴",
 		"knight": "보존",
 		"mage": "지식",

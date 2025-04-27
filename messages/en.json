@@ -55,7 +55,7 @@
 		"noDamageDetail": "No damage details available",
 		"noCharactersInLineup": "No characters in lineup",
         "noTurns": "No turns yet",
-		"style": "Style",
+		"type": "Type",
         "warrior": "Destruction",
         "knight": "Preservation",
         "mage": "Erudition",

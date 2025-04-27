@@ -55,7 +55,7 @@
 		"noDamageDetail": "ダメージの詳細は利用できません",
 		"noCharactersInLineup": "編成にキャラクターがいません",
 		"noTurns": "まだターンがありません",
-		"style": "スタイル",
+		"type": "タイプ",
 		"warrior": "破壊",
 		"knight": "保護",
 		"mage": "博識",

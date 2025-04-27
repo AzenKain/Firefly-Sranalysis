@@ -44,14 +44,14 @@ export default function Home() {
   }, [expandedCharts]);
 
   return (
-    <div className="flex flex-col h-full w-full mt-5 min-h-[74vh] bg-base-100 font-[family-name:var(--font-geist-sans)]">
+    <div className="flex flex-col px-2 h-full w-full mt-5 min-h-[74vh] bg-base-100 font-[family-name:var(--font-geist-sans)]">
       <div className="h-full">
         <div className="grid grid-cols-12 gap-2 lg:gap-3 h-full min-h-full">
           <div className="col-span-12 md:col-span-3 lg:col-span-2 xl:col-span-2 h-full">
             <ActionBar />
           </div>
 
-          <div className="col-span-12 md:col-span-6 lg:col-span-8 xl:col-span-8 flex flex-col h-full">
+          <div className="col-span-12 md:col-span-6 lg:col-span-8 xl:col-span-8 max-h-[90vh] flex flex-col h-full overflow-auto">
             <div className="grid grid-cols-3 gap-2 mb-3">
               <div className="p-2 text-base lg:text-lg xl:text-xl rounded bg-primary text-primary-content text-center shadow-md">
                 {transI18n("totalDamage")}: {Number(totalDamage).toFixed(2)}
@@ -64,7 +64,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="bg-base-200 rounded-lg p-2 shadow-md flex-grow">
+            <div className="rounded-lg p-2 shadow-md flex-grow">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
 
                 {expandedCharts.includes('chart1') ? (
@@ -112,7 +112,7 @@ export default function Home() {
                         onClick={() => setModeLine(m as 0 | 1)}
                         className={`btn btn-sm ${modeLine === m ? "btn-accent" : "btn-ghost"}`}
                       >
-                        {transI18n("style")} {m}
+                        {transI18n("type")} {m}
                       </button>
                     ))}
                   </div>
@@ -120,7 +120,7 @@ export default function Home() {
                 </div>
 
                 {expandedCharts.includes('chart3') ? (
-                  <div key="chart3-expanded" className="lg:col-span-2 bg-base-200 rounded-lg p-2 shadow-md relative">
+                  <div key="chart3-expanded" className="lg:col-span-2 max-h-[70vh] bg-base-200 rounded-lg p-2 shadow-md relative">
                     <div className="absolute top-2 left-2 z-10">
                       <button
                         className="btn btn-sm btn-circle btn-ghost"
@@ -132,7 +132,7 @@ export default function Home() {
                     <DamagePercentChartForAll />
                   </div>
                 ) : (
-                  <div key="chart3-normal" className="bg-base-200 rounded-lg p-2 shadow-md relative">
+                  <div key="chart3-normal" className="bg-base-200 max-h-[40vh] rounded-lg p-2 shadow-md relative">
                     <div className="absolute top-2 left-2 z-10">
                       <button
                         className="btn btn-sm btn-circle btn-ghost"
@@ -164,7 +164,7 @@ export default function Home() {
                         onClick={() => setModeBar(m as 0 | 1 | 2)}
                         className={`btn btn-sm ${modeBar === m ? "btn-accent" : "btn-ghost"}`}
                       >
-                        {transI18n("style")} {m}
+                        {transI18n("type")} {m}
                       </button>
                     ))}
                   </div>
