@@ -47,7 +47,12 @@ export default function Header() {
             ?.split("=")[1];
 
         if (cookieLocale) {
-            setLocale(cookieLocale)
+            if (!listCurrentLanguage.hasOwnProperty(cookieLocale)) {
+                setLocale("en")
+            } else {
+                setLocale(cookieLocale)
+            }
+            
         } else {
             let browserLocale = navigator.language.slice(0, 2);
 
