@@ -39,7 +39,7 @@ export default async function RootLayout({
           <NextIntlClientProvider messages={messages}>
           <ThemeProvider>
             <ClientThemeWrapper>
-              <div className="h-full min-h-screen">
+              <div className="h-full">
                 <Header></Header>
                 {children}
                 <Footer></Footer>

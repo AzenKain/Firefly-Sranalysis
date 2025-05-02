@@ -13,6 +13,7 @@
     "chart.js": "^4.4.9",
     "chartjs-plugin-datalabels": "^2.2.0",
     "framer-motion": "^12.7.4",
+    "html-to-image": "^1.11.13",
     "next": "15.3.1",
     "next-intl": "^4.0.2",
     "react": "^19.0.0",
@@ -32,6 +33,7 @@
     "daisyui": "^5.0.27",
     "eslint": "^9",
     "eslint-config-next": "15.3.1",
+    "tailwind-scrollbar": "^4.0.2",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

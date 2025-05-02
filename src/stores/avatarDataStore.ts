@@ -1,15 +1,15 @@
-import { AvatarType } from '@/types';
+import { AvatarHakushiType } from '@/types';
 import { create } from 'zustand'
 
 
 interface AvatarDataState {
-    listAvatar: AvatarType[];
-    setListAvatar: (list: AvatarType[]) => void;
+    listAvatar: AvatarHakushiType[];
+    setListAvatar: (list: AvatarHakushiType[]) => void;
 }
 
 const useAvatarDataStore = create<AvatarDataState>((set) => ({
     listAvatar: [],
-    setListAvatar: (list: AvatarType[]) => set({ listAvatar: list }),
+    setListAvatar: (list: AvatarHakushiType[]) => set({ listAvatar: list }),
 
 }));
 

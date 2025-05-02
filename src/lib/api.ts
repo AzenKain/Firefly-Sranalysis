@@ -1,5 +1,5 @@
 import useSocketStore from "@/stores/socketSettingStore";
-import { AvatarHakushiType, AvatarType } from "@/types/avatar";
+import { AvatarHakushiType, AvatarHakushiRawType } from "@/types/avatar";
 
 
 export async function checkConnectTcpApi(): Promise<boolean> {
@@ -22,7 +22,7 @@ export async function checkConnectTcpApi(): Promise<boolean> {
     return false
 }
 
-export async function getCharacterListApi(): Promise<AvatarType[]> {
+export async function getCharacterListApi(): Promise<AvatarHakushiType[]> {
     const res = await fetch('/api/hakushin', {
         method: 'GET',
         headers: {
@@ -35,14 +35,14 @@ export async function getCharacterListApi(): Promise<AvatarType[]> {
         return [];
     }
 
-    const data: Map<string, AvatarHakushiType> = new Map(Object.entries(await res.json()));
+    const data: Map<string, AvatarHakushiRawType> = new Map(Object.entries(await res.json()));
 
 
     return Array.from(data.entries()).map(([id, it]) => convertAvatar(id, it));
 }
 
 
-function convertAvatar(id: string, item: AvatarHakushiType): AvatarType {
+function convertAvatar(id: string, item: AvatarHakushiRawType): AvatarHakushiType {
     const lang = new Map<string, string>([
         ['en', item.en],
         ['kr', item.kr],
@@ -50,7 +50,7 @@ function convertAvatar(id: string, item: AvatarHakushiType): AvatarType {
         ['jp', item.jp]
     ]);
 
-    const result: AvatarType = {
+    const result: AvatarHakushiType = {
         release: item.release,
         icon: item.icon,
         rank: item.rank,

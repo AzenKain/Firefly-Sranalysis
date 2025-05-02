@@ -2,16 +2,16 @@ import useBattleDataStore from "@/stores/battleDataStore";
 import { useMemo } from "react";
 
 export function useDamageLineForOne(avatarId: number, mode: 0 | 1 = 0) {
-  const { turnHistory } = useBattleDataStore.getState();
+  const { skillHistory, turnHistory } = useBattleDataStore.getState();
 
   return useMemo(() => {
     const map = new Map<number, number>();
 
-    for (const turn of turnHistory) {
-      if (turn.avatarId !== avatarId) continue;
-
-      const prev = map.get(turn.actionValue) || 0;
-      map.set(turn.actionValue, prev + turn.totalDamage);
+    for (const skill of skillHistory) {
+      if (skill.avatarId !== avatarId) continue;
+      const actionValue = turnHistory[skill.turnBattleId].actionValue
+      const prev = map.get(actionValue) || 0;
+      map.set(actionValue, prev + skill.totalDamage);
     }
 
     const points = Array.from(map.entries())
@@ -27,5 +27,5 @@ export function useDamageLineForOne(avatarId: number, mode: 0 | 1 = 0) {
     }
 
     return points.map(p => ({ x: p.x, y: Number(p.y.toFixed(2)) }));
-  }, [avatarId, turnHistory, mode]);
+  }, [avatarId, skillHistory, turnHistory, mode]);
 }

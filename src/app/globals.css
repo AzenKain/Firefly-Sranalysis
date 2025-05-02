@@ -1,4 +1,27 @@
 @import "tailwindcss";
+
+
 @plugin "daisyui" {
     themes: winter --default, night --prefersdark, cupcake, coffee;
+}
+@plugin 'tailwind-scrollbar' {
+    nocompatible: true;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #9ca3af; 
+  border-radius: 0; 
+}
+
+::-webkit-scrollbar-button {
+  display: none; 
 }

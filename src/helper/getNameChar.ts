@@ -1,8 +1,8 @@
 import { listCurrentLanguage } from "@/lib/constant";
-import { AvatarType } from "@/types";
+import { AvatarHakushiType } from "@/types";
 
 
-export function getNameChar(locale: string, data: AvatarType | undefined): string {
+export function getNameChar(locale: string, data: AvatarHakushiType | undefined): string {
     if (!data) {
         return ""
     }

@@ -2,13 +2,13 @@ import useBattleDataStore from "@/stores/battleDataStore";
 import { useMemo } from "react";
 
 export function useCalcTotalDmgAvatar(avatarId: number) {
-  const { turnHistory } = useBattleDataStore.getState();
+  const { skillHistory } = useBattleDataStore.getState();
 
   return useMemo(() => {
-    return turnHistory
+    return skillHistory
       .filter(t => t.avatarId === avatarId)
       .reduce((sum, turn) => sum + turn.totalDamage, 0);
-  }, [avatarId, turnHistory]);
+  }, [avatarId, skillHistory]);
 }
 
 

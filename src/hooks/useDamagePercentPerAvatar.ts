@@ -2,12 +2,12 @@ import useBattleDataStore from "@/stores/battleDataStore";
 import { useMemo } from "react";
 
 export function useDamagePercentPerAvatar() {
-  const { turnHistory } = useBattleDataStore.getState();
+  const { skillHistory } = useBattleDataStore.getState();
 
   return useMemo(() => {
     const dmgByAvatar = new Map<number, number>();
 
-    turnHistory.forEach(t => {
+    skillHistory.forEach(t => {
       dmgByAvatar.set(t.avatarId, (dmgByAvatar.get(t.avatarId) || 0) + t.totalDamage);
     });
 
@@ -17,5 +17,5 @@ export function useDamagePercentPerAvatar() {
       avatarId,
       percent: totalDmg > 0 ? (dmg / totalDmg) * 100 : 0,
     }));
-  }, [turnHistory]);
+  }, [skillHistory]);
 }

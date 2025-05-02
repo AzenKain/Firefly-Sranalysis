@@ -5,24 +5,26 @@ import { useDamagePerCycleForOne } from "@/hooks/useDamagePerCycle";
 
 import { Chart as ChartJS, BarElement, ArcElement, RadialLinearScale } from "chart.js";
 import { useTranslations } from "next-intl";
+import { useState } from "react";
 
 ChartJS.register(BarElement, ArcElement, RadialLinearScale);
 export function DamagePerCycleForOne({
     avatarId,
-    mode,
 }: {
     avatarId: number;
-    mode: 0 | 1 | 2;
 }) {
+    const [mode, setMode] = useState<0 | 1 | 2>(0);
     const dataRaw = useDamagePerCycleForOne(avatarId, mode);
     const transI18n = useTranslations("DataAnalysisPage");
     const data = {
         labels: dataRaw.map(d => d.x),
         datasets: [
             {
-                label: mode === 0 ? `${transI18n("damagerPerCycle")} (100av)` : mode === 1 ?  `${transI18n("damagerPerCycle")} (150av | 100v)` : `${transI18n("damagerPerCycle")} (150av | 150av | 100v)`,
+                label: mode === 0 ? `${transI18n("damagePerCycleAndWave")}` : mode === 1 ? `${transI18n("damagePerCycle")}` : `${transI18n("damagePerWave")}`,
                 data: dataRaw.map(d => d.y),
-                backgroundColor: "rgba(255,99,132,0.6)",
+                backgroundColor: dataRaw.map((_, i) =>
+                    ['#f87171', '#34d399', '#60a5fa', '#facc15', '#a78bfa', '#fb923c', '#f472b6'][i % 7]
+                ),
             },
         ],
     };
@@ -31,9 +33,6 @@ export function DamagePerCycleForOne({
         responsive: true,
         plugins: {
             legend: { display: true },
-            datalabels: {
-                display: false, 
-            },
         },
         scales: {
             x: { title: { display: true, text: transI18n("cycleCount") } },
@@ -42,5 +41,24 @@ export function DamagePerCycleForOne({
 
     };
 
-    return <Bar data={data} options={options} />;
+    return (
+        <div className="w-full">
+            <div className="mb-4 flex items-start gap-2 justify-end">
+                {[
+                    { mode: 0, label: `${transI18n("type")} 1`, className: "btn-primary" },
+                    { mode: 1, label: `${transI18n("type")} 2`, className: "btn-warning" },
+                    { mode: 2, label: `${transI18n("type")} 3`, className: "btn-warning" },
+                ].map(({ mode: m, label, className }) => (
+                    <button
+                        key={m}
+                        onClick={() => setMode(m as 0 | 1 | 2)}
+                        className={`btn btn-sm ${mode === m ? className : "btn-ghost"}`}
+                    >
+                        {label}
+                    </button>
+                ))}
+            </div>
+            <Bar data={data} options={options} />
+        </div>
+    )
 }

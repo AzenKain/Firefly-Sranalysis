@@ -1,14 +1,21 @@
-import { AvatarInfo } from "./lineup";
-import { TurnInfo } from "./turn";
+import { AvatarType } from "./lineup";
+import { TurnInfoType } from "./turn";
 
 export interface BattleEndType {
-    avatars: AvatarInfo[];
-    turn_history: TurnInfo[];
+    avatars: AvatarType[];
+    turn_history: TurnInfoType[];
+    av_history: TurnInfoType[];
     turn_count: number;
     total_damage: number;
     action_value: number;
+    stage_id: number;
 }
 export interface KillType {
-    attacker: AvatarInfo;
+    attacker: AvatarType;
 }
 
+export interface BattleBeginType {
+    max_waves: number
+    max_cycles: number
+    stage_id: number
+}

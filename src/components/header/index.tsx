@@ -7,7 +7,6 @@ import { connectSocket, disconnectSocket, getSocket, isSocketConnected } from "@
 import useBattleDataStore from "@/stores/battleDataStore";
 import useLocaleStore from "@/stores/localeStore";
 import useSocketStore from "@/stores/socketSettingStore";
-import { BattleDataStateJson } from "@/types/mics";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
@@ -24,15 +23,7 @@ const themes = [
 export default function Header() {
     const { changeTheme } = useChangeTheme()
     const { locale, setLocale } = useLocaleStore()
-    const {
-        totalAV,
-        totalDamage,
-        damagePerAV,
-        turnHistory,
-        lineup,
-        loadBattleDataFromJSON,
-    } = useBattleDataStore()
-
+    const { loadBattleDataFromJSON } = useBattleDataStore()
     const router = useRouter()
     const transI18n = useTranslations("DataAnalysisPage")
     const { host, port, status, connectionType, setHost, setPort, setStatus, setConnectionType } = useSocketStore();
@@ -201,7 +192,7 @@ export default function Header() {
                         <li>
                             <button
                                 className="px-3 py-2 hover:bg-base-200 rounded-md transition-all duration-200 font-medium"
-                                onClick={() => exportBattleData({ totalAV, totalDamage, turnHistory, damagePerAV, lineup } as BattleDataStateJson)}
+                                onClick={() => exportBattleData()}
                             >
                                 {transI18n("exportData")}
                             </button>
@@ -261,7 +252,7 @@ export default function Header() {
                     <li>
                         <button
                             className="px-3 py-2 hover:bg-base-200 rounded-md transition-all duration-200 font-medium"
-                            onClick={() => exportBattleData({ totalAV, totalDamage, turnHistory, damagePerAV, lineup } as BattleDataStateJson)}
+                            onClick={() => exportBattleData()}
                         >
                             {transI18n("exportData")}
                         </button>

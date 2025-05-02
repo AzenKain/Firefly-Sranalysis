@@ -1,8 +1,8 @@
-export interface AvatarInfo {
+export interface AvatarType{
     id: number;
     name: string;
 }
 
 export interface LineUpType {
-    avatars: AvatarInfo[];
+    avatars: AvatarType[];
 }

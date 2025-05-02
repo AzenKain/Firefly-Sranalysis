@@ -1,4 +1,4 @@
-export interface AvatarHakushiType  {
+export interface AvatarHakushiRawType  {
     release: number;
     icon: string;
     rank: string;
@@ -11,7 +11,7 @@ export interface AvatarHakushiType  {
     jp: string;
 }
 
-export interface AvatarType {
+export interface AvatarHakushiType {
     id: string;
     release: number;
     icon: string;

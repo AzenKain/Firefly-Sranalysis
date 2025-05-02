@@ -1,11 +1,12 @@
-import { AvatarInfo } from "./lineup";
+import { AvatarType } from "./lineup";
+import { AttackType } from "@/types/attack";
 
 export interface SkillInfo {
     name: string;
-    type: string;
+    type: AttackType;
 }
 
 export interface AvatarSkillType {
-    avatar: AvatarInfo;
+    avatar: AvatarType;
     skill: SkillInfo;
 }

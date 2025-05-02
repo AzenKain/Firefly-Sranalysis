@@ -2,13 +2,10 @@ import { io, Socket } from "socket.io-client";
 import useSocketStore from "@/stores/socketSettingStore";
 import { toast } from 'react-toastify';
 import useBattleDataStore from "@/stores/battleDataStore";
+import { BattleBeginType } from "@/types";
 
 let socket: Socket | null = null;
 
-
-const onBattleBegin = () => {
-    notify("Battle Started!", "info")
-}
 
 const notify = (msg: string, type: 'info' | 'success' | 'error' = 'info') => {
     if (type === 'success') toast.success(msg);
@@ -25,7 +22,11 @@ export const connectSocket = (): Socket => {
         onKillService,
         onDamageService,
         onBattleEndService,
-        onTurnBeginService
+        onTurnBeginService,
+        onBattleBeginService,
+        onCreateBattleService,
+        onUpdateCycleService,
+        OnUpdateWaveService
     } = useBattleDataStore.getState();
 
     let url = `${host}:${port}`;
@@ -72,21 +73,24 @@ export const connectSocket = (): Socket => {
         setStatus(true);
         notify(`Kết nối thành công với Socket ID: ${socket?.id}`, 'success');
     };
+    const onBattleBegin = (data: BattleBeginType) => {
+        notify("Battle Started!", "info")
+        onBattleBeginService(data)
+    }
 
     if (isSocketConnected()) onConnect();
 
-    socket.on("SetBattleLineup", (json) => onSetBattleLineupService(JSON.parse(json)));
-    socket.on("TurnEnd", (json) => onTurnEndService(JSON.parse(json)));
+    socket.on("OnSetBattleLineup", (json) => onSetBattleLineupService(JSON.parse(json)));
     socket.on("OnTurnEnd", (json) => onTurnEndService(JSON.parse(json)));
     socket.on("OnUseSkill", (json) => onUseSkillService(JSON.parse(json)));
     socket.on("OnKill", (json) => onKillService(JSON.parse(json)));
     socket.on("OnDamage", (json) => onDamageService(JSON.parse(json)));
-    socket.on('BattleBegin', () => onBattleBegin());
-    socket.on('OnBattleBegin', () => onBattleBegin());
-    socket.on('TurnBegin', (json) => onTurnBeginService(JSON.parse(json)));
+    socket.on('OnBattleBegin', (json) => onBattleBegin(JSON.parse(json)));
     socket.on('OnTurnBegin', (json) => onTurnBeginService(JSON.parse(json)));
-    socket.on('BattleEnd', (json) => onBattleEndService(JSON.parse(json)));
     socket.on('OnBattleEnd', (json) => onBattleEndService(JSON.parse(json)));
+    socket.on('OnUpdateCycle', (json) => onUpdateCycleService(JSON.parse(json)));
+    socket.on('OnUpdateWave', (json) => OnUpdateWaveService(JSON.parse(json)));
+    socket.on('OnCreateBattle', (json) => onCreateBattleService(JSON.parse(json)));
 
     socket.on("Error", (msg: string) => {
         console.error("Server Error:", msg);
@@ -103,21 +107,28 @@ export const disconnectSocket = (): void => {
         onKillService,
         onDamageService,
         onBattleEndService,
-        onTurnBeginService
+        onTurnBeginService,
+        onBattleBeginService,
+        onCreateBattleService,
+        onUpdateCycleService,
+        OnUpdateWaveService
     } = useBattleDataStore.getState();
+    const onBattleBegin = (data: BattleBeginType) => {
+        notify("Battle Started!", "info")
+        onBattleBeginService(data)
+    }
     if (socket) {
-        socket.off("SetBattleLineup", (json) => onSetBattleLineupService(JSON.parse(json)));
-        socket.off("TurnEnd", (json) => onTurnEndService(JSON.parse(json)));
+        socket.off("OnSetBattleLineup", (json) => onSetBattleLineupService(JSON.parse(json)));
         socket.off("OnTurnEnd", (json) => onTurnEndService(JSON.parse(json)));
         socket.off("OnUseSkill", (json) => onUseSkillService(JSON.parse(json)));
         socket.off("OnKill", (json) => onKillService(JSON.parse(json)));
         socket.off("OnDamage", (json) => onDamageService(JSON.parse(json)));
-        socket.off('BattleBegin', () => onBattleBegin());
-        socket.off('OnBattleBegin', () => onBattleBegin());
-        socket.off('TurnBegin', (json) => onTurnBeginService(JSON.parse(json)));
+        socket.off('OnBattleBegin', (json) => onBattleBegin(JSON.parse(json)));
         socket.off('OnTurnBegin', (json) => onTurnBeginService(JSON.parse(json)));
-        socket.off('BattleEnd', (json) => onBattleEndService(JSON.parse(json)));
         socket.off('OnBattleEnd', (json) => onBattleEndService(JSON.parse(json)));
+        socket.off('OnUpdateCycle', (json) => onUpdateCycleService(JSON.parse(json)));
+        socket.off('OnUpdateWave', (json) => OnUpdateWaveService(JSON.parse(json)));
+        socket.off('OnCreateBattle', (json) => onCreateBattleService(JSON.parse(json)));
         socket.offAny();
         socket.disconnect();
         useSocketStore.getState().setStatus(false);

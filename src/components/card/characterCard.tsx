@@ -2,10 +2,10 @@
 
 import { getNameChar } from '@/helper';
 import useLocaleStore from '@/stores/localeStore';
-import { AvatarType } from '@/types';
+import { AvatarHakushiType } from '@/types';
 
 interface CharacterCardProps {
-  data: AvatarType
+  data: AvatarHakushiType
 }
 
 export function parseRuby(text: string): string {

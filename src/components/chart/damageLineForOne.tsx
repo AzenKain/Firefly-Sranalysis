@@ -2,7 +2,6 @@
 import { Line } from "react-chartjs-2";
 import { ChartOptions } from "chart.js";
 import { useDamageLineForOne } from "@/hooks/useDamageLineForOne";
-
 import {
   Chart as ChartJS,
   LineElement,
@@ -15,6 +14,7 @@ import {
   Filler,
 } from "chart.js";
 import { useTranslations } from "next-intl";
+import { useState } from "react";
 
 ChartJS.register(
   LineElement,
@@ -27,11 +27,9 @@ ChartJS.register(
   Filler
 );
 
-ChartJS.defaults.set('plugins.datalabels', {
-  color: '#FE777B'
-});
 
-export function DamageLineForOne({ avatarId, mode = 0 }: { avatarId: number; mode?: 0 | 1 }) {
+export function DamageLineForOne({ avatarId }: { avatarId: number; }) {
+  const [mode, setMode] = useState<0 | 1>(1);
   const dataRaw = useDamageLineForOne(avatarId, mode);
   const transI18n = useTranslations("DataAnalysisPage");
   const data = {
@@ -52,9 +50,6 @@ export function DamageLineForOne({ avatarId, mode = 0 }: { avatarId: number; mod
     responsive: true,
     plugins: {
       legend: { display: true },
-      datalabels: {
-        display: false, 
-      },
     },
     scales: {
       x: { title: { display: true, text: transI18n("actionValue") } },
@@ -63,5 +58,23 @@ export function DamageLineForOne({ avatarId, mode = 0 }: { avatarId: number; mod
 
   };
 
-  return <Line data={data} options={options} />;
+  return (
+    <div className="w-full">
+      <div className="mb-4 flex items-start gap-2 justify-end">
+        {[
+          { mode: 1, label: `${transI18n("type")} 1`, className: "btn-primary" },
+          { mode: 2, label: `${transI18n("type")} 2`, className: "btn-warning" },
+        ].map(({ mode: m, label, className }) => (
+          <button
+            key={m}
+            onClick={() => setMode(m as 0 | 1)}
+            className={`btn btn-sm ${mode === m ? className : "btn-ghost"}`}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
+      <Line data={data} options={options} />
+    </div>
+  )
 }

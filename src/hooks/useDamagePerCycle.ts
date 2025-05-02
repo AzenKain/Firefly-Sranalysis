@@ -1,79 +1,69 @@
 import useBattleDataStore from "@/stores/battleDataStore";
+import { useTranslations } from "next-intl";
 import { useMemo } from "react";
 
 
 type Mode = 0 | 1 | 2;
 
-function getChunkIndex(av: number, mode: Mode): number {
-    let sum = 0;
-    let idx = 0;
-
-    if (mode === 0) {
-        while (sum <= av) {
-            sum += 100;
-            idx++;
-        }
-    } else if (mode === 1) {
-        if (av < 150) return 0;
-        sum = 150;
-        idx = 1;
-        while (sum <= av) {
-            sum += 100;
-            idx++;
-        }
-    } else {
-        if (av < 150) return 0;
-        if (av < 300) return 1;
-        sum = 300;
-        idx = 2;
-        while (sum <= av) {
-            sum += 100;
-            idx++;
-        }
-    }
-
-    return idx - 1;
-}
-
 export function useDamagePerCycleForOne(avatarId: number, mode: Mode) {
-    const { turnHistory } = useBattleDataStore.getState();
+  const { skillHistory, turnHistory, maxCycle } = useBattleDataStore.getState();
+  const transI18n = useTranslations("DataAnalysisPage");
+  return useMemo(() => {
+    const damageMap = new Map<string, number>();
+    
+    skillHistory
+      .filter(s => s.avatarId === avatarId)
+      .forEach(s => {
+        const turn = turnHistory[s.turnBattleId];
+        if (!turn) return;
 
-    return useMemo(() => {
-        const damageMap = new Map<number, number>();
+        let key = '';
+        if (mode === 0) {
+          key = `${transI18n('cycle')} ${maxCycle-turn.cycleIndex} - ${transI18n('wave')} ${turn.waveIndex}`;
+        } else if (mode === 1) {
+          key = `${transI18n('cycle')} ${maxCycle-turn.cycleIndex}`;
+        } else if (mode === 2) {
+          key = `${transI18n('wave')} ${turn.waveIndex}`;
+        }
 
-        turnHistory
-            .filter(t => t.avatarId === avatarId)
-            .forEach(t => {
-                const idx = getChunkIndex(t.actionValue, mode);
-                damageMap.set(idx, (damageMap.get(idx) || 0) + t.totalDamage);
-            });
+        damageMap.set(key, (damageMap.get(key) || 0) + s.totalDamage);
+      });
 
-        const maxIndex = Math.max(...Array.from(damageMap.keys()), 0);
+    const result = Array.from(damageMap.entries())
+      .map(([x, y]) => ({ x, y }))
+      .sort((a, b) => a.x.localeCompare(b.x, undefined, { numeric: true }));
 
-        return Array.from({ length: maxIndex + 1 }).map((_, i) => ({
-            x: `${i + 1}`,
-            y: damageMap.get(i) || 0,
-        }));
-    }, [avatarId, mode, turnHistory]);
+    return result;
+  }, [avatarId, mode, skillHistory, turnHistory, transI18n]);
 }
 
 
 export function useDamagePerCycleForAll(mode: Mode) {
-    const { turnHistory } = useBattleDataStore.getState();
-
+    const { skillHistory, turnHistory, maxCycle } = useBattleDataStore.getState();
+    const transI18n = useTranslations("DataAnalysisPage");
     return useMemo(() => {
-        const damageMap = new Map<number, number>();
-
-        turnHistory.forEach(t => {
-            const idx = getChunkIndex(t.actionValue, mode);
-            damageMap.set(idx, (damageMap.get(idx) || 0) + t.totalDamage);
-        });
-
-        const maxIndex = Math.max(...Array.from(damageMap.keys()), 0);
-
-        return Array.from({ length: maxIndex + 1 }).map((_, i) => ({
-            x: `${i + 1}`,
-            y: damageMap.get(i) || 0,
-        }));
-    }, [mode, turnHistory]);
-}
+      const damageMap = new Map<string, number>();
+  
+      skillHistory.forEach(s => {
+        const turn = turnHistory[s.turnBattleId];
+        if (!turn) return;
+  
+        let key = '';
+        if (mode === 0) {
+          key = `${transI18n('cycle')} ${maxCycle-turn.cycleIndex} - ${transI18n('wave')} ${turn.waveIndex}`;
+        } else if (mode === 1) {
+          key = `${transI18n('cycle')} ${maxCycle-turn.cycleIndex}`;
+        } else if (mode === 2) {
+          key = `${transI18n('wave')} ${turn.waveIndex}`;
+        }
+  
+        damageMap.set(key, (damageMap.get(key) || 0) + s.totalDamage);
+      });
+  
+      const result = Array.from(damageMap.entries())
+        .map(([x, y]) => ({ x, y }))
+        .sort((a, b) => a.x.localeCompare(b.x, undefined, { numeric: true }));
+  
+      return result;
+    }, [mode, skillHistory, turnHistory, transI18n]);
+  }

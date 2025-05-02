@@ -18,9 +18,8 @@ export default function Home() {
     totalAV,
     totalDamage,
     damagePerAV,
+    turnHistory
   } = useBattleDataStore();
-  const [modeBar, setModeBar] = useState<0 | 1 | 2>(1);
-  const [modeLine, setModeLine] = useState<0 | 1>(1);
   const [expandedCharts, setExpandedCharts] = useState<string[]>([]);
 
   const toggleExpand = (chartId: string) => {
@@ -45,53 +44,50 @@ export default function Home() {
 
   return (
     <div className="flex flex-col px-2 h-full w-full mt-5 min-h-[74vh] bg-base-100 font-[family-name:var(--font-geist-sans)]">
-      <div className="h-full">
+      <div className="h-full ">
         <div className="grid grid-cols-12 gap-2 lg:gap-3 h-full min-h-full">
           <div className="col-span-12 md:col-span-3 lg:col-span-2 xl:col-span-2 h-full">
             <ActionBar />
           </div>
 
-          <div className="col-span-12 md:col-span-6 lg:col-span-8 xl:col-span-8 max-h-[90vh] flex flex-col h-full overflow-auto">
-            <div className="grid grid-cols-3 gap-2 mb-3">
+          <div className="col-span-12 md:col-span-6 lg:col-span-8 xl:col-span-8 max-h-[92vh] flex flex-col h-full overflow-auto ">
+
+            <div className="grid grid-cols-2 gap-2 mb-3">
               <div className="p-2 text-base lg:text-lg xl:text-xl rounded bg-primary text-primary-content text-center shadow-md">
-                {transI18n("totalDamage")}: {Number(totalDamage).toFixed(2)}
+                {transI18n("totalDamage")}
+                <div>{Number(totalDamage).toFixed(2)}</div>
               </div>
               <div className="p-2 text-base lg:text-lg xl:text-xl rounded bg-secondary text-secondary-content text-center shadow-md">
-                {transI18n("totalAV")}: {Number(totalAV).toFixed(2)}
+                {transI18n("totalAV")}
+                <div>{Number(totalAV).toFixed(2)}</div>
               </div>
               <div className="p-2 text-base lg:text-lg xl:text-xl rounded bg-accent text-accent-content text-center shadow-md">
-                {transI18n("damagePerAV")}: {Number(damagePerAV).toFixed(2)}
+                {transI18n("damagePerAV")}
+                <div>{Number(damagePerAV).toFixed(2)}</div>
+              </div>
+              <div className="p-2 text-base lg:text-lg xl:text-xl rounded bg-warning text-warning-content text-center shadow-md">
+                {transI18n("totalTurn")}
+                <div>{turnHistory.filter(it => it.avatarId && it.avatarId != -1).length}</div>
               </div>
             </div>
+
 
             <div className="rounded-lg p-2 shadow-md flex-grow">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
 
-                {expandedCharts.includes('chart1') ? (
-                  <div key="chart1-expanded" className="lg:col-span-2 bg-base-200 rounded-lg p-2 shadow-md relative">
-                    <div className="absolute top-2 left-2 z-10">
-                      <button
-                        className="btn btn-sm btn-circle btn-ghost"
-                        onClick={() => toggleExpand('chart1')}
-                      >
-                        −
-                      </button>
-                    </div>
-                    <DamagePerAvatarForAll />
+                <div
+                  key={expandedCharts.includes('chart1') ? 'chart1-expanded' : 'chart1-normal'}
+                  className={`bg-base-200 rounded-lg p-2 shadow-md relative ${expandedCharts.includes('chart1') ? 'lg:col-span-2' : ''}`}>
+                  <div className="absolute top-2 left-2 z-10">
+                    <button
+                      className="btn btn-sm btn-circle btn-ghost"
+                      onClick={() => toggleExpand('chart1')}
+                    >
+                      {expandedCharts.includes('chart1') ? '−' : '⤢'}
+                    </button>
                   </div>
-                ) : (
-                  <div key="chart1-normal" className="bg-base-200 rounded-lg p-2 shadow-md relative">
-                    <div className="absolute top-2 left-2 z-10">
-                      <button
-                        className="btn btn-sm btn-circle btn-ghost"
-                        onClick={() => toggleExpand('chart1')}
-                      >
-                        ⤢
-                      </button>
-                    </div>
-                    <DamagePerAvatarForAll />
-                  </div>
-                )}
+                  <DamagePerAvatarForAll />
+                </div>
 
                 <div
                   className={`bg-base-200 rounded-lg p-2 shadow-md relative ${expandedCharts.includes('chart2') ? 'lg:col-span-2' : ''}`}
@@ -105,45 +101,24 @@ export default function Home() {
                       {expandedCharts.includes('chart2') ? '−' : '⤢'}
                     </button>
                   </div>
-                  <div className="flex justify-end gap-2">
-                    {[0, 1].map((m) => (
-                      <button
-                        key={m}
-                        onClick={() => setModeLine(m as 0 | 1)}
-                        className={`btn btn-sm ${modeLine === m ? "btn-accent" : "btn-ghost"}`}
-                      >
-                        {transI18n("type")} {m}
-                      </button>
-                    ))}
-                  </div>
-                  <MultiCharLineChart mode={modeLine} />
+                  <MultiCharLineChart />
                 </div>
 
-                {expandedCharts.includes('chart3') ? (
-                  <div key="chart3-expanded" className="lg:col-span-2 max-h-[70vh] bg-base-200 rounded-lg p-2 shadow-md relative">
-                    <div className="absolute top-2 left-2 z-10">
-                      <button
-                        className="btn btn-sm btn-circle btn-ghost"
-                        onClick={() => toggleExpand('chart3')}
-                      >
-                        −
-                      </button>
-                    </div>
-                    <DamagePercentChartForAll />
+
+                <div
+                  className={`bg-base-200 rounded-lg p-2 shadow-md relative ${expandedCharts.includes('chart3') ? 'lg:col-span-2' : ''}`}
+                  key={expandedCharts.includes('chart3') ? 'chart3-expanded' : 'chart3-normal'}
+                >
+                  <div className="absolute top-2 left-2 z-10">
+                    <button
+                      className="btn btn-sm btn-circle btn-ghost"
+                      onClick={() => toggleExpand('chart3')}
+                    >
+                      {expandedCharts.includes('chart3') ? '−' : '⤢'}
+                    </button>
                   </div>
-                ) : (
-                  <div key="chart3-normal" className="bg-base-200 max-h-[40vh] rounded-lg p-2 shadow-md relative">
-                    <div className="absolute top-2 left-2 z-10">
-                      <button
-                        className="btn btn-sm btn-circle btn-ghost"
-                        onClick={() => toggleExpand('chart3')}
-                      >
-                        ⤢
-                      </button>
-                    </div>
-                    <DamagePercentChartForAll />
-                  </div>
-                )}
+                  <DamagePercentChartForAll />
+                </div>
 
                 <div
                   className={`bg-base-200 rounded-lg p-2 shadow-md relative ${expandedCharts.includes('chart4') ? 'lg:col-span-2' : ''}`}
@@ -157,18 +132,7 @@ export default function Home() {
                       {expandedCharts.includes('chart4') ? '−' : '⤢'}
                     </button>
                   </div>
-                  <div className="flex justify-end gap-2">
-                    {[0, 1, 2].map((m) => (
-                      <button
-                        key={m}
-                        onClick={() => setModeBar(m as 0 | 1 | 2)}
-                        className={`btn btn-sm ${modeBar === m ? "btn-accent" : "btn-ghost"}`}
-                      >
-                        {transI18n("type")} {m}
-                      </button>
-                    ))}
-                  </div>
-                  <DamagePerCycleForAll mode={modeBar} />
+                  <DamagePerCycleForAll />
                 </div>
               </div>
             </div>
