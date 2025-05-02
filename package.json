@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@radix-ui/react-tooltip": "^1.2.3",
     "chart.js": "^4.4.9",
     "chartjs-plugin-datalabels": "^2.2.0",
     "framer-motion": "^12.7.4",
