@@ -14,10 +14,11 @@ import { DamageLineForOne } from "../chart/damageLineForOne";
 import { DamagePerCycleForOne } from "../chart/damagePerCycleForOne";
 import { useCalcTotalDmgAvatar, useCalcTotalTurnAvatar } from "@/hooks/useCalcAvatarData";
 import Image from "next/image";
+import NameAvatar from "../nameAvatar";
 // import ShowCaseInfo from "../card/showCaseCard";
 
 export default function LineupBar() {
-    const [selectedCharacter, setSelectedCharacter] = useState<AvatarHakushiType | null>(null);
+    const [selectedCharacter, setSelectedCharacter] = useState<AvatarHakushiType | undefined>(undefined);
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const transI18n = useTranslations("DataAnalysisPage");
@@ -44,7 +45,7 @@ export default function LineupBar() {
     // Close modal handler
     const handleCloseModal = (modalId: string) => {
         setIsModalOpen(false);
-        setSelectedCharacter(null);
+        setSelectedCharacter(undefined);
         const modal = document.getElementById(modalId) as HTMLDialogElement | null;
         if (modal) {
             modal.close()
@@ -80,7 +81,16 @@ export default function LineupBar() {
                         <path strokeLinecap="round" strokeLinejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                     </svg>
 
-                    <span className="text-sm truncate">{transI18n("lastTurn")}: {getNameChar(locale, listAvatar.find(it => it.id === turnHistory.findLast(i => i?.avatarId)?.avatarId?.toString()))}</span>
+                        <span className="text-sm truncate flex flex-row">
+                            <div>
+                                {transI18n("lastTurn")}: 
+                            </div>
+                            
+                            <NameAvatar
+                                locale={locale}
+                                text={getNameChar(locale, listAvatar.find(it => it.id === turnHistory.findLast(i => i?.avatarId)?.avatarId?.toString()))}
+                            />
+                        </span>
                 </div>
             </div>
 
@@ -132,9 +142,12 @@ export default function LineupBar() {
                         </div>
 
                         <div className="border-b border-purple-500/30 px-6 py-4 mb-4">
-                            <h3 className="font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-cyan-400">
-                                {selectedCharacter ? getNameChar(locale, selectedCharacter).toUpperCase() : ""}
-                            </h3>
+       
+                            <NameAvatar
+                                locale={locale}
+                                text={getNameChar(locale, selectedCharacter).toUpperCase()}
+                                className={"font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-cyan-400"}
+                            />
                         </div>
 
                         {selectedCharacter && (

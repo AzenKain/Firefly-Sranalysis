@@ -32,7 +32,7 @@ export default function Header() {
 
 
     useEffect(() => {
-        console.log(navigator.language.slice(0, 2))
+        
         const cookieLocale = document.cookie.split("; ")
             .find((row) => row.startsWith("MYNEXTAPP_LOCALE"))
             ?.split("=")[1];

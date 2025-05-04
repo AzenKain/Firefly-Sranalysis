@@ -29,14 +29,7 @@ const nextConfig: NextConfig = {
   eslint: {
       ignoreDuringBuilds: true,
   },
-  async rewrites() {
-    return [
-      {
-        source: '/api/hakushin',
-        destination: 'https://api.hakush.in/hsr/data/character.json',
-      },
-    ];
-  },
+
 };
 
 export default withNextIntl(nextConfig);

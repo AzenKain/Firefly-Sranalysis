@@ -1,6 +1,6 @@
 import useSocketStore from "@/stores/socketSettingStore";
 import { AvatarHakushiType, AvatarHakushiRawType } from "@/types/avatar";
-
+import axios from 'axios';
 
 export async function checkConnectTcpApi(): Promise<boolean> {
     const { host, port, connectionType } = useSocketStore.getState()
@@ -23,22 +23,27 @@ export async function checkConnectTcpApi(): Promise<boolean> {
 }
 
 export async function getCharacterListApi(): Promise<AvatarHakushiType[]> {
-    const res = await fetch('/api/hakushin', {
-        method: 'GET',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-    });
+    try {
+        const res = await axios.get<Record<string, AvatarHakushiRawType>>(
+            'https://api.hakush.in/hsr/data/character.json',
+            {
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            }
+        );
 
-    if (!res.ok) {
-        console.log(`Error ${res.status}: ${res.statusText}`);
+        const data = new Map(Object.entries(res.data));
+
+        return Array.from(data.entries()).map(([id, it]) => convertAvatar(id, it));
+    } catch (error: unknown) {
+        if (axios.isAxiosError(error)) {
+            console.log(`Error: ${error.response?.status} - ${error.message}`);
+        } else {
+            console.log(`Unexpected error: ${String(error)}`);
+        }
         return [];
     }
-
-    const data: Map<string, AvatarHakushiRawType> = new Map(Object.entries(await res.json()));
-
-
-    return Array.from(data.entries()).map(([id, it]) => convertAvatar(id, it));
 }
 
 

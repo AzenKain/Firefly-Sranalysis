@@ -9,6 +9,7 @@ import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { getNameChar } from "@/helper";
 import Image from "next/image";
+import NameAvatar from "../nameAvatar";
 
 export default function ActionBar() {
     const [selectTurn, setSelectTurn] = useState<SkillBattleInfo | null>(null);
@@ -128,8 +129,11 @@ export default function ActionBar() {
                                                     />
                                                 </div>
                                             </div>
-
-                                            <div className="text-base-content text-center text-sm mt-1 font-medium">{getNameChar(locale, data)}</div>
+                                            <NameAvatar
+                                                locale={locale}
+                                                text={getNameChar(locale, data)}
+                                                className="text-base-content text-center text-sm mt-1 font-medium"
+                                            />   
                                         </div>
                                         <div className="grid grid-cols-1 justify-center gap-2 py-2 w-full">
                                             <div className="bg-local text-primary text-xs  max-w-full">
@@ -180,14 +184,18 @@ export default function ActionBar() {
                                 <h4 className="text-lg font-semibold mb-2 text-pink-500">{transI18n("characterInformation")}</h4>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
                                     <div className="flex flex-col space-y-2">
-                                        <p className="flex items-center gap-2">
+                                        <div className="flex items-center gap-2">
                                             <span className="font-medium text-base-content/70">{transI18n("id")}:</span>
                                             <span className="font-bold">{selectAvatar.id}</span>
-                                        </p>
-                                        <p className="flex items-center gap-2">
+                                        </div>
+                                        <div className="flex items-center gap-2">
                                             <span className="font-medium text-base-content/70">{transI18n("character")}:</span>
-                                            <span className="font-bold">{getNameChar(locale, selectAvatar)}</span>
-                                        </p>
+                                            <NameAvatar
+                                                locale={locale}
+                                                text={getNameChar(locale, selectAvatar)}
+                                                className="font-bold"
+                                            />
+                                        </div>
                                     </div>
                                     <div className="flex justify-center items-center">
                                         <Image
