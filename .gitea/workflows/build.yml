@@ -1,0 +1,25 @@
+name: Gitea Auto Deploy
+run-name: ${{ gitea.actor }} pushed code 🚀
+
+on: [push]
+
+jobs:
+  Deploy-Container:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out latest code
+        uses: actions/checkout@v4
+
+      - name: Stop and remove old containers
+        run: |
+          docker compose down || true
+
+      - name: Remove unused Docker resources
+        run: |
+          docker system prune -a --volumes -f
+
+      - name: Build and restart containers
+        run: |
+          docker compose pull
+          docker compose up -d --build
