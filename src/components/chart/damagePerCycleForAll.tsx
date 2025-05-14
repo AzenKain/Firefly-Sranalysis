@@ -54,7 +54,7 @@ export default function DamagePerCycleForAll() {
                     </button>
                 ))}
             </div>
-            <Bar data={data} options={options} />;
+            <Bar data={data} options={options} />
         </div>
     )
 }
