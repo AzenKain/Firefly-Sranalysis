@@ -18,7 +18,7 @@ const useSocketStore = create<SocketState>()(
             host: "http://localhost",
             port: 3443,
             status: false,
-            connectionType: "FireflyPSLocal",
+            connectionType: "Native",
             setHost: (host: string) => set({ host }),
             setConnectionType: (connectionType: string) => set({ connectionType }),
             setPort: (port: number) => set({ port }),

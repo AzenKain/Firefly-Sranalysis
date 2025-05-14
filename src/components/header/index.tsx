@@ -32,7 +32,7 @@ export default function Header() {
 
 
     useEffect(() => {
-        
+
         const cookieLocale = document.cookie.split("; ")
             .find((row) => row.startsWith("MYNEXTAPP_LOCALE"))
             ?.split("=")[1];
@@ -43,7 +43,7 @@ export default function Header() {
             } else {
                 setLocale(cookieLocale)
             }
-            
+
         } else {
             let browserLocale = navigator.language.slice(0, 2);
 
@@ -405,7 +405,8 @@ export default function Header() {
                                 value={connectionType}
                                 onChange={(e) => setConnectionType(e.target.value)}
                             >
-                                <option value="FireflyPSLocal">Firefly PS Local</option>
+                                <option value="Native">Native</option>
+                                <option value="PS">PS</option>
                                 <option value="Other">{transI18n("other")}</option>
                             </select>
                         </div>
@@ -464,12 +465,14 @@ export default function Header() {
                                 >
                                     {transI18n("connect")}
                                 </button>
-                                <button
-                                    className={`btn btn-secondary`}
-                                    onClick={checkConnection}
-                                >
-                                    {transI18n("checkGameConnect")}
-                                </button>
+                                {connectionType !== "Native" && (
+                                    <button
+                                        className={`btn btn-secondary`}
+                                        onClick={checkConnection}
+                                    >
+                                        {transI18n("checkGameConnect")}
+                                    </button>
+                                )}
                             </div>
                         </div>
                     </div>

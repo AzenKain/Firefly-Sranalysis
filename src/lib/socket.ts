@@ -13,6 +13,16 @@ const notify = (msg: string, type: 'info' | 'success' | 'error' = 'info') => {
     else toast.info(msg);
 };
 
+function safeParse(json: unknown | string) {
+    try {
+        return typeof json === "string" ? JSON.parse(json) : json;
+    } catch (e) {
+        console.error("JSON parse error:", e, json);
+        return null;
+    }
+}
+
+
 export const connectSocket = (): Socket => {
     const { host, port, connectionType, setStatus } = useSocketStore.getState();
     const { 
@@ -30,7 +40,10 @@ export const connectSocket = (): Socket => {
     } = useBattleDataStore.getState();
 
     let url = `${host}:${port}`;
-    if (connectionType === "FireflyPSLocal") {
+    if (connectionType === "Native") {
+        url = "http://localhost:1305"
+    }
+    else if (connectionType === "PS") {
         url = "http://localhost:21000"
     }
 
@@ -80,17 +93,60 @@ export const connectSocket = (): Socket => {
 
     if (isSocketConnected()) onConnect();
 
-    socket.on("OnSetBattleLineup", (json) => onSetBattleLineupService(JSON.parse(json)));
-    socket.on("OnTurnEnd", (json) => onTurnEndService(JSON.parse(json)));
-    socket.on("OnUseSkill", (json) => onUseSkillService(JSON.parse(json)));
-    socket.on("OnKill", (json) => onKillService(JSON.parse(json)));
-    socket.on("OnDamage", (json) => onDamageService(JSON.parse(json)));
-    socket.on('OnBattleBegin', (json) => onBattleBegin(JSON.parse(json)));
-    socket.on('OnTurnBegin', (json) => onTurnBeginService(JSON.parse(json)));
-    socket.on('OnBattleEnd', (json) => onBattleEndService(JSON.parse(json)));
-    socket.on('OnUpdateCycle', (json) => onUpdateCycleService(JSON.parse(json)));
-    socket.on('OnUpdateWave', (json) => OnUpdateWaveService(JSON.parse(json)));
-    socket.on('OnCreateBattle', (json) => onCreateBattleService(JSON.parse(json)));
+    socket.on("OnSetBattleLineup", (json) => {
+        const data = safeParse(json);
+        if (data) onSetBattleLineupService(data);
+    });
+
+    socket.on("OnTurnEnd", (json) => {
+        const data = safeParse(json);
+        if (data) onTurnEndService(data);
+    });
+
+    socket.on("OnUseSkill", (json) => {
+        const data = safeParse(json);
+        if (data) onUseSkillService(data);
+    });
+
+    socket.on("OnKill", (json) => {
+        const data = safeParse(json);
+        if (data) onKillService(data);
+    });
+
+    socket.on("OnDamage", (json) => {
+        const data = safeParse(json);
+        if (data) onDamageService(data);
+    });
+
+    socket.on("OnBattleBegin", (json) => {
+        const data = safeParse(json);
+        if (data) onBattleBegin(data);
+    });
+
+    socket.on("OnTurnBegin", (json) => {
+        const data = safeParse(json);
+        if (data) onTurnBeginService(data);
+    });
+
+    socket.on("OnBattleEnd", (json) => {
+        const data = safeParse(json);
+        if (data) onBattleEndService(data);
+    });
+
+    socket.on("OnUpdateCycle", (json) => {
+        const data = safeParse(json);
+        if (data) onUpdateCycleService(data);
+    });
+
+    socket.on("OnUpdateWave", (json) => {
+        const data = safeParse(json);
+        if (data) OnUpdateWaveService(data);
+    });
+
+    socket.on("OnCreateBattle", (json) => {
+        const data = safeParse(json);
+        if (data) onCreateBattleService(data);
+    });
 
     socket.on("Error", (msg: string) => {
         console.error("Server Error:", msg);
