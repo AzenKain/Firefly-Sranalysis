@@ -39,7 +39,7 @@ export default function EnemyBar() {
                             <div className="space-y-2">
                                 <div className="flex justify-between items-center">
                                     <div className="text-xs text-base-content/70">HP:</div>
-                                    <div className="text-xs font-medium">
+                                    <div className="flex text-xs font-medium">
                                         <div className="text-error">
                                             {Number(enemy?.stats?.HP ?? 0).toLocaleString(undefined, { maximumFractionDigits: 0 })}
                                         </div>
