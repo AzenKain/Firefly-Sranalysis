@@ -1,5 +1,4 @@
-import { AvatarType } from "./lineup";
-
+import { EntityType } from "./entity";
 
 export interface TurnInfoType {
     avatars_turn_damage: number[];
@@ -11,10 +10,9 @@ export interface TurnInfoType {
 
 export interface TurnBeginType {
     action_value: number;
-    turn_owner?: AvatarType
+    turn_owner?: EntityType | null
 }
 
 export interface TurnEndType {
-    avatars: AvatarType[];
     turn_info: TurnInfoType
 }

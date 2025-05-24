@@ -140,7 +140,7 @@ export default function ActionBar() {
                                                 {`${transI18n("useSkill")}: ${transI18n(attackTypeToString(turn.skillType).toLowerCase())}`}
                                             </div>
                                             <div className="text-primary text-xs max-w-full">
-                                                {`${transI18n("totalDamage")}: ${turn.totalDamage.toFixed(2)}`}
+                                                {`${transI18n("totalDamage")}: ${Number(turn.totalDamage).toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 })}`}
                                             </div>
                                         </div>
                                     </div>
@@ -234,11 +234,11 @@ export default function ActionBar() {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                                 <div className="bg-base-200 rounded-lg p-4 shadow-md">
                                     <h4 className="text-lg font-semibold mb-2 text-cyan-500 border-b border-cyan-300/30 pb-1">{transI18n("actionValue")}</h4>
-                                    <p className="mt-2">{turnHistory[selectTurn?.turnBattleId].actionValue.toFixed(2)}</p>
+                                    <p className="mt-2">{Number(turnHistory[selectTurn?.turnBattleId].actionValue).toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 })}</p>
                                 </div>
                                 <div className="bg-base-200 rounded-lg p-4 shadow-md">
                                     <h4 className="text-lg font-semibold mb-2 text-purple-500 border-b border-purple-300/30 pb-1">{transI18n("totalDamage")}</h4>
-                                    <p className="mt-2 font-bold text-lg">{selectTurn?.totalDamage.toFixed(2)}</p>
+                                    <p className="mt-2 font-bold text-lg">{Number(selectTurn?.totalDamage).toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 })}</p>
                                 </div>
                             </div>
 
@@ -252,7 +252,7 @@ export default function ActionBar() {
                                                 className="flex flex-col items-start gap-1 p-3 rounded-lg shadow bg-base-200"
                                             >
                                                 <span className="text-lg font-semibold text-primary">
-                                                    {detail.damage.toFixed(2)}
+                                                    {Number(detail.damage).toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 })}
                                                 </span>
                                                 <span className="text-xs uppercase text-gray-500 tracking-wide">
                                                     {transI18n(attackTypeToString(detail?.damage_type).toLowerCase())}

@@ -23,7 +23,7 @@ const themes = [
 export default function Header() {
     const { changeTheme } = useChangeTheme()
     const { locale, setLocale } = useLocaleStore()
-    const { loadBattleDataFromJSON } = useBattleDataStore()
+    const { loadBattleDataFromJSON, version } = useBattleDataStore()
     const router = useRouter()
     const transI18n = useTranslations("DataAnalysisPage")
     const { host, port, status, connectionType, setHost, setPort, setStatus, setConnectionType } = useSocketStore();
@@ -219,6 +219,16 @@ export default function Header() {
                     </h1>
                     <p className="text-sm text-gray-500">For Veritas</p>
                 </a>
+                {version && (
+        <div className="px-2">
+        <div className="inline-flex items-center space-x-2 px-3 py-1.5 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full shadow-md hover:shadow-lg transition-all duration-200">
+          <div className="w-1.5 h-1.5 bg-white rounded-full animate-pulse"></div>
+          <div className="text-xs font-semibold text-white">
+            {version}
+          </div>
+        </div>
+      </div>
+                )}
 
             </div>
 

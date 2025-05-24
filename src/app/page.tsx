@@ -10,6 +10,7 @@ import DamagePerAvatarForAll from "@/components/chart/damagePerAvatarForAll";
 import MultiCharLineChart from "@/components/chart/damageLineForAll";
 import DamagePerCycleForAll from "@/components/chart/damagePerCycleForAll";
 import DamagePercentChartForAll from "@/components/chart/damagePercentForAll";
+import EnemyBar from "@/components/enemybar";
 
 export default function Home() {
   const transI18n = useTranslations("DataAnalysisPage");
@@ -18,7 +19,8 @@ export default function Home() {
     totalAV,
     totalDamage,
     damagePerAV,
-    turnHistory
+    turnHistory,
+    enemyDetail
   } = useBattleDataStore();
   const [expandedCharts, setExpandedCharts] = useState<string[]>([]);
 
@@ -55,22 +57,22 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-2 mb-3">
               <div className="p-2 text-base lg:text-lg xl:text-xl rounded bg-primary text-primary-content text-center shadow-md">
                 {transI18n("totalDamage")}
-                <div>{Number(totalDamage).toFixed(2)}</div>
+                <div>{Number(totalDamage).toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 })}</div>
               </div>
               <div className="p-2 text-base lg:text-lg xl:text-xl rounded bg-secondary text-secondary-content text-center shadow-md">
                 {transI18n("totalAV")}
-                <div>{Number(totalAV).toFixed(2)}</div>
+                <div>{Number(totalAV).toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 })}</div>
               </div>
               <div className="p-2 text-base lg:text-lg xl:text-xl rounded bg-accent text-accent-content text-center shadow-md">
                 {transI18n("damagePerAV")}
-                <div>{Number(damagePerAV).toFixed(2)}</div>
+                <div>{Number(damagePerAV).toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 })}</div>
               </div>
               <div className="p-2 text-base lg:text-lg xl:text-xl rounded bg-warning text-warning-content text-center shadow-md">
                 {transI18n("totalTurn")}
                 <div>{turnHistory.filter(it => it.avatarId && it.avatarId != -1).length}</div>
               </div>
             </div>
-
+            {enemyDetail && <EnemyBar />}
 
             <div className="rounded-lg p-2 shadow-md flex-grow">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">

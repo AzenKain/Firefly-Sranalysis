@@ -10,9 +10,6 @@ export interface BattleEndType {
     action_value: number;
     stage_id: number;
 }
-export interface KillType {
-    attacker: AvatarType;
-}
 
 export interface BattleBeginType {
     max_waves: number

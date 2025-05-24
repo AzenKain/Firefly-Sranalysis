@@ -209,7 +209,7 @@ export default function LineupBar() {
                                                             <p>
                                                                 {transI18n("eidolons")}: <span className="font-bold">{avatar?.data?.rank}</span>
                                                             </p>
-                                                            <p className="flex items-center space-x-2">
+                                                            <div className="flex items-center space-x-2">
                                                                 <span>{transI18n("lightcones")}:</span>
                                                                 <Image
                                                                     src={`https://api.hakush.in/hsr/UI/lightconemediumicon/${avatar?.Lightcone?.item_id}.webp`}
@@ -218,8 +218,8 @@ export default function LineupBar() {
                                                                     width={200}
                                                                     height={200}
                                                                 />
-                                                            </p>
-                                                            <p className="flex items-center space-x-2 w-full">
+                                                            </div>
+                                                            <div className="flex items-center space-x-2 w-full">
                                                                 <span>{transI18n("relics")}:</span>
                                                                 <div className="grid grid-cols-3 md:flex md:flex-row   w-full">
                                                                     {relicIds.map(it => (
@@ -233,7 +233,7 @@ export default function LineupBar() {
                                                                         />
                                                                     ))}
                                                                 </div>
-                                                            </p>
+                                                            </div>
                                                         </>
                                                     );
                                                 })()}
@@ -256,10 +256,10 @@ export default function LineupBar() {
                                     <ShowCaseInfo></ShowCaseInfo>
                                 </div> */}
                                 <div className="bg-base-200 rounded-lg p-4 shadow-md">
-                                    <p className="mt-2 font-bold text-lg text-cyan-500">{transI18n("totalTurn")}: <span className="text-base-content">{totalTurn.toFixed(2)}</span></p>
+                                    <p className="mt-2 font-bold text-lg text-cyan-500">{transI18n("totalTurn")}: <span className="text-base-content">{Number(totalTurn).toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 })}</span></p>
                                 </div>
                                 <div className="bg-base-200 rounded-lg p-4 shadow-md">
-                                    <h4 className="text-lg font-semibold mb-2 text-purple-500">{transI18n("totalDamage")}: <span className="text-base-content">{totalDamage.toFixed(2)}</span></h4>
+                                    <h4 className="text-lg font-semibold mb-2 text-purple-500">{transI18n("totalDamage")}: <span className="text-base-content">{Number(totalDamage).toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 })}</span></h4>
                                 </div>
 
                                 <div className="bg-base-200 rounded-lg p-4 shadow-md">

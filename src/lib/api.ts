@@ -5,7 +5,7 @@ import axios from 'axios';
 export async function checkConnectTcpApi(): Promise<boolean> {
     const { host, port, connectionType } = useSocketStore.getState()
     let url = `${host}:${port}/check-tcp`
-    if (connectionType === "FireflyPSLocal") {
+    if (connectionType === "PS") {
         url = "http://localhost:21000/check-tcp"
     }
     const response = await fetch(url, {

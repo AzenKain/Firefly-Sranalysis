@@ -1,7 +1,7 @@
-import { AvatarType } from "./lineup";
+import { EntityType } from "./entity";
 
-export interface AttackResultType {
-    attacker: AvatarType;
+export interface DamageType {
+    attacker: EntityType;
     damage: number;
     damage_type?: AttackType
 }

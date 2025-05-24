@@ -14,7 +14,10 @@ export const exportBattleData = (
     waveIndex,
     dataAvatar,
     maxWave,
-    maxCycle
+    maxCycle,
+    version,
+    avatarDetail,
+    enemyDetail
   } = useBattleDataStore.getState();
     
   const data: BattleDataStateJson = {
@@ -28,7 +31,10 @@ export const exportBattleData = (
     cycleIndex,
     waveIndex,
     maxWave,
-    maxCycle
+    maxCycle,
+    version,
+    avatarDetail,
+    enemyDetail
   }
 
   const dataStr = JSON.stringify(data, null, 2);

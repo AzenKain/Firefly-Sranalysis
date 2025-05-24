@@ -1,9 +1,11 @@
 import {AttackType, DamageDetailType} from "./attack";
 import { AvatarAnalysisJson } from "./srtools";
+import { StatType } from "./stat";
+
 
 export interface AvatarBattleInfo {
     avatarId: number;
-    isDie: boolean;
+    isDie?: boolean;
 }
 
 export interface SkillBattleInfo {
@@ -33,5 +35,34 @@ export interface BattleDataStateJson {
     maxWave: number;
     cycleIndex: number,
     waveIndex: number,
-    maxCycle: number
+    maxCycle: number,
+    version?: string,
+    avatarDetail?: Record<number, AvatarInfo>;
+    enemyDetail?: Record<number, EnemyInfo>;
 }
+
+export interface StatsHistoryType {
+    stats: StatType
+    turnBattleId: number;
+}
+
+export interface EnemyInfo {
+    id: number;
+    name: string;
+    maxHP: number;
+    level: number;
+    isDie: boolean;
+    positionIndex: number;
+    waveIndex: number;
+    killer_uid: number;
+    stats: Record<string, number>;
+    statsHistory: StatsHistoryType[];
+}
+export interface AvatarInfo {
+    id: number;
+    isDie: boolean;
+    killer_uid: number;
+    stats: Record<string, number>;
+    statsHistory: StatsHistoryType[];
+}
+
