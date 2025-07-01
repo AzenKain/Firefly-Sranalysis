@@ -34,7 +34,7 @@ ENV NEXT_TELEMETRY_DISABLED=1
 RUN adduser --system --uid 1001 nextjs
 
 COPY --from=builder /app/public ./public
-
+COPY --from=builder /app/messages ./messages
 # Set the correct permission for prerender cache
 RUN mkdir .next
 RUN chown nextjs:bun .next

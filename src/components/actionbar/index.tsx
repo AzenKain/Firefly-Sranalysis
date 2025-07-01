@@ -136,11 +136,14 @@ export default function ActionBar() {
                                             />   
                                         </div>
                                         <div className="grid grid-cols-1 justify-center gap-2 py-2 w-full">
-                                            <div className="bg-local text-primary text-xs  max-w-full">
+                                            <div className="bg-local text-primary text-xs max-w-full">
                                                 {`${transI18n("useSkill")}: ${transI18n(attackTypeToString(turn.skillType).toLowerCase())}`}
                                             </div>
                                             <div className="text-primary text-xs max-w-full">
                                                 {`${transI18n("totalDamage")}: ${Number(turn.totalDamage).toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 })}`}
+                                            </div>
+                                            <div className="text-primary text-xs max-w-full">
+                                                {`${transI18n("actionValue")}: ${Number(turnHistory[turn.turnBattleId]?.actionValue || 0).toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 })}`}
                                             </div>
                                         </div>
                                     </div>

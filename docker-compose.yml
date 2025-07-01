@@ -7,3 +7,9 @@ services:
     restart: unless-stopped
     ports:
       - "3005:3000"
+    networks:
+      - sranalysis-network
+
+networks:
+  sranalysis-network:
+    driver: bridge

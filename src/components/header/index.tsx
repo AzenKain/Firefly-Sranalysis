@@ -374,7 +374,7 @@ export default function Header() {
 
                 {/* GitHub Link */}
                 <Link
-                    className='hidden sm:block btn btn-ghost btn-sm btn-circle hover:bg-base-200 transition-all duration-200'
+                    className='hidden sm:flex btn btn-ghost btn-sm btn-circle bg-white/20 hover:bg-white/100 transition-all duration-200 items-center justify-center'
                     href={"https://github.com/AzenKain/SR-Analysis"}
                     target="_blank"
                     rel="noopener noreferrer"
