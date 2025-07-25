@@ -34,7 +34,7 @@ export const metadata: Metadata = {
       images: [
         {
           url: "https://sranalysis.kain.id.vn/ff-sranalysis.png",
-          width: 1200,
+          width: 630,
           height: 630,
           alt: "Firefly Analytics Logo",
         },
