@@ -2,15 +2,16 @@
 
 import useBattleDataStore from "@/stores/battleDataStore";
 import Image from "next/image";
+import useAvatarDataStore from "@/stores/avatarDataStore";
+import { getNameEnemy } from "@/helper/getNameChar";
 
-function formatEnemyIdForURL(id?: number): string {
-    const n = id ?? 0;
-    const adjusted = n.toString().length === 9 ? n / 100 : n;
-    return adjusted.toFixed(0);
-}
+import useLocaleStore from "@/stores/localeStore";
+import NameAvatar from "../nameAvatar";
 
 export default function EnemyBar() {
     const { enemyDetail } = useBattleDataStore()
+    const { listEnemy } = useAvatarDataStore()
+    const { locale } = useLocaleStore()
 
     return (
         <div className="p-3 w-full">
@@ -21,16 +22,18 @@ export default function EnemyBar() {
                             <div className="flex items-center justify-between mb-3">
                                 <div className="flex items-center gap-2">
                                     <Image
-                                        src={`https://api.hakush.in/hsr/UI/monstermiddleicon/Monster_${formatEnemyIdForURL(enemy.id)}.webp`}
+                                        src={`https://api.hakush.in/hsr/UI/monstermiddleicon/${listEnemy.find((monster) => monster.child.includes(enemy.id))?.icon?.split("/")?.pop()?.replace(".png", "")}.webp`}
                                         alt={enemy.name}
                                         width={40}
                                         height={40}
                                         className="object-cover w-10 h-10 rounded-lg"
                                     />
                                     <div className="flex-1 min-w-0">
-                                        <h3 className="text-base font-semibold leading-tight truncate overflow-hidden" title={enemy.name}>
-                                            {enemy.name}
-                                        </h3>
+                                        <NameAvatar
+                                            text={getNameEnemy(locale, listEnemy.find((monster) => monster.child.includes(enemy.id)))}
+                                            locale={locale}
+                                            className="text-base font-semibold leading-tight truncate overflow-hidden"
+                                        />
                                         <p className="text-base-content/70 text-xs">Level {enemy.level || 1}</p>
                                     </div>
                                 </div>

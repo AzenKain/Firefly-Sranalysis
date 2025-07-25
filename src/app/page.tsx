@@ -3,7 +3,7 @@ import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import ActionBar from "@/components/actionbar";
 import useAvatarDataStore from "@/stores/avatarDataStore";
-import { getCharacterListApi } from "@/lib/api";
+import { getCharacterListApi, getEnemyListApi } from "@/lib/api";
 import LineupBar from "@/components/lineupbar";
 import useBattleDataStore from "@/stores/battleDataStore";
 import DamagePerAvatarForAll from "@/components/chart/damagePerAvatarForAll";
@@ -14,7 +14,7 @@ import EnemyBar from "@/components/enemybar";
 
 export default function Home() {
   const transI18n = useTranslations("DataAnalysisPage");
-  const { setListAvatar } = useAvatarDataStore();
+  const { setListAvatar, setListEnemy } = useAvatarDataStore();
   const {
     totalAV,
     totalDamage,
@@ -36,9 +36,11 @@ export default function Home() {
     const fetchData = async () => {
       const data = await getCharacterListApi();
       setListAvatar(data);
+      const enemyData = await getEnemyListApi();
+      setListEnemy(enemyData);
     };
     fetchData();
-  }, [setListAvatar]);
+  }, [setListAvatar, setListEnemy]);
 
   useEffect(() => {
     window.dispatchEvent(new Event('resize'));

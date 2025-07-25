@@ -21,7 +21,34 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Firefly Analytics",
   description: "Analytics tool for Veritas",
-};
+    icons: {
+      icon: "/ff-sranalysis.png",
+      shortcut: "/ff-sranalysis.ico",
+      apple: "/ff-sranalysis.png",
+    },
+    openGraph: {
+      title: "Firefly Analytics",
+      description: "Analytics tool for Veritas",
+      url: "https://sranalysis.kain.id.vn",
+      siteName: "Firefly Analytics",
+      images: [
+        {
+          url: "https://sranalysis.kain.id.vn/ff-sranalysis.png",
+          width: 1200,
+          height: 630,
+          alt: "Firefly Analytics Logo",
+        },
+      ],
+      locale: "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Firefly Analytics",
+      description: "Analytics tool for Veritas",
+      images: ["https://sranalysis.kain.id.vn/ff-sranalysis.png"],
+    },
+  };
 
 export default async function RootLayout({
   children,

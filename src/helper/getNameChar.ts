@@ -1,5 +1,5 @@
 import { listCurrentLanguage } from "@/lib/constant";
-import { AvatarHakushiType } from "@/types";
+import { AvatarHakushiType, EnemyHakushiType } from "@/types";
 
 
 export function getNameChar(locale: string, data: AvatarHakushiType | undefined): string {
@@ -18,6 +18,21 @@ export function getNameChar(locale: string, data: AvatarHakushiType | undefined)
         text = `Female ${data.damageType} MC`
     } else if (Number(data.id) > 8000) {
         text = `Male ${data.damageType} MC`
+    }
+    return text
+}
+
+export function getNameEnemy(locale: string, data: EnemyHakushiType | undefined): string {
+    if (!data) {
+        return ""
+    }
+    if (!listCurrentLanguage.hasOwnProperty(locale)) {
+        return ""
+    }
+
+    let text = data.lang.get(listCurrentLanguage[locale as keyof typeof listCurrentLanguage].toLowerCase()) ?? "";
+    if (!text) {
+        text = data.lang.get("en") ?? "";
     }
     return text
 }
