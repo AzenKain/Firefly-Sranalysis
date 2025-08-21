@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
   reactStrictMode: false,
   output: 'standalone',
   images: {
+      unoptimized: true,
       remotePatterns: [
           {
               protocol: 'https',

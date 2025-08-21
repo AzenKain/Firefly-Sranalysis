@@ -21,13 +21,16 @@ export default function EnemyBar() {
                         <div key={uid} className="bg-base-200 rounded-lg p-3 border border-gray-700 w-52 flex-shrink-0">
                             <div className="flex items-center justify-between mb-3">
                                 <div className="flex items-center gap-2">
-                                    <Image
-                                        src={`https://api.hakush.in/hsr/UI/monstermiddleicon/${listEnemy.find((monster) => monster.child.includes(enemy.id))?.icon?.split("/")?.pop()?.replace(".png", "")}.webp`}
-                                        alt={enemy.name}
-                                        width={40}
-                                        height={40}
-                                        className="object-cover w-10 h-10 rounded-lg"
-                                    />
+                                    {listEnemy.find((monster) => monster.child.includes(enemy.id))?.icon?.split("/")?.pop()?.replace(".png", "") && (
+                                        <Image
+                                            src={`https://api.hakush.in/hsr/UI/monstermiddleicon/${listEnemy.find((monster) => monster.child.includes(enemy.id))?.icon?.split("/")?.pop()?.replace(".png", "")}.webp`}
+                                            alt={enemy.name}
+                                            width={40}
+                                            height={40}
+                                            className="object-cover w-10 h-10 rounded-lg"
+                                        />
+                                    )}
+
                                     <div className="flex-1 min-w-0">
                                         <NameAvatar
                                             text={getNameEnemy(locale, listEnemy.find((monster) => monster.child.includes(enemy.id)))}
