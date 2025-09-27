@@ -5,8 +5,7 @@ import useLocaleStore from '@/stores/localeStore';
 import { AvatarHakushiType } from '@/types';
 import NameAvatar from '../nameAvatar';
 import useBattleDataStore from '@/stores/battleDataStore';
-import { useEffect, useMemo, useState } from 'react';
-import { AvatarInfo } from '@/types/mics';
+import Image from 'next/image';
 
 interface CharacterCardProps {
   data: AvatarHakushiType
@@ -29,20 +28,23 @@ export default function CharacterCard({ data }: CharacterCardProps) {
       >
 
         <div className="relative w-full h-full">
-          <img
-            loading="lazy"
+          <Image
+            width={376}
+            height={512}
             src={`https://api.hakush.in/hsr/UI/avatarshopicon/${data.id}.webp`}
             className="w-full h-full rounded-md object-cover"
             alt="ALT"
           />
-          <img
-            loading='lazy'
+          <Image
+            width={48}
+            height={48}
             src={`https://api.hakush.in/hsr/UI/element/${data.damageType.toLowerCase()}.webp`}
             className="absolute top-0 left-0 w-6 h-6"
             alt={data.damageType.toLowerCase()}
           />
-          <img
-            loading='lazy'
+          <Image
+            width={48}
+            height={48}
             src={`https://api.hakush.in/hsr/UI/pathicon/${data.baseType.toLowerCase()}.webp`}
             className="absolute top-0 right-0 w-6 h-6"
             alt={data.baseType.toLowerCase()}
