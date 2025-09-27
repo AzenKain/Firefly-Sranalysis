@@ -7,8 +7,6 @@ import Footer from "@/components/footer";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 import { ToastContainer } from 'react-toastify';
-import { SpeedInsights } from '@vercel/speed-insights/next';
-import { Analytics } from '@vercel/analytics/react';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -77,8 +75,6 @@ export default async function RootLayout({
           </ThemeProvider>
           </NextIntlClientProvider>
           <ToastContainer/>
-          <SpeedInsights />
-          <Analytics />
       </body>
     </html>
   );
