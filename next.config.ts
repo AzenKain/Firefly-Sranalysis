@@ -1,7 +1,11 @@
 
 import createNextIntlPlugin from "next-intl/plugin";
 import type { NextConfig } from "next";
+import bundleAnalyzer from "@next/bundle-analyzer";
 
+const withBundleAnalyzer = bundleAnalyzer({
+  enabled: process.env.ANALYZE === "true",
+});
 
 const withNextIntl = createNextIntlPlugin()
 const nextConfig: NextConfig = {
@@ -33,4 +37,4 @@ const nextConfig: NextConfig = {
 
 };
 
-export default withNextIntl(nextConfig);
+export default withBundleAnalyzer(withNextIntl(nextConfig));
