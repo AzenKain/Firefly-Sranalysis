@@ -67,7 +67,7 @@ export default function LineupBar() {
     return (
         <div className="p-4 md:p-1 rounded-lg shadow-lg w-full h-full">
             <motion.h2
-                className="text-center text-xl lg:text-2xl pb-2 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500"
+                className="text-center text-xl lg:text-2xl pb-2 font-bold text-transparent bg-clip-text bg-linear-to-r from-pink-500 via-purple-500 to-cyan-500"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
@@ -115,7 +115,7 @@ export default function LineupBar() {
                                         transition={{ duration: 0.3, delay: index * 0.1 }}
                                         whileHover={{ scale: 1.05 }}
                                         onClick={() => handleShow("character_detail_modal", item)}
-                                        className={`cursor-pointer flex-shrink-0  justify-items-center ${isLastTurn ? "shadow-[inset_0_0_10px_2px_rgba(59,130,246,0.7),_0_0_20px_5px_rgba(59,130,246,0.3)]" : ""
+                                        className={`cursor-pointer shrink-0  justify-items-center ${isLastTurn ? "shadow-[inset_0_0_10px_2px_rgba(59,130,246,0.7),0_0_20px_5px_rgba(59,130,246,0.3)]" : ""
                                             }`}
                                     >
                                         <CharacterCard data={item} />
@@ -129,7 +129,7 @@ export default function LineupBar() {
 
                 {/* Character Detail Modal */}
                 <dialog id="character_detail_modal" className="modal backdrop-blur-sm">
-                    <div className="modal-box w-11/12 max-w-7xl bg-gradient-to-b bg-base-100 text-base-content border-purple-500 shadow-lg shadow-purple-500/20">
+                    <div className="modal-box w-11/12 max-w-7xl bg-linear-to-b bg-base-100 text-base-content border-purple-500 shadow-lg shadow-purple-500/20">
                         <div className="sticky top-0 z-10">
                             <motion.button
                                 whileHover={{ scale: 1.1, rotate: 90 }}
@@ -146,7 +146,7 @@ export default function LineupBar() {
                             <NameAvatar
                                 locale={locale}
                                 text={getNameChar(locale, selectedCharacter).toUpperCase()}
-                                className={"font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-cyan-400"}
+                                className={"font-bold text-2xl text-transparent bg-clip-text bg-linear-to-r from-pink-400 to-cyan-400"}
                             />
                         </div>
 

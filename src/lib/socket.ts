@@ -1,59 +1,149 @@
+// File: socket-client.ts
+
 import { io, Socket } from "socket.io-client";
 import useSocketStore from "@/stores/socketSettingStore";
-import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
 import useBattleDataStore from "@/stores/battleDataStore";
-import { BattleBeginType } from "@/types";
+import type {
+    AvatarAnalysisJson,
+    BattleBeginType,
+    BattleEndType,
+    DamageType,
+    EntityDefeatedType,
+    InitializeEnemyType,
+    SetBattleLineupType,
+    StatChangeType,
+    TurnBeginType,
+    TurnEndType,
+    UpdateCycleType,
+    UpdateTeamFormationType,
+    UpdateWaveType,
+    UseSkillType,
+    VersionType,
+} from "@/types";
 
 let socket: Socket | null = null;
 
-
-const notify = (msg: string, type: 'info' | 'success' | 'error' = 'info') => {
-    if (type === 'success') toast.success(msg);
-    else if (type === 'error') toast.error(msg);
+const notify = (msg: string, type: "info" | "success" | "error" = "info") => {
+    if (type === "success") toast.success(msg);
+    else if (type === "error") toast.error(msg);
     else toast.info(msg);
 };
 
-function safeParse(json: unknown | string) {
-    try {
-        return typeof json === "string" ? JSON.parse(json) : json;
-    } catch (e) {
-        console.error("JSON parse error:", e, json);
-        return null;
-    }
+interface SocketEvents {
+    Connected: VersionType;
+    OnBattleBegin: BattleBeginType;
+    OnSetBattleLineup: SetBattleLineupType;
+    OnDamage: DamageType;
+    OnTurnBegin: TurnBeginType;
+    OnTurnEnd: TurnEndType;
+    OnEntityDefeated: EntityDefeatedType;
+    OnUseSkill: UseSkillType;
+    OnUpdateWave: UpdateWaveType;
+    OnUpdateCycle: UpdateCycleType;
+    OnStatChange: StatChangeType;
+    OnUpdateTeamFormation: UpdateTeamFormationType;
+    OnInitializeEnemy: InitializeEnemyType;
+    OnBattleEnd: BattleEndType;
+    OnCreateBattle: AvatarAnalysisJson[];
+    Error: string;
 }
 
+type ListenerMap = {
+    [K in keyof SocketEvents]: (payload: SocketEvents[K]) => void;
+};
 
-export const connectSocket = (): Socket => {
+let listeners: ListenerMap | null = null;
+
+let workerPool: Worker[] | null = null;
+let nextWorker = 0;
+let reqId = 1;
+const pendingMap = new Map<number, (res: { parsed: unknown | null; err?: string }) => void>();
+
+const createWorkerPool = (size = Math.max(1, (navigator.hardwareConcurrency || 4) - 1)) => {
+    if (workerPool) return workerPool;
+    const code = `self.onmessage = function(e) { try { const { id, raw } = e.data; const parsed = typeof raw === 'string' ? JSON.parse(raw) : raw; self.postMessage({ id, parsed }); } catch (err) { self.postMessage({ id, err: err && err.message ? err.message : String(err) }); } }`;
+    const blob = new Blob([code], { type: 'application/javascript' });
+    const url = URL.createObjectURL(blob);
+    workerPool = Array.from({ length: size }).map(() => new Worker(url));
+    workerPool.forEach((w) => {
+        w.onmessage = (ev) => {
+            const { id, parsed, err } = ev.data as { id: number; parsed: unknown; err?: string };
+            const cb = pendingMap.get(id);
+            if (cb) {
+                cb({ parsed: parsed ?? null, err });
+                pendingMap.delete(id);
+            }
+        };
+        w.onerror = (ev) => {
+            console.error('worker error', ev.message);
+        };
+    });
+    return workerPool;
+};
+
+const parseWithWorker = (raw: unknown): Promise<{ parsed: unknown | null; err?: string }> => {
+    if (!workerPool) createWorkerPool();
+    if (!workerPool) return Promise.resolve({ parsed: null, err: 'no worker' });
+    const id = reqId++;
+    return new Promise((resolve) => {
+        pendingMap.set(id, resolve);
+        const w = workerPool![nextWorker];
+        nextWorker = (nextWorker + 1) % workerPool!.length;
+        try {
+            w.postMessage({ id, raw });
+        } catch (err) {
+            pendingMap.delete(id);
+            resolve({ parsed: null, err: err && (err as Error).message ? (err as Error).message : String(err) });
+        }
+    });
+};
+
+let eventQueue: { name: keyof SocketEvents; data: unknown }[] = [];
+let rafScheduled = false;
+const MAX_QUEUE = 5000;
+
+const flushQueue = () => {
+    const items = eventQueue.splice(0, eventQueue.length);
+    if (items.length === 0) return;
+    const l = listeners;
+    if (!l) return;
+    for (const it of items) {
+        try {
+            l[it.name](it.data as never);
+        } catch (err) {
+            console.error('listener handler error', err);
+        }
+    }
+};
+
+const scheduleFlush = () => {
+    if (rafScheduled) return;
+    rafScheduled = true;
+    requestAnimationFrame(() => {
+        rafScheduled = false;
+        flushQueue();
+    });
+};
+
+const safeEnqueue = (name: keyof SocketEvents, data: unknown) => {
+    if (eventQueue.length > MAX_QUEUE) {
+        eventQueue.shift();
+        console.warn('eventQueue overflow, dropping oldest');
+    }
+    eventQueue.push({ name, data });
+    scheduleFlush();
+};
+
+export const connectSocket = async (): Promise<Socket> => {
     const { host, port, connectionType, setStatus } = useSocketStore.getState();
-    const {
-        onConnectedService,
-        onBattleBeginService,
-        onSetBattleLineupService,
-        onDamageService,
-        onTurnBeginService,
-        onTurnEndService,
-        onEntityDefeatedService,
-        onUseSkillService,
-        onUpdateWaveService,
-        onUpdateCycleService,
-        onStatChange,
-        onUpdateTeamFormation,
-        onInitializeEnemyService,
-        onBattleEndService,
-        onCreateBattleService,
-    } = useBattleDataStore.getState();
+    const battle = useBattleDataStore.getState();
 
     let url = `${host}:${port}`;
-    if (connectionType === "Native") {
-        url = "http://localhost:1305"
-    }
-    else if (connectionType === "PS") {
-        url = "http://localhost:21000"
-    }
+    if (connectionType === "Native") url = "http://localhost:1305";
+    else if (connectionType === "PS") url = "http://localhost:21000";
 
-    if (socket) {
-        socket.disconnect();
-    }
+    if (socket) socket.disconnect();
 
     socket = io(url, {
         reconnectionAttempts: 5,
@@ -62,156 +152,91 @@ export const connectSocket = (): Socket => {
     });
 
     socket.on("connect", () => {
-        console.log("Socket connected");
         setStatus(true);
+        notify(`Connected: ${socket?.id}`, "success");
     });
 
-    socket.on("disconnect", () => {
-        console.log("Socket disconnected");
-        setStatus(false);
-    });
+    socket.on("disconnect", () => setStatus(false));
+    socket.on("connect_error", () => setStatus(false));
+    socket.on("connect_timeout", () => setStatus(false));
+    socket.on("reconnect_failed", () => setStatus(false));
 
-    socket.on("connect_error", (err) => {
-        console.error("Connection error:", err);
-        setStatus(false);
-    });
-
-    socket.on("connect_timeout", () => {
-        console.warn("Connection timeout");
-        setStatus(false);
-    });
-
-    socket.on("reconnect_failed", () => {
-        console.error("Reconnect failed");
-        setStatus(false);
-    });
-
-    const onConnect = () => {
-        setStatus(true);
-        notify(`Kết nối thành công với Socket ID: ${socket?.id}`, 'success');
+    listeners = {
+        Connected: (payload) => battle.onConnectedService(payload),
+        OnBattleBegin: (payload) => {
+            notify("Battle Started!", "info");
+            battle.onBattleBeginService(payload);
+        },
+        OnSetBattleLineup: (payload) => battle.onSetBattleLineupService(payload),
+        OnDamage: (payload) => battle.onDamageService(payload),
+        OnTurnBegin: (payload) => battle.onTurnBeginService(payload),
+        OnTurnEnd: (payload) => battle.onTurnEndService(payload),
+        OnEntityDefeated: (payload) => battle.onEntityDefeatedService(payload),
+        OnUseSkill: (payload) => battle.onUseSkillService(payload),
+        OnUpdateWave: (payload) => battle.onUpdateWaveService(payload),
+        OnUpdateCycle: (payload) => battle.onUpdateCycleService(payload),
+        OnStatChange: (payload) => battle.onStatChange(payload),
+        OnUpdateTeamFormation: (payload) => battle.onUpdateTeamFormation(payload),
+        OnInitializeEnemy: (payload) => battle.onInitializeEnemyService(payload),
+        OnBattleEnd: (payload) => battle.onBattleEndService(payload),
+        OnCreateBattle: (payload) => battle.onCreateBattleService(payload),
+        Error: (msg) => console.error("Server Error:", msg),
     };
 
-    const onBattleBegin = (data: BattleBeginType) => {
-        notify("Battle Started!", "info")
-        onBattleBeginService(data)
-    }
+    const register = (eventName: string) => {
+        socket?.on(eventName, async (raw: unknown) => {
+            if (!listeners) return;
+            if (workerPool) {
+                const res = await parseWithWorker(raw);
+                if (res.err) {
+                    safeEnqueue("Error", `Worker parse error for ${eventName}: ${res.err}`);
+                } else if (res.parsed !== null) {
+                    safeEnqueue(eventName as keyof SocketEvents, res.parsed);
+                }
+            } else {
+                try {
+                    const parsed = typeof raw === 'string' ? JSON.parse(raw) : raw;
+                    safeEnqueue(eventName as keyof SocketEvents, parsed);
+                } catch (err) {
+                    safeEnqueue("Error", `Parse error for ${eventName}: ${err && (err as Error).message ? (err as Error).message : String(err)}`);
+                }
+            }
+        });
+    };
 
-    if (isSocketConnected()) onConnect();
-    socket.on("Connected", (json) => {
-        const data = safeParse(json);
-        if (data) onConnectedService(data);
-    });
-    socket.on("OnBattleBegin", (json) => {
-        const data = safeParse(json);
-        if (data) onBattleBegin(data);
-    });
-    socket.on("OnSetBattleLineup", (json) => {
-        const data = safeParse(json);
-        if (data) onSetBattleLineupService(data);
-    });
-    socket.on("OnDamage", (json) => {
-        const data = safeParse(json);
-        if (data) onDamageService(data);
-    });
-    socket.on("OnTurnBegin", (json) => {
-        const data = safeParse(json);
-        if (data) onTurnBeginService(data);
-    });
-    socket.on("OnTurnEnd", (json) => {
-        const data = safeParse(json);
-        if (data) onTurnEndService(data);
-    });
-    socket.on("OnEntityDefeated", (json) => {
-        const data = safeParse(json);
-        if (data) onEntityDefeatedService(data);
-    });
-    socket.on("OnUseSkill", (json) => {
-        const data = safeParse(json);
-        if (data) onUseSkillService(data);
-    });
-    socket.on("OnUpdateWave", (json) => {
-        const data = safeParse(json);
-        if (data) onUpdateWaveService(data);
-    });
-    socket.on("OnUpdateCycle", (json) => {
-        const data = safeParse(json);
-        if (data) onUpdateCycleService(data);
-    });
-    socket.on("OnStatChange", (json) => {
-        const data = safeParse(json);
-        if (data) onStatChange(data);
-    });
-    socket.on("OnUpdateTeamFormation", (json) => {
-        const data = safeParse(json);
-        if (data) onUpdateTeamFormation(data);
-    });
-    socket.on("OnInitializeEnemy", (json) => {
-        const data = safeParse(json);
-        if (data) onInitializeEnemyService(data);
-    });
-    socket.on("OnBattleEnd", (json) => {
-        const data = safeParse(json);
-        if (data) onBattleEndService(data);
-    });
-    socket.on("OnCreateBattle", (json) => {
-        const data = safeParse(json);
-        if (data) onCreateBattleService(data);
-    });
-    socket.on("Error", (msg: string) => {
-        console.error("Server Error:", msg);
-    });
+    Object.keys(listeners).forEach((k) => register(k));
+
+    createWorkerPool();
 
     return socket;
 };
 
 export const disconnectSocket = (): void => {
-    const { 
-        onConnectedService,
-        onBattleBeginService,
-        onSetBattleLineupService,
-        onDamageService,
-        onTurnBeginService,
-        onTurnEndService,
-        onEntityDefeatedService,
-        onUseSkillService,
-        onUpdateWaveService,
-        onUpdateCycleService,
-        onStatChange,
-        onUpdateTeamFormation,
-        onInitializeEnemyService,
-        onBattleEndService,
-        onCreateBattleService,
-    } = useBattleDataStore.getState();
-    const onBattleBegin = (data: BattleBeginType) => {
-        notify("Battle Started!", "info")
-        onBattleBeginService(data)
+    if (!socket) return;
+    if (listeners) {
+        Object.keys(listeners).forEach((eventName) => {
+            socket?.off(eventName);
+        });
     }
-    if (socket) {
-        socket.off("Connected", (json) => onConnectedService(JSON.parse(json)));
-        socket.off("OnBattleBegin", (json) => onBattleBegin(JSON.parse(json)));
-        socket.off("OnSetBattleLineup", (json) => onSetBattleLineupService(JSON.parse(json)));
-        socket.off("OnTurnEnd", (json) => onTurnEndService(JSON.parse(json)));
-        socket.off("OnUseSkill", (json) => onUseSkillService(JSON.parse(json)));
-        socket.off("OnEntityDefeated", (json) => onEntityDefeatedService(JSON.parse(json)));
-        socket.off("OnDamage", (json) => onDamageService(JSON.parse(json)));
-        socket.off('OnTurnBegin', (json) => onTurnBeginService(JSON.parse(json)));
-        socket.off('OnBattleEnd', (json) => onBattleEndService(JSON.parse(json)));
-        socket.off('OnUpdateCycle', (json) => onUpdateCycleService(JSON.parse(json)));
-        socket.off('OnUpdateWave', (json) => onUpdateWaveService(JSON.parse(json)));
-        socket.off('OnCreateBattle', (json) => onCreateBattleService(JSON.parse(json)));
-        socket.off('OnStatChange', (json) => onStatChange(JSON.parse(json)));
-        socket.off('OnUpdateTeamFormation', (json) => onUpdateTeamFormation(JSON.parse(json)));
-        socket.off('OnInitializeEnemy', (json) => onInitializeEnemyService(JSON.parse(json)));
-        socket.offAny();
-        socket.disconnect();
-        useSocketStore.getState().setStatus(false);
+    socket.disconnect();
+    useSocketStore.getState().setStatus(false);
+    listeners = null;
+    if (workerPool) {
+        workerPool.forEach((w) => w.terminate());
+        workerPool = null;
     }
+    pendingMap.clear();
+    eventQueue = [];
 };
 
-export const isSocketConnected = (): boolean => {
-    return socket?.connected || false;
+export const isSocketConnected = (): boolean => socket?.connected || false;
+export const getSocket = (): Socket | null => socket;
+
+export const setWorkerPoolSize = (size: number) => {
+    if (workerPool) {
+        workerPool.forEach((w) => w.terminate());
+        workerPool = null;
+    }
+    createWorkerPool(Math.max(1, size));
 };
 
-export const getSocket = (): Socket | null => {
-    return socket;
-};

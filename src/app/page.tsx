@@ -47,7 +47,7 @@ export default function Home() {
   }, [expandedCharts]);
 
   return (
-    <div className="flex flex-col px-2 h-full w-full mt-5 min-h-[74vh] bg-base-100 font-[family-name:var(--font-geist-sans)]">
+    <div className="flex flex-col px-2 h-full w-full mt-5 min-h-[74vh] bg-base-100 font-(family-name:--font-geist-sans)">
       <div className="h-full ">
         <div className="grid grid-cols-12 gap-2 lg:gap-3 h-full min-h-full">
           <div className="col-span-12 md:col-span-3 lg:col-span-2 xl:col-span-2 h-full">
@@ -76,7 +76,7 @@ export default function Home() {
             </div>
             {enemyDetail && <EnemyBar />}
 
-            <div className="rounded-lg p-2 shadow-md flex-grow">
+            <div className="rounded-lg p-2 shadow-md grow">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
 
                 <div
