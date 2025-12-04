@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Firefly Analysis
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js&logoColor=white)
+![Bun](https://img.shields.io/badge/Bun-%23000000.svg?style=for-the-badge&logo=bun&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 
-First, run the development server:
+**Firefly Analysis** is a modern, high-performance web toolkit designed to streamline workflows and provide essential services. This project is built upon the powerful synergy of the **Next.js** framework and the ultra-fast **Bun.js** runtime, ensuring lightning-fast development and deployment.
 
+---
+
+## Live Sites
+
+The application is deployed and available at the following URLs:
+
+| Role | URL |
+| :--- | :--- |
+| **Main Site** | [sranalysis.kain.id.vn](https://sranalysis.kain.id.vn) |
+| **Backup / Vercel Mirror** | [firefly-sranalysis.vercel.app](https://firefly-sranalysis.vercel.app) |
+
+---
+
+## Key Features
+
+* **Optimized Performance:** Leveraging Bun for dependency management, scripting, and development server speed.
+* **Next.js App Router:** Modern routing and data fetching using the latest Next.js architecture.
+* **Server-Side Rendering (SSR):** Enhanced SEO and faster initial load times for improved user experience.
+* **Robust Type Safety:** Built with TypeScript for reliable and maintainable code.
+* **Modular Design:** Clean separation of concerns with reusable components and utilities.
+
+## Technology Stack
+
+* **Frontend Framework:** [Next.js 15](https://nextjs.org/) (React)
+* **Runtime & Package Manager:** [Bun](https://bun.sh/)
+* **Language:** TypeScript
+* **Styling:** (Tailwind CSS, DaisyUI)
+* **State Management:** (Zustand)
+
+---
+
+## Prerequisites
+
+Ensure you have **Bun** installed on your system.
+
+Install Bun (macOS, WSL, Linux):
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+curl -fsSL [https://bun.sh/install](https://bun.sh/install) | bash
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+bun install
+```
+```bash
+bun run dev
+```
+```bash
+bun run build
+bun run start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
