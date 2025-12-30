@@ -1,5 +1,3 @@
-// File: socket-client.ts
-
 import { io, Socket } from "socket.io-client";
 import useSocketStore from "@/stores/socketSettingStore";
 import { toast } from "react-toastify";
@@ -59,13 +57,18 @@ let workerPool: Worker[] | null = null;
 let nextWorker = 0;
 let reqId = 1;
 const pendingMap = new Map<number, (res: { parsed: unknown | null; err?: string }) => void>();
+let workerBlobUrl: string | null = null;
 
 const createWorkerPool = (size = Math.max(1, (navigator.hardwareConcurrency || 4) - 1)) => {
     if (workerPool) return workerPool;
     const code = `self.onmessage = function(e) { try { const { id, raw } = e.data; const parsed = typeof raw === 'string' ? JSON.parse(raw) : raw; self.postMessage({ id, parsed }); } catch (err) { self.postMessage({ id, err: err && err.message ? err.message : String(err) }); } }`;
-    const blob = new Blob([code], { type: 'application/javascript' });
-    const url = URL.createObjectURL(blob);
-    workerPool = Array.from({ length: size }).map(() => new Worker(url));
+
+    if (!workerBlobUrl) {
+        const blob = new Blob([code], { type: 'application/javascript' });
+        workerBlobUrl = URL.createObjectURL(blob);
+    }
+    
+    workerPool = Array.from({ length: size }).map(() => new Worker(workerBlobUrl!));
     workerPool.forEach((w) => {
         w.onmessage = (ev) => {
             const { id, parsed, err } = ev.data as { id: number; parsed: unknown; err?: string };
@@ -87,7 +90,16 @@ const parseWithWorker = (raw: unknown): Promise<{ parsed: unknown | null; err?: 
     if (!workerPool) return Promise.resolve({ parsed: null, err: 'no worker' });
     const id = reqId++;
     return new Promise((resolve) => {
-        pendingMap.set(id, resolve);
+        const timeout = setTimeout(() => {
+            pendingMap.delete(id);
+            resolve({ parsed: null, err: "worker timeout" });
+        }, 3000);
+
+        pendingMap.set(id, (res) => {
+            clearTimeout(timeout);
+            resolve(res);
+        });
+
         const w = workerPool![nextWorker];
         nextWorker = (nextWorker + 1) % workerPool!.length;
         try {
@@ -101,7 +113,7 @@ const parseWithWorker = (raw: unknown): Promise<{ parsed: unknown | null; err?: 
 
 let eventQueue: { name: keyof SocketEvents; data: unknown }[] = [];
 let rafScheduled = false;
-const MAX_QUEUE = 5000;
+const MAX_QUEUE = 1000;
 
 const flushQueue = () => {
     const items = eventQueue.splice(0, eventQueue.length);
@@ -129,7 +141,6 @@ const scheduleFlush = () => {
 const safeEnqueue = (name: keyof SocketEvents, data: unknown) => {
     if (eventQueue.length > MAX_QUEUE) {
         eventQueue.shift();
-        console.warn('eventQueue overflow, dropping oldest');
     }
     eventQueue.push({ name, data });
     scheduleFlush();
@@ -137,8 +148,6 @@ const safeEnqueue = (name: keyof SocketEvents, data: unknown) => {
 
 export const connectSocket = async (): Promise<Socket> => {
     const { host, port, connectionType, setStatus } = useSocketStore.getState();
-    const battle = useBattleDataStore.getState();
-
     let url = `${host}:${port}`;
     if (connectionType === "Native") url = "http://localhost:1305";
     else if (connectionType === "PS") url = "http://localhost:21000";
@@ -162,24 +171,24 @@ export const connectSocket = async (): Promise<Socket> => {
     socket.on("reconnect_failed", () => setStatus(false));
 
     listeners = {
-        Connected: (payload) => battle.onConnectedService(payload),
+        Connected: (payload) => useBattleDataStore.getState().onConnectedService(payload),
         OnBattleBegin: (payload) => {
             notify("Battle Started!", "info");
-            battle.onBattleBeginService(payload);
+            useBattleDataStore.getState().onBattleBeginService(payload);
         },
-        OnSetBattleLineup: (payload) => battle.onSetBattleLineupService(payload),
-        OnDamage: (payload) => battle.onDamageService(payload),
-        OnTurnBegin: (payload) => battle.onTurnBeginService(payload),
-        OnTurnEnd: (payload) => battle.onTurnEndService(payload),
-        OnEntityDefeated: (payload) => battle.onEntityDefeatedService(payload),
-        OnUseSkill: (payload) => battle.onUseSkillService(payload),
-        OnUpdateWave: (payload) => battle.onUpdateWaveService(payload),
-        OnUpdateCycle: (payload) => battle.onUpdateCycleService(payload),
-        OnStatChange: (payload) => battle.onStatChange(payload),
-        OnUpdateTeamFormation: (payload) => battle.onUpdateTeamFormation(payload),
-        OnInitializeEnemy: (payload) => battle.onInitializeEnemyService(payload),
-        OnBattleEnd: (payload) => battle.onBattleEndService(payload),
-        OnCreateBattle: (payload) => battle.onCreateBattleService(payload),
+        OnSetBattleLineup: (payload) => useBattleDataStore.getState().onSetBattleLineupService(payload),
+        OnDamage: (payload) => useBattleDataStore.getState().onDamageService(payload),
+        OnTurnBegin: (payload) => useBattleDataStore.getState().onTurnBeginService(payload),
+        OnTurnEnd: (payload) => useBattleDataStore.getState().onTurnEndService(payload),
+        OnEntityDefeated: (payload) => useBattleDataStore.getState().onEntityDefeatedService(payload),
+        OnUseSkill: (payload) => useBattleDataStore.getState().onUseSkillService(payload),
+        OnUpdateWave: (payload) => useBattleDataStore.getState().onUpdateWaveService(payload),
+        OnUpdateCycle: (payload) => useBattleDataStore.getState().onUpdateCycleService(payload),
+        OnStatChange: (payload) => useBattleDataStore.getState().onStatChange(payload),
+        OnUpdateTeamFormation: (payload) => useBattleDataStore.getState().onUpdateTeamFormation(payload),
+        OnInitializeEnemy: (payload) => useBattleDataStore.getState().onInitializeEnemyService(payload),
+        OnBattleEnd: (payload) => useBattleDataStore.getState().onBattleEndService(payload),
+        OnCreateBattle: (payload) => useBattleDataStore.getState().onCreateBattleService(payload),
         Error: (msg) => console.error("Server Error:", msg),
     };
 
@@ -217,6 +226,10 @@ export const disconnectSocket = (): void => {
         Object.keys(listeners).forEach((eventName) => {
             socket?.off(eventName);
         });
+    }
+    if (workerBlobUrl) {
+        URL.revokeObjectURL(workerBlobUrl);
+        workerBlobUrl = null;
     }
     socket.disconnect();
     useSocketStore.getState().setStatus(false);
