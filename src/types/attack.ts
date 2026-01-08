@@ -26,7 +26,8 @@ export enum AttackType {
     ElementDamage = 10,
     Level = 11,
     Servant = 12,
-    TrueDamage = 13
+    TrueDamage = 13,
+    ElationDamage = 14
 }
 
 export function attackTypeToString(type: AttackType | undefined): string {
@@ -48,6 +49,7 @@ export function attackTypeToString(type: AttackType | undefined): string {
         case AttackType.Level: return "Level";
         case AttackType.Servant: return "Servant";
         case AttackType.TrueDamage: return "True Damage";
+        case AttackType.ElationDamage: return "Elation Damage";
         default: return "Unknown";
     }
 }
