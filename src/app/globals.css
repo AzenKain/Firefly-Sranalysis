@@ -2,6 +2,7 @@
 
 
 @plugin "daisyui" {
+    exclude: properties;
     themes: winter --default, night --prefersdark, cupcake, coffee;
 }
 @plugin 'tailwind-scrollbar' {
