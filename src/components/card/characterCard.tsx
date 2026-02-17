@@ -2,21 +2,21 @@
 
 import { getNameChar } from '@/helper';
 import useLocaleStore from '@/stores/localeStore';
-import { AvatarHakushiType } from '@/types';
+import { CharacterBasic } from '@/types';
 import NameAvatar from '../nameAvatar';
 import useBattleDataStore from '@/stores/battleDataStore';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 interface CharacterCardProps {
-  data: AvatarHakushiType
+  data: CharacterBasic
 }
-
-
 
 export default function CharacterCard({ data }: CharacterCardProps) {
   const { locale } = useLocaleStore();
-  const text = getNameChar(locale, data)
   const { avatarDetail } = useBattleDataStore()
+  const transI18n = useTranslations("DataAnalysisPage");
+  const text = getNameChar(locale, transI18n, data)
 
   return (
     <li className="z-10 flex flex-col w-28 items-center p-1 rounded-md shadow-lg bg-linear-to-b from-customStart to-customEnd transform transition-transform duration-300 hover:scale-105 m-1">
@@ -31,21 +31,27 @@ export default function CharacterCard({ data }: CharacterCardProps) {
           <Image
             width={376}
             height={512}
-            src={`https://api.hakush.in/hsr/UI/avatarshopicon/${data.id}.webp`}
+            unoptimized
+            crossOrigin="anonymous"
+            src={`${process.env.CDN_URL}/${data.icon}`}
             className="w-full h-full rounded-md object-cover"
             alt="ALT"
           />
           <Image
             width={48}
             height={48}
-            src={`https://api.hakush.in/hsr/UI/element/${data.damageType.toLowerCase()}.webp`}
+            unoptimized
+            crossOrigin="anonymous"
+            src={`/icon/${data.damageType.toLowerCase()}.webp`}
             className="absolute top-0 left-0 w-6 h-6"
             alt={data.damageType.toLowerCase()}
           />
           <Image
             width={48}
             height={48}
-            src={`https://api.hakush.in/hsr/UI/pathicon/${data.baseType.toLowerCase()}.webp`}
+            unoptimized
+            crossOrigin="anonymous"
+            src={`/icon/${data.baseType.toLowerCase()}.webp`}
             className="absolute top-0 right-0 w-6 h-6"
             alt={data.baseType.toLowerCase()}
           />

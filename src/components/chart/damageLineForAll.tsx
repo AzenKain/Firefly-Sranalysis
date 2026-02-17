@@ -24,14 +24,13 @@ export default function MultiCharLineChart() {
   const [mode, setMode] = useState<1 | 2>(2);
   const dataByAvatar = useDamageLinesForAll(mode);
   const avatarIds = Object.keys(dataByAvatar).map(Number);
-  const { listAvatar } = useAvatarDataStore()
+  const { mapAvatar } = useAvatarDataStore()
   const { locale } = useLocaleStore();
   const transI18n = useTranslations("DataAnalysisPage")
 
-
   const data = {
     datasets: avatarIds.map((id, idx) => ({
-      label: getNameChar(locale, listAvatar.find(it => it.id == id.toString())),
+      label: getNameChar(locale, transI18n, mapAvatar?.[id.toString()]),
       data: dataByAvatar[id].map(({ x, y }: { x: number; y: number }) => {
         return {
           x: x.toFixed(2),

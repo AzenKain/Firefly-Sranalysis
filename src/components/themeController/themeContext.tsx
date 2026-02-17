@@ -1,5 +1,6 @@
 "use client";
-import { createContext, PropsWithChildren, useEffect, useState } from "react";
+import useLocaleStore from "@/stores/localeStore";
+import { createContext, PropsWithChildren, useEffect } from "react";
 
 interface ThemeContextType {
     theme?: string;
@@ -8,7 +9,7 @@ interface ThemeContextType {
 export const ThemeContext = createContext<ThemeContextType>({});
 
 export const ThemeProvider = ({ children }: PropsWithChildren) => {
-    const [theme, setTheme] = useState<string>("light");
+    const { theme, setTheme } = useLocaleStore()
 
     useEffect(() => {
         if (typeof window !== "undefined") {
@@ -19,14 +20,13 @@ export const ThemeProvider = ({ children }: PropsWithChildren) => {
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const changeTheme = (nextTheme: string | null) => {
-        console.log(nextTheme)
         if (nextTheme) {
             setTheme(nextTheme);
             if (typeof window !== "undefined") {
                 localStorage.setItem("theme", nextTheme);
             }
         } else {
-            setTheme((prev) => (prev === "light" ? "night" : "light"));
+            setTheme(theme === "winter" ? "night" : "winter");
             if (typeof window !== "undefined") {
                 localStorage.setItem("theme", theme);
             }

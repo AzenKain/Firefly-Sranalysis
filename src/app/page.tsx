@@ -11,10 +11,11 @@ import MultiCharLineChart from "@/components/chart/damageLineForAll";
 import DamagePerCycleForAll from "@/components/chart/damagePerCycleForAll";
 import DamagePercentChartForAll from "@/components/chart/damagePercentForAll";
 import EnemyBar from "@/components/enemybar";
+import { CharacterBasic, MonsterBasic } from "@/types";
 
 export default function Home() {
   const transI18n = useTranslations("DataAnalysisPage");
-  const { setListAvatar, setListEnemy } = useAvatarDataStore();
+  const { setListAvatar, setMapAvatar, setListEnemy, setMapEnemy } = useAvatarDataStore();
   const {
     totalAV,
     totalDamage,
@@ -34,10 +35,20 @@ export default function Home() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const data = await getCharacterListApi();
-      setListAvatar(data);
+      const avatarData = await getCharacterListApi();
+      setListAvatar(avatarData);
+      const avatarMap = avatarData.reduce<Record<string, CharacterBasic>>((acc, m) => {
+        acc[m.id] = m
+        return acc
+      }, {})
+      setMapAvatar(avatarMap)
       const enemyData = await getEnemyListApi();
       setListEnemy(enemyData);
+      const monsterMap = enemyData.reduce<Record<string, MonsterBasic>>((acc, m) => {
+        acc[m.id] = m
+        return acc
+      }, {})
+      setMapEnemy(monsterMap)
     };
     fetchData();
   }, [setListAvatar, setListEnemy]);

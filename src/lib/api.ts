@@ -1,6 +1,5 @@
 import useSocketStore from "@/stores/socketSettingStore";
-import { EnemyHakushiRawType, EnemyHakushiType } from "@/types";
-import { AvatarHakushiType, AvatarHakushiRawType } from "@/types/avatar";
+import { CharacterBasic, MonsterBasic } from "@/types";
 import axios from 'axios';
 
 export async function checkConnectTcpApi(): Promise<boolean> {
@@ -23,20 +22,10 @@ export async function checkConnectTcpApi(): Promise<boolean> {
     return false
 }
 
-export async function getCharacterListApi(): Promise<AvatarHakushiType[]> {
+export async function getCharacterListApi(): Promise<CharacterBasic[]> {
     try {
-        const res = await axios.get<Record<string, AvatarHakushiRawType>>(
-            'https://api.hakush.in/hsr/data/character.json',
-            {
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            }
-        );
-
-        const data = new Map(Object.entries(res.data));
-
-        return Array.from(data.entries()).map(([id, it]) => convertAvatar(id, it));
+        const res = await axios.get<CharacterBasic[]>("/data/character.json");
+        return res.data
     } catch (error: unknown) {
         if (axios.isAxiosError(error)) {
             console.log(`Error: ${error.response?.status} - ${error.message}`);
@@ -47,20 +36,10 @@ export async function getCharacterListApi(): Promise<AvatarHakushiType[]> {
     }
 }
 
-export async function getEnemyListApi(): Promise<EnemyHakushiType[]> {
+export async function getEnemyListApi(): Promise<MonsterBasic[]> {
     try {
-        const res = await axios.get<Record<string, EnemyHakushiRawType>>(
-            'https://api.hakush.in/hsr/data/monster.json',
-            {
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            }
-        );
-
-        const data = new Map(Object.entries(res.data));
-
-        return Array.from(data.entries()).map(([id, it]) => convertMonster(id, it));
+        const res = await axios.get<MonsterBasic[]>("/data/monster.json");
+        return res.data
     } catch (error: unknown) {
         if (axios.isAxiosError(error)) {
             console.log(`Error: ${error.response?.status} - ${error.message}`);
@@ -69,47 +48,4 @@ export async function getEnemyListApi(): Promise<EnemyHakushiType[]> {
         }
         return [];
     }
-}
-
-function convertAvatar(id: string, item: AvatarHakushiRawType): AvatarHakushiType {
-    const lang = new Map<string, string>([
-        ['en', item.en],
-        ['kr', item.kr],
-        ['cn', item.cn],
-        ['jp', item.jp]
-    ]);
-
-    const result: AvatarHakushiType = {
-        release: item.release,
-        icon: item.icon,
-        rank: item.rank,
-        baseType: item.baseType,
-        damageType: item.damageType,
-        desc: item.desc,
-        lang: lang,
-        id: id  
-    };
-
-    return result;
-}
-
-export function convertMonster(id: string, item: EnemyHakushiRawType): EnemyHakushiType {
-    const lang = new Map<string, string>([
-        ['en', item.en],
-        ['kr', item.kr],
-        ['cn', item.cn],
-        ['jp', item.jp]
-    ]);
-    const result: EnemyHakushiType = {
-        id: id,
-        rank: item.rank,
-        camp: item.camp,
-        icon: item.icon,
-        child: item.child,
-        weak: item.weak,
-        desc: item.desc,
-        lang: lang
-    };
-
-    return result;
 }

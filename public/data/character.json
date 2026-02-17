@@ -1,0 +1,1133 @@
+[
+    {
+        "id": "1001",
+        "icon": "spriteoutput/avatarshopicon/avatar/1001.png",
+        "rank": "CombatPowerAvatarRarityType4",
+        "baseType": "Knight",
+        "damageType": "Ice",
+        "lang": {
+            "en": "March 7th",
+            "cn": "三月七",
+            "jp": "{RUBY_B#みつき}三月{RUBY_E#}なのか",
+            "kr": "Mar. 7th"
+        }
+    },
+    {
+        "id": "1002",
+        "icon": "spriteoutput/avatarshopicon/avatar/1002.png",
+        "rank": "CombatPowerAvatarRarityType4",
+        "baseType": "Rogue",
+        "damageType": "Wind",
+        "lang": {
+            "en": "Dan Heng",
+            "cn": "丹恒",
+            "jp": "{RUBY_B#タンコウ}丹恒{RUBY_E#}",
+            "kr": "단항"
+        }
+    },
+    {
+        "id": "1003",
+        "icon": "spriteoutput/avatarshopicon/avatar/1003.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Mage",
+        "damageType": "Fire",
+        "lang": {
+            "en": "Himeko",
+            "cn": "姬子",
+            "jp": "{RUBY_B#ひめこ}姫子{RUBY_E#}",
+            "kr": "히메코"
+        }
+    },
+    {
+        "id": "1004",
+        "icon": "spriteoutput/avatarshopicon/avatar/1004.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Warlock",
+        "damageType": "Imaginary",
+        "lang": {
+            "en": "Welt",
+            "cn": "瓦尔特",
+            "jp": "ヴェルト",
+            "kr": "웰트"
+        }
+    },
+    {
+        "id": "1005",
+        "icon": "spriteoutput/avatarshopicon/avatar/1005.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Warlock",
+        "damageType": "Thunder",
+        "lang": {
+            "en": "Kafka",
+            "cn": "卡芙卡",
+            "jp": "カフカ",
+            "kr": "카프카"
+        }
+    },
+    {
+        "id": "1006",
+        "icon": "spriteoutput/avatarshopicon/avatar/1006.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Warlock",
+        "damageType": "Quantum",
+        "lang": {
+            "en": "Silver Wolf",
+            "cn": "银狼",
+            "jp": "{RUBY_B#ぎんろう}銀狼{RUBY_E#}",
+            "kr": "은랑"
+        }
+    },
+    {
+        "id": "1008",
+        "icon": "spriteoutput/avatarshopicon/avatar/1008.png",
+        "rank": "CombatPowerAvatarRarityType4",
+        "baseType": "Warrior",
+        "damageType": "Thunder",
+        "lang": {
+            "en": "Arlan",
+            "cn": "阿兰",
+            "jp": "アーラン",
+            "kr": "아를란"
+        }
+    },
+    {
+        "id": "1009",
+        "icon": "spriteoutput/avatarshopicon/avatar/1009.png",
+        "rank": "CombatPowerAvatarRarityType4",
+        "baseType": "Shaman",
+        "damageType": "Fire",
+        "lang": {
+            "en": "Asta",
+            "cn": "艾丝妲",
+            "jp": "アスター",
+            "kr": "아스타"
+        }
+    },
+    {
+        "id": "1013",
+        "icon": "spriteoutput/avatarshopicon/avatar/1013.png",
+        "rank": "CombatPowerAvatarRarityType4",
+        "baseType": "Mage",
+        "damageType": "Ice",
+        "lang": {
+            "en": "Herta",
+            "cn": "黑塔",
+            "jp": "ヘルタ",
+            "kr": "헤르타"
+        }
+    },
+    {
+        "id": "1101",
+        "icon": "spriteoutput/avatarshopicon/avatar/1101.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Shaman",
+        "damageType": "Wind",
+        "lang": {
+            "en": "Bronya",
+            "cn": "布洛妮娅",
+            "jp": "ブローニャ",
+            "kr": "브로냐"
+        }
+    },
+    {
+        "id": "1102",
+        "icon": "spriteoutput/avatarshopicon/avatar/1102.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Rogue",
+        "damageType": "Quantum",
+        "lang": {
+            "en": "Seele",
+            "cn": "希儿",
+            "jp": "ゼーレ",
+            "kr": "제레"
+        }
+    },
+    {
+        "id": "1103",
+        "icon": "spriteoutput/avatarshopicon/avatar/1103.png",
+        "rank": "CombatPowerAvatarRarityType4",
+        "baseType": "Mage",
+        "damageType": "Thunder",
+        "lang": {
+            "en": "Serval",
+            "cn": "希露瓦",
+            "jp": "セーバル",
+            "kr": "서벌"
+        }
+    },
+    {
+        "id": "1104",
+        "icon": "spriteoutput/avatarshopicon/avatar/1104.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Knight",
+        "damageType": "Ice",
+        "lang": {
+            "en": "Gepard",
+            "cn": "杰帕德",
+            "jp": "ジェパード",
+            "kr": "게파드"
+        }
+    },
+    {
+        "id": "1105",
+        "icon": "spriteoutput/avatarshopicon/avatar/1105.png",
+        "rank": "CombatPowerAvatarRarityType4",
+        "baseType": "Priest",
+        "damageType": "Physical",
+        "lang": {
+            "en": "Natasha",
+            "cn": "娜塔莎",
+            "jp": "ナターシャ",
+            "kr": "나타샤"
+        }
+    },
+    {
+        "id": "1106",
+        "icon": "spriteoutput/avatarshopicon/avatar/1106.png",
+        "rank": "CombatPowerAvatarRarityType4",
+        "baseType": "Warlock",
+        "damageType": "Ice",
+        "lang": {
+            "en": "Pela",
+            "cn": "佩拉",
+            "jp": "ペラ",
+            "kr": "페라"
+        }
+    },
+    {
+        "id": "1107",
+        "icon": "spriteoutput/avatarshopicon/avatar/1107.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Warrior",
+        "damageType": "Physical",
+        "lang": {
+            "en": "Clara",
+            "cn": "克拉拉",
+            "jp": "クラーラ",
+            "kr": "클라라"
+        }
+    },
+    {
+        "id": "1108",
+        "icon": "spriteoutput/avatarshopicon/avatar/1108.png",
+        "rank": "CombatPowerAvatarRarityType4",
+        "baseType": "Warlock",
+        "damageType": "Wind",
+        "lang": {
+            "en": "Sampo",
+            "cn": "桑博",
+            "jp": "サンポ",
+            "kr": "삼포"
+        }
+    },
+    {
+        "id": "1109",
+        "icon": "spriteoutput/avatarshopicon/avatar/1109.png",
+        "rank": "CombatPowerAvatarRarityType4",
+        "baseType": "Warrior",
+        "damageType": "Fire",
+        "lang": {
+            "en": "Hook",
+            "cn": "虎克",
+            "jp": "フック",
+            "kr": "후크"
+        }
+    },
+    {
+        "id": "1110",
+        "icon": "spriteoutput/avatarshopicon/avatar/1110.png",
+        "rank": "CombatPowerAvatarRarityType4",
+        "baseType": "Priest",
+        "damageType": "Quantum",
+        "lang": {
+            "en": "Lynx",
+            "cn": "玲可",
+            "jp": "リンクス",
+            "kr": "링스"
+        }
+    },
+    {
+        "id": "1111",
+        "icon": "spriteoutput/avatarshopicon/avatar/1111.png",
+        "rank": "CombatPowerAvatarRarityType4",
+        "baseType": "Warlock",
+        "damageType": "Physical",
+        "lang": {
+            "en": "Luka",
+            "cn": "卢卡",
+            "jp": "ルカ",
+            "kr": "루카"
+        }
+    },
+    {
+        "id": "1112",
+        "icon": "spriteoutput/avatarshopicon/avatar/1112.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Rogue",
+        "damageType": "Fire",
+        "lang": {
+            "en": "Topaz & Numby",
+            "cn": "托帕&账账",
+            "jp": "トパーズ&カブ",
+            "kr": "토파즈&복순이"
+        }
+    },
+    {
+        "id": "1201",
+        "icon": "spriteoutput/avatarshopicon/avatar/1201.png",
+        "rank": "CombatPowerAvatarRarityType4",
+        "baseType": "Mage",
+        "damageType": "Quantum",
+        "lang": {
+            "en": "Qingque",
+            "cn": "青雀",
+            "jp": "{RUBY_B#セイジャク}青雀{RUBY_E#}",
+            "kr": "청작"
+        }
+    },
+    {
+        "id": "1202",
+        "icon": "spriteoutput/avatarshopicon/avatar/1202.png",
+        "rank": "CombatPowerAvatarRarityType4",
+        "baseType": "Shaman",
+        "damageType": "Thunder",
+        "lang": {
+            "en": "Tingyun",
+            "cn": "停云",
+            "jp": "{RUBY_B#テイウン}停雲{RUBY_E#}",
+            "kr": "정운"
+        }
+    },
+    {
+        "id": "1203",
+        "icon": "spriteoutput/avatarshopicon/avatar/1203.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Priest",
+        "damageType": "Imaginary",
+        "lang": {
+            "en": "Luocha",
+            "cn": "罗刹",
+            "jp": "{RUBY_B#ラセツ}羅刹{RUBY_E#}",
+            "kr": "나찰"
+        }
+    },
+    {
+        "id": "1204",
+        "icon": "spriteoutput/avatarshopicon/avatar/1204.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Mage",
+        "damageType": "Thunder",
+        "lang": {
+            "en": "Jing Yuan",
+            "cn": "景元",
+            "jp": "{RUBY_B#ケイゲン}景元{RUBY_E#}",
+            "kr": "경원"
+        }
+    },
+    {
+        "id": "1205",
+        "icon": "spriteoutput/avatarshopicon/avatar/1205.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Warrior",
+        "damageType": "Wind",
+        "lang": {
+            "en": "Blade",
+            "cn": "刃",
+            "jp": "{RUBY_B#ジン}刃{RUBY_E#}",
+            "kr": "블레이드"
+        }
+    },
+    {
+        "id": "1206",
+        "icon": "spriteoutput/avatarshopicon/avatar/1206.png",
+        "rank": "CombatPowerAvatarRarityType4",
+        "baseType": "Rogue",
+        "damageType": "Physical",
+        "lang": {
+            "en": "Sushang",
+            "cn": "素裳",
+            "jp": "{RUBY_B#スショウ}素裳{RUBY_E#}",
+            "kr": "소상"
+        }
+    },
+    {
+        "id": "1207",
+        "icon": "spriteoutput/avatarshopicon/avatar/1207.png",
+        "rank": "CombatPowerAvatarRarityType4",
+        "baseType": "Shaman",
+        "damageType": "Imaginary",
+        "lang": {
+            "en": "Yukong",
+            "cn": "驭空",
+            "jp": "{RUBY_B#ギョクウ}御空{RUBY_E#}",
+            "kr": "어공"
+        }
+    },
+    {
+        "id": "1208",
+        "icon": "spriteoutput/avatarshopicon/avatar/1208.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Knight",
+        "damageType": "Quantum",
+        "lang": {
+            "en": "Fu Xuan",
+            "cn": "符玄",
+            "jp": "{RUBY_B#フゲン}符玄{RUBY_E#}",
+            "kr": "부현"
+        }
+    },
+    {
+        "id": "1209",
+        "icon": "spriteoutput/avatarshopicon/avatar/1209.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Rogue",
+        "damageType": "Ice",
+        "lang": {
+            "en": "Yanqing",
+            "cn": "彦卿",
+            "jp": "{RUBY_B#ゲンキョウ}彦卿{RUBY_E#}",
+            "kr": "연경"
+        }
+    },
+    {
+        "id": "1210",
+        "icon": "spriteoutput/avatarshopicon/avatar/1210.png",
+        "rank": "CombatPowerAvatarRarityType4",
+        "baseType": "Warlock",
+        "damageType": "Fire",
+        "lang": {
+            "en": "Guinaifen",
+            "cn": "桂乃芬",
+            "jp": "{RUBY_B#ケイナイフン}桂乃芬{RUBY_E#}",
+            "kr": "계네빈"
+        }
+    },
+    {
+        "id": "1211",
+        "icon": "spriteoutput/avatarshopicon/avatar/1211.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Priest",
+        "damageType": "Thunder",
+        "lang": {
+            "en": "Bailu",
+            "cn": "白露",
+            "jp": "{RUBY_B#ビャクロ}白露{RUBY_E#}",
+            "kr": "백로"
+        }
+    },
+    {
+        "id": "1212",
+        "icon": "spriteoutput/avatarshopicon/avatar/1212.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Warrior",
+        "damageType": "Ice",
+        "lang": {
+            "en": "Jingliu",
+            "cn": "镜流",
+            "jp": "{RUBY_B#ケイリュウ}鏡流{RUBY_E#}",
+            "kr": "경류"
+        }
+    },
+    {
+        "id": "1213",
+        "icon": "spriteoutput/avatarshopicon/avatar/1213.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Warrior",
+        "damageType": "Imaginary",
+        "lang": {
+            "en": "Dan Heng • Imbibitor Lunae",
+            "cn": "丹恒•饮月",
+            "jp": "{RUBY_B#タンコウ}丹恒{RUBY_E#}・{RUBY_B#インゲツ}飲月{RUBY_E#}",
+            "kr": "단항•음월"
+        }
+    },
+    {
+        "id": "1214",
+        "icon": "spriteoutput/avatarshopicon/avatar/1214.png",
+        "rank": "CombatPowerAvatarRarityType4",
+        "baseType": "Warrior",
+        "damageType": "Quantum",
+        "lang": {
+            "en": "Xueyi",
+            "cn": "雪衣",
+            "jp": "{RUBY_B#セツイ}雪衣{RUBY_E#}",
+            "kr": "설의"
+        }
+    },
+    {
+        "id": "1215",
+        "icon": "spriteoutput/avatarshopicon/avatar/1215.png",
+        "rank": "CombatPowerAvatarRarityType4",
+        "baseType": "Shaman",
+        "damageType": "Physical",
+        "lang": {
+            "en": "Hanya",
+            "cn": "寒鸦",
+            "jp": "{RUBY_B#カンア}寒鴉{RUBY_E#}",
+            "kr": "한아"
+        }
+    },
+    {
+        "id": "1217",
+        "icon": "spriteoutput/avatarshopicon/avatar/1217.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Priest",
+        "damageType": "Wind",
+        "lang": {
+            "en": "Huohuo",
+            "cn": "藿藿",
+            "jp": "フォフォ",
+            "kr": "곽향"
+        }
+    },
+    {
+        "id": "1218",
+        "icon": "spriteoutput/avatarshopicon/avatar/1218.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Warlock",
+        "damageType": "Fire",
+        "lang": {
+            "en": "Jiaoqiu",
+            "cn": "椒丘",
+            "jp": "{RUBY_B#ショウキュウ}椒丘{RUBY_E#}",
+            "kr": "초구"
+        }
+    },
+    {
+        "id": "1220",
+        "icon": "spriteoutput/avatarshopicon/avatar/1220.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Rogue",
+        "damageType": "Wind",
+        "lang": {
+            "en": "Feixiao",
+            "cn": "飞霄",
+            "jp": "{RUBY_B#ヒショウ}飛霄{RUBY_E#}",
+            "kr": "비소"
+        }
+    },
+    {
+        "id": "1221",
+        "icon": "spriteoutput/avatarshopicon/avatar/1221.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Warrior",
+        "damageType": "Physical",
+        "lang": {
+            "en": "Yunli",
+            "cn": "云璃",
+            "jp": "{RUBY_B#ウンリ}雲璃{RUBY_E#}",
+            "kr": "운리"
+        }
+    },
+    {
+        "id": "1222",
+        "icon": "spriteoutput/avatarshopicon/avatar/1222.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Priest",
+        "damageType": "Fire",
+        "lang": {
+            "en": "Lingsha",
+            "cn": "灵砂",
+            "jp": "{RUBY_B#レイサ}霊砂{RUBY_E#}",
+            "kr": "영사"
+        }
+    },
+    {
+        "id": "1223",
+        "icon": "spriteoutput/avatarshopicon/avatar/1223.png",
+        "rank": "CombatPowerAvatarRarityType4",
+        "baseType": "Rogue",
+        "damageType": "Thunder",
+        "lang": {
+            "en": "Moze",
+            "cn": "貊泽",
+            "jp": "モゼ",
+            "kr": "맥택"
+        }
+    },
+    {
+        "id": "1224",
+        "icon": "spriteoutput/avatarshopicon/avatar/1224.png",
+        "rank": "CombatPowerAvatarRarityType4",
+        "baseType": "Rogue",
+        "damageType": "Imaginary",
+        "lang": {
+            "en": "March 7th",
+            "cn": "三月七",
+            "jp": "{RUBY_B#みつき}三月{RUBY_E#}なのか",
+            "kr": "Mar. 7th"
+        }
+    },
+    {
+        "id": "1225",
+        "icon": "spriteoutput/avatarshopicon/avatar/1225.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Warlock",
+        "damageType": "Fire",
+        "lang": {
+            "en": "Fugue",
+            "cn": "忘归人",
+            "jp": "{RUBY_B#きぼう}帰忘{RUBY_E#}の{RUBY_B#さすらいびと}流離人{RUBY_E#}",
+            "kr": "망귀인"
+        }
+    },
+    {
+        "id": "1301",
+        "icon": "spriteoutput/avatarshopicon/avatar/1301.png",
+        "rank": "CombatPowerAvatarRarityType4",
+        "baseType": "Priest",
+        "damageType": "Fire",
+        "lang": {
+            "en": "Gallagher",
+            "cn": "加拉赫",
+            "jp": "ギャラガー",
+            "kr": "갤러거"
+        }
+    },
+    {
+        "id": "1302",
+        "icon": "spriteoutput/avatarshopicon/avatar/1302.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Mage",
+        "damageType": "Physical",
+        "lang": {
+            "en": "Argenti",
+            "cn": "银枝",
+            "jp": "アルジェンティ",
+            "kr": "아젠티"
+        }
+    },
+    {
+        "id": "1303",
+        "icon": "spriteoutput/avatarshopicon/avatar/1303.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Shaman",
+        "damageType": "Ice",
+        "lang": {
+            "en": "Ruan Mei",
+            "cn": "阮•梅",
+            "jp": "ルアン・メェイ",
+            "kr": "완•매"
+        }
+    },
+    {
+        "id": "1304",
+        "icon": "spriteoutput/avatarshopicon/avatar/1304.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Knight",
+        "damageType": "Imaginary",
+        "lang": {
+            "en": "Aventurine",
+            "cn": "砂金",
+            "jp": "アベンチュリン",
+            "kr": "어벤츄린"
+        }
+    },
+    {
+        "id": "1305",
+        "icon": "spriteoutput/avatarshopicon/avatar/1305.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Rogue",
+        "damageType": "Imaginary",
+        "lang": {
+            "en": "Dr. Ratio",
+            "cn": "真理医生",
+            "jp": "Dr.レイシオ",
+            "kr": "Dr. 레이시오"
+        }
+    },
+    {
+        "id": "1306",
+        "icon": "spriteoutput/avatarshopicon/avatar/1306.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Shaman",
+        "damageType": "Quantum",
+        "lang": {
+            "en": "Sparkle",
+            "cn": "花火",
+            "jp": "{RUBY_B#はなび}花火{RUBY_E#}",
+            "kr": "스파클"
+        }
+    },
+    {
+        "id": "1307",
+        "icon": "spriteoutput/avatarshopicon/avatar/1307.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Warlock",
+        "damageType": "Wind",
+        "lang": {
+            "en": "Black Swan",
+            "cn": "黑天鹅",
+            "jp": "ブラックスワン",
+            "kr": "블랙 스완"
+        }
+    },
+    {
+        "id": "1308",
+        "icon": "spriteoutput/avatarshopicon/avatar/1308.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Warlock",
+        "damageType": "Thunder",
+        "lang": {
+            "en": "Acheron",
+            "cn": "黄泉",
+            "jp": "{RUBY_B#よみ}黄泉{RUBY_E#}",
+            "kr": "아케론"
+        }
+    },
+    {
+        "id": "1309",
+        "icon": "spriteoutput/avatarshopicon/avatar/1309.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Shaman",
+        "damageType": "Physical",
+        "lang": {
+            "en": "Robin",
+            "cn": "知更鸟",
+            "jp": "ロビン",
+            "kr": "로빈"
+        }
+    },
+    {
+        "id": "1310",
+        "icon": "spriteoutput/avatarshopicon/avatar/1310.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Warrior",
+        "damageType": "Fire",
+        "lang": {
+            "en": "Firefly",
+            "cn": "流萤",
+            "jp": "ホタル",
+            "kr": "반디"
+        }
+    },
+    {
+        "id": "1312",
+        "icon": "spriteoutput/avatarshopicon/avatar/1312.png",
+        "rank": "CombatPowerAvatarRarityType4",
+        "baseType": "Warrior",
+        "damageType": "Ice",
+        "lang": {
+            "en": "Misha",
+            "cn": "米沙",
+            "jp": "ミーシャ",
+            "kr": "미샤"
+        }
+    },
+    {
+        "id": "1313",
+        "icon": "spriteoutput/avatarshopicon/avatar/1313.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Shaman",
+        "damageType": "Imaginary",
+        "lang": {
+            "en": "Sunday",
+            "cn": "星期日",
+            "jp": "サンデー",
+            "kr": "선데이"
+        }
+    },
+    {
+        "id": "1314",
+        "icon": "spriteoutput/avatarshopicon/avatar/1314.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Mage",
+        "damageType": "Quantum",
+        "lang": {
+            "en": "Jade",
+            "cn": "翡翠",
+            "jp": "ジェイド",
+            "kr": "제이드"
+        }
+    },
+    {
+        "id": "1315",
+        "icon": "spriteoutput/avatarshopicon/avatar/1315.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Rogue",
+        "damageType": "Physical",
+        "lang": {
+            "en": "Boothill",
+            "cn": "波提欧",
+            "jp": "ブートヒル",
+            "kr": "부트힐"
+        }
+    },
+    {
+        "id": "1317",
+        "icon": "spriteoutput/avatarshopicon/avatar/1317.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Mage",
+        "damageType": "Imaginary",
+        "lang": {
+            "en": "Rappa",
+            "cn": "乱破",
+            "jp": "{RUBY_B#らんは}乱破{RUBY_E#}",
+            "kr": "라파"
+        }
+    },
+    {
+        "id": "1321",
+        "icon": "spriteoutput/avatarshopicon/avatar/1321.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Warlock",
+        "damageType": "Fire",
+        "lang": {
+            "en": "The Dahlia",
+            "cn": "大丽花",
+            "jp": "ダリア",
+            "kr": "달리아"
+        }
+    },
+    {
+        "id": "1401",
+        "icon": "spriteoutput/avatarshopicon/avatar/1401.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Mage",
+        "damageType": "Ice",
+        "lang": {
+            "en": "The Herta",
+            "cn": "大黑塔",
+            "jp": "マダム・ヘルタ",
+            "kr": "더 헤르타"
+        }
+    },
+    {
+        "id": "1402",
+        "icon": "spriteoutput/avatarshopicon/avatar/1402.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Memory",
+        "damageType": "Thunder",
+        "lang": {
+            "en": "Aglaea",
+            "cn": "阿格莱雅",
+            "jp": "アグライア",
+            "kr": "아글라이아"
+        }
+    },
+    {
+        "id": "1403",
+        "icon": "spriteoutput/avatarshopicon/avatar/1403.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Shaman",
+        "damageType": "Quantum",
+        "lang": {
+            "en": "Tribbie",
+            "cn": "缇宝",
+            "jp": "トリビー",
+            "kr": "트리비"
+        }
+    },
+    {
+        "id": "1404",
+        "icon": "spriteoutput/avatarshopicon/avatar/1404.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Warrior",
+        "damageType": "Imaginary",
+        "lang": {
+            "en": "Mydei",
+            "cn": "万敌",
+            "jp": "モーディス",
+            "kr": "마이데이"
+        }
+    },
+    {
+        "id": "1405",
+        "icon": "spriteoutput/avatarshopicon/avatar/1405.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Mage",
+        "damageType": "Wind",
+        "lang": {
+            "en": "Anaxa",
+            "cn": "那刻夏",
+            "jp": "アナイクス",
+            "kr": "아낙사"
+        }
+    },
+    {
+        "id": "1406",
+        "icon": "spriteoutput/avatarshopicon/avatar/1406.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Warlock",
+        "damageType": "Quantum",
+        "lang": {
+            "en": "Cipher",
+            "cn": "赛飞儿",
+            "jp": "サフェル",
+            "kr": "사이퍼"
+        }
+    },
+    {
+        "id": "1407",
+        "icon": "spriteoutput/avatarshopicon/avatar/1407.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Memory",
+        "damageType": "Quantum",
+        "lang": {
+            "en": "Castorice",
+            "cn": "遐蝶",
+            "jp": "キャストリス",
+            "kr": "카스토리스"
+        }
+    },
+    {
+        "id": "1408",
+        "icon": "spriteoutput/avatarshopicon/avatar/1408.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Warrior",
+        "damageType": "Physical",
+        "lang": {
+            "en": "Phainon",
+            "cn": "白厄",
+            "jp": "ファイノン",
+            "kr": "파이논"
+        }
+    },
+    {
+        "id": "1409",
+        "icon": "spriteoutput/avatarshopicon/avatar/1409.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Memory",
+        "damageType": "Wind",
+        "lang": {
+            "en": "Hyacine",
+            "cn": "风堇",
+            "jp": "ヒアンシー",
+            "kr": "히아킨"
+        }
+    },
+    {
+        "id": "1410",
+        "icon": "spriteoutput/avatarshopicon/avatar/1410.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Warlock",
+        "damageType": "Physical",
+        "lang": {
+            "en": "Hysilens",
+            "cn": "海瑟音",
+            "jp": "セイレンス",
+            "kr": "히실렌스"
+        }
+    },
+    {
+        "id": "1412",
+        "icon": "spriteoutput/avatarshopicon/avatar/1412.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Shaman",
+        "damageType": "Wind",
+        "lang": {
+            "en": "Cerydra",
+            "cn": "刻律德菈",
+            "jp": "ケリュドラ",
+            "kr": "케리드라"
+        }
+    },
+    {
+        "id": "1413",
+        "icon": "spriteoutput/avatarshopicon/avatar/1413.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Memory",
+        "damageType": "Ice",
+        "lang": {
+            "en": "Evernight",
+            "cn": "长夜月",
+            "jp": "{RUBY_B#ながよづき}長夜月{RUBY_E#}",
+            "kr": "에버나이트"
+        }
+    },
+    {
+        "id": "1414",
+        "icon": "spriteoutput/avatarshopicon/avatar/1414.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Knight",
+        "damageType": "Physical",
+        "lang": {
+            "en": "Dan Heng • Permansor Terrae",
+            "cn": "丹恒•腾荒",
+            "jp": "{RUBY_B#たんこう}丹恒{RUBY_E#}・{RUBY_B#とうこう}騰荒{RUBY_E#}",
+            "kr": "단항•등황"
+        }
+    },
+    {
+        "id": "1415",
+        "icon": "spriteoutput/avatarshopicon/avatar/1415.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Memory",
+        "damageType": "Ice",
+        "lang": {
+            "en": "Cyrene",
+            "cn": "昔涟",
+            "jp": "キュレネ",
+            "kr": "키레네"
+        }
+    },
+    {
+        "id": "1501",
+        "icon": "spriteoutput/avatarshopicon/avatar/1501.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Elation",
+        "damageType": "Fire",
+        "lang": {
+            "en": "Sparxie",
+            "cn": "火花",
+            "jp": "{RUBY_B#ひばな}火花{RUBY_E#}",
+            "kr": "스파키"
+        }
+    },
+    {
+        "id": "1502",
+        "icon": "spriteoutput/avatarshopicon/avatar/1502.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Elation",
+        "damageType": "Physical",
+        "lang": {
+            "en": "Yao Guang",
+            "cn": "爻光",
+            "jp": "{RUBY_B#コウコウ}爻光{RUBY_E#}",
+            "kr": "효광"
+        }
+    },
+    {
+        "id": "8001",
+        "icon": "spriteoutput/avatarshopicon/avatar/8001.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Warrior",
+        "damageType": "Physical",
+        "lang": {
+            "en": "{NICKNAME}",
+            "cn": "{NICKNAME}",
+            "jp": "{NICKNAME}",
+            "kr": "{NICKNAME}"
+        }
+    },
+    {
+        "id": "8002",
+        "icon": "spriteoutput/avatarshopicon/avatar/8002.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Warrior",
+        "damageType": "Physical",
+        "lang": {
+            "en": "{NICKNAME}",
+            "cn": "{NICKNAME}",
+            "jp": "{NICKNAME}",
+            "kr": "{NICKNAME}"
+        }
+    },
+    {
+        "id": "8003",
+        "icon": "spriteoutput/avatarshopicon/avatar/8003.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Knight",
+        "damageType": "Fire",
+        "lang": {
+            "en": "{NICKNAME}",
+            "cn": "{NICKNAME}",
+            "jp": "{NICKNAME}",
+            "kr": "{NICKNAME}"
+        }
+    },
+    {
+        "id": "8004",
+        "icon": "spriteoutput/avatarshopicon/avatar/8004.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Knight",
+        "damageType": "Fire",
+        "lang": {
+            "en": "{NICKNAME}",
+            "cn": "{NICKNAME}",
+            "jp": "{NICKNAME}",
+            "kr": "{NICKNAME}"
+        }
+    },
+    {
+        "id": "8005",
+        "icon": "spriteoutput/avatarshopicon/avatar/8005.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Shaman",
+        "damageType": "Imaginary",
+        "lang": {
+            "en": "{NICKNAME}",
+            "cn": "{NICKNAME}",
+            "jp": "{NICKNAME}",
+            "kr": "{NICKNAME}"
+        }
+    },
+    {
+        "id": "8006",
+        "icon": "spriteoutput/avatarshopicon/avatar/8006.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Shaman",
+        "damageType": "Imaginary",
+        "lang": {
+            "en": "{NICKNAME}",
+            "cn": "{NICKNAME}",
+            "jp": "{NICKNAME}",
+            "kr": "{NICKNAME}"
+        }
+    },
+    {
+        "id": "8007",
+        "icon": "spriteoutput/avatarshopicon/avatar/8007.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Memory",
+        "damageType": "Ice",
+        "lang": {
+            "en": "{NICKNAME}",
+            "cn": "{NICKNAME}",
+            "jp": "{NICKNAME}",
+            "kr": "{NICKNAME}"
+        }
+    },
+    {
+        "id": "8008",
+        "icon": "spriteoutput/avatarshopicon/avatar/8008.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Memory",
+        "damageType": "Ice",
+        "lang": {
+            "en": "{NICKNAME}",
+            "cn": "{NICKNAME}",
+            "jp": "{NICKNAME}",
+            "kr": "{NICKNAME}"
+        }
+    },
+    {
+        "id": "1504",
+        "icon": "spriteoutput/avatarshopicon/avatar/1504.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Rogue",
+        "damageType": "Thunder",
+        "lang": {
+            "en": "Ashveil",
+            "cn": "不死途",
+            "jp": "<unbreak>不死途</unbreak>",
+            "kr": "애쉬베일"
+        }
+    },
+    {
+        "id": "1014",
+        "icon": "spriteoutput/avatarshopicon/avatar/1014.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Warrior",
+        "damageType": "Wind",
+        "lang": {
+            "en": "Saber",
+            "cn": "Saber",
+            "jp": "セイバー",
+            "kr": "세이버"
+        }
+    },
+    {
+        "id": "1015",
+        "icon": "spriteoutput/avatarshopicon/avatar/1015.png",
+        "rank": "CombatPowerAvatarRarityType5",
+        "baseType": "Rogue",
+        "damageType": "Quantum",
+        "lang": {
+            "en": "Archer",
+            "cn": "Archer",
+            "jp": "アーチャー",
+            "kr": "아처"
+        }
+    }
+]

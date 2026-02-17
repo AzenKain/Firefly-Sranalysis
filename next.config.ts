@@ -12,24 +12,35 @@ const nextConfig: NextConfig = {
   reactStrictMode: false,
   output: 'standalone',
   images: {
-      unoptimized: true,
-      remotePatterns: [
-          {
-              protocol: 'https',
-              hostname: 'localhost',
-              pathname: '**',
-          },
-          {
-              protocol: 'http',
-              hostname: 'localhost',
-              pathname: '**',
-          },
-          {
-            protocol: 'https',
-            hostname: 'api.hakush.in',
-            pathname: '**',
-          },
-      ],
+    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'localhost',
+        pathname: '**',
+      },
+      {
+        protocol: 'http',
+        hostname: 'localhost',
+        pathname: '**',
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.kain.id.vn",
+        pathname: "**",
+      },
+      {
+        protocol: "http",
+        hostname: "cdn.kain.id.vn",
+        pathname: "**",
+      }
+    ],
+  },
+  compiler: {
+    styledComponents: true,
+  },
+  env: {
+    CDN_URL: "https://cdn.kain.id.vn/firefly/assets/asbres",
   },
 };
 

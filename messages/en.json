@@ -55,15 +55,15 @@
 		"noCharactersInLineup": "No characters in lineup",
         "noTurns": "No turns yet",
 		"type": "Type",
-        "warrior": "Destruction",
-        "knight": "Preservation",
-        "mage": "Erudition",
-        "priest": "Abundance",
+        "warrior": "The Destruction",
+        "knight": "The Preservation",
+        "mage": "The Erudition",
+        "priest": "The Abundance",
         "rogue": "The Hunt",
-        "shaman": "Harmony",
-        "warlock": "Nihility",
-        "memory": "Remembrance",
-		"elation": "Elation",
+        "shaman": "The Harmony",
+        "warlock": "The Nihility",
+        "memory": "The Remembrance",
+		"elation": "The Elation",
         "fire": "Fire", 
         "ice": "Ice", 
         "imaginary": "Imaginary", 
@@ -105,6 +105,7 @@
 		"level": "Level",
 		"relics": "Relics", 
 		"eidolons": "Eidolons", 
-		"lightcones": "Lightcones"
+		"lightcones": "Lightcones",
+		"trailblazer": "Trailblazer"
 	}
 }

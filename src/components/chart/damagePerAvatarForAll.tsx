@@ -48,17 +48,16 @@ const borderPalette = colorPalette.map((c) => c.replace('0.6', '1'));
 export default function DamagePerAvatarForAll() {
     const transI18n = useTranslations("DataAnalysisPage");
     const { lineup, skillHistory } = useBattleDataStore();
-    const { listAvatar } = useAvatarDataStore();
+    const { mapAvatar } = useAvatarDataStore();
     const { locale } = useLocaleStore();
 
     const [mode, setMode] = useState<number>(2);
 
     const avatarMap = lineup.map((avatar) => {
-        const char = listAvatar.find(it => it.id === avatar.avatarId.toString());
-        if (!char) return undefined;
+        if (!mapAvatar?.[avatar.avatarId.toString()]) return undefined;
         return {
             avatarId: avatar.avatarId,
-            avatarName: getNameChar(locale, char)
+            avatarName: getNameChar(locale, transI18n, mapAvatar?.[avatar.avatarId.toString()])
         };
     }).filter(Boolean) as { avatarId: number, avatarName: string }[];
 

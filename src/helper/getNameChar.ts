@@ -1,38 +1,51 @@
 import { listCurrentLanguage } from "@/lib/constant";
-import { AvatarHakushiType, EnemyHakushiType } from "@/types";
+import { CharacterBasic, MonsterBasic } from "@/types";
+import { useTranslations } from "next-intl";
 
 
-export function getNameChar(locale: string, data: AvatarHakushiType | undefined): string {
-    if (!data) {
-        return ""
-    }
-    if (!listCurrentLanguage.hasOwnProperty(locale)) {
-        return ""
-    }
+type TFunc = ReturnType<typeof useTranslations>
 
-    let text = data.lang.get(listCurrentLanguage[locale as keyof typeof listCurrentLanguage].toLowerCase()) ?? "";
-    if (!text) {
-        text = data.lang.get("en") ?? "";
-    }
-    if (Number(data.id) % 2 === 0 && Number(data.id) > 8000) {
-        text = `Female ${data.damageType} MC`
-    } else if (Number(data.id) > 8000) {
-        text = `Male ${data.damageType} MC`
-    }
-    return text
+export function getNameChar(
+  locale: string,
+  t: TFunc,
+  data: CharacterBasic | undefined
+): string {
+  if (!data) return "";
+
+  if (!Object.prototype.hasOwnProperty.call(listCurrentLanguage, locale)) {
+    return "";
+  }
+
+  const langKey = listCurrentLanguage[locale as keyof typeof listCurrentLanguage].toLowerCase();
+
+  let text = data.lang[langKey] ?? "";
+
+  if (!text) {
+    text = data.lang["en"] ?? "";
+  }
+
+  if (Number(data.id) > 8000) {
+    text = `${t("trailblazer")} • ${t(data?.baseType?.toLowerCase() ?? "")}`;
+  }
+
+  return text;
 }
 
-export function getNameEnemy(locale: string, data: EnemyHakushiType | undefined): string {
+export function getNameEnemy(locale: string, data: MonsterBasic | undefined): string {
     if (!data) {
         return ""
     }
-    if (!listCurrentLanguage.hasOwnProperty(locale)) {
+    if (!Object.prototype.hasOwnProperty.call(listCurrentLanguage, locale)) {
         return ""
     }
 
-    let text = data.lang.get(listCurrentLanguage[locale as keyof typeof listCurrentLanguage].toLowerCase()) ?? "";
+    const langKey = listCurrentLanguage[locale as keyof typeof listCurrentLanguage].toLowerCase();
+
+
+    let text = data.lang[langKey] ?? "";
+
     if (!text) {
-        text = data.lang.get("en") ?? "";
+        text = data.lang["en"] ?? "";
     }
     return text
 }

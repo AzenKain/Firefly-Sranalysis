@@ -2,7 +2,7 @@
 import useAvatarDataStore from "@/stores/avatarDataStore";
 import useBattleDataStore from "@/stores/battleDataStore";
 import useLocaleStore from "@/stores/localeStore";
-import {attackTypeToString, AvatarHakushiType} from "@/types";
+import { attackTypeToString, CharacterBasic } from "@/types";
 import { SkillBattleInfo } from "@/types/mics";
 import { useEffect, useState, useRef } from "react";
 import { useTranslations } from "next-intl";
@@ -13,7 +13,7 @@ import NameAvatar from "../nameAvatar";
 
 export default function ActionBar() {
     const [selectTurn, setSelectTurn] = useState<SkillBattleInfo | null>(null);
-    const [selectAvatar, setSelectAvatar] = useState<AvatarHakushiType | null>(null);
+    const [selectAvatar, setSelectAvatar] = useState<CharacterBasic | null>(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const { skillHistory, turnHistory, cycleIndex, waveIndex, maxWave } = useBattleDataStore();
     const { listAvatar } = useAvatarDataStore();
@@ -29,7 +29,7 @@ export default function ActionBar() {
         alignItems: 'center',
     };
 
-    const handleShow = (modalId: string, avatar: AvatarHakushiType, turn: SkillBattleInfo) => {
+    const handleShow = (modalId: string, avatar: CharacterBasic, turn: SkillBattleInfo) => {
         const modal = document.getElementById(modalId) as HTMLDialogElement | null;
         if (modal) {
             setSelectAvatar(avatar);
@@ -105,13 +105,13 @@ export default function ActionBar() {
                         skillHistory.map((turn, index) => {
                             const data = listAvatar.find(it => it.id === turn.avatarId.toString());
                             if (!data) return null;
-                            const text = getNameChar(locale, data);
+                            const text = getNameChar(locale, transI18n, data);
 
                             return (
                                 <div key={index} className="h-full md:w-full">
                                     <div
                                         onClick={() => handleShow("action_detail_modal", data, turn)}
-                                        className="h-full grid grid-cols-2 gap-2 border bg-base-100 w-full hover:bg-base-200 transition-colors duration-200 border-cyan-400 border-l-4 cursor-pointer min-w-[200px] sm:min-w-[250px] md:min-w-0"
+                                        className="h-full grid grid-cols-2 gap-2 border bg-base-100 w-full hover:bg-base-200 transition-colors duration-200 border-cyan-400 border-l-4 cursor-pointer min-w-50 sm:min-w-62.5 md:min-w-0"
                                     >
                                         <div
                                             style={contentStyle}
@@ -119,21 +119,23 @@ export default function ActionBar() {
                                         >
                                             <div className="avatar">
                                                 <div className="w-12 h-12 rounded-full border-2 flex items-center justify-center bg-base-300 border-cyan-400 border-l-4">
-                                                    
+
                                                     <Image
-                                                        src={`https://api.hakush.in/hsr/UI/avatarshopicon/${data.id}.webp`}
+                                                        src={`${process.env.CDN_URL}/${data.icon}`}
+                                                        unoptimized
+                                                        crossOrigin="anonymous"
                                                         alt={text}
-                                                        width={32}
-                                                        height={32}
+                                                        width={125}
+                                                        height={125}
                                                         className="w-8 h-8 object-contain"
                                                     />
                                                 </div>
                                             </div>
                                             <NameAvatar
                                                 locale={locale}
-                                                text={getNameChar(locale, data)}
+                                                text={getNameChar(locale, transI18n, data)}
                                                 className="text-base-content text-center text-sm mt-1 font-medium"
-                                            />   
+                                            />
                                         </div>
                                         <div className="grid grid-cols-1 justify-center gap-2 py-2 w-full">
                                             <div className="bg-local text-primary text-xs max-w-full">
@@ -195,15 +197,17 @@ export default function ActionBar() {
                                             <span className="font-medium text-base-content/70">{transI18n("character")}:</span>
                                             <NameAvatar
                                                 locale={locale}
-                                                text={getNameChar(locale, selectAvatar)}
+                                                text={getNameChar(locale, transI18n, selectAvatar)}
                                                 className="font-bold"
                                             />
                                         </div>
                                     </div>
                                     <div className="flex justify-center items-center">
                                         <Image
-                                            src={`https://api.hakush.in/hsr/UI/avatarshopicon/${selectAvatar.id}.webp`}
-                                            alt={getNameChar(locale, selectAvatar)}
+                                            src={`${process.env.CDN_URL}/${selectAvatar?.icon}`}
+                                            unoptimized
+                                            crossOrigin="anonymous"
+                                            alt={getNameChar(locale, transI18n, selectAvatar)}
                                             width={80}
                                             height={80}
                                             className="h-20 w-20 object-cover rounded-full border-2 border-purple-500 shadow-lg shadow-purple-500/20"

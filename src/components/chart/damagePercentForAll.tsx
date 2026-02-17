@@ -27,14 +27,14 @@ export default function DamagePercentChartForAll() {
   const [mode, setMode] = useState<1 | 2>(1);
   const damageByAvatar = useDamagePercentPerAvatar();
   const damageByType = useDamagePercentByType();
-  const { listAvatar } = useAvatarDataStore();
+  const { mapAvatar } = useAvatarDataStore();
   const { locale } = useLocaleStore();
   const transI18n = useTranslations("DataAnalysisPage");
 
   const chartData = {
     labels: (mode === 1
       ? damageByAvatar.map(d =>
-        getNameChar(locale, listAvatar.find(it => it.id == d.avatarId.toString()))
+        getNameChar(locale, transI18n, mapAvatar?.[d.avatarId.toString()])
       )
       : damageByType.map(d => transI18n(d.type.toLowerCase()))
     ),
