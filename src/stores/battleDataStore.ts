@@ -1,4 +1,4 @@
-import { DamageType, AvatarAnalysisJson, UseSkillType, BattleBeginType, BattleEndType, DamageDetailType, EntityDefeatedType, SetBattleLineupType, TurnBeginType, TurnEndType, UpdateCycleType, UpdateWaveType, VersionType, StatChangeType, UpdateTeamFormationType } from '@/types';
+import { DamageType, AvatarAnalysisJson, UseSkillType, BattleBeginType, BattleEndType, DamageDetailType, EntityDefeatedType, SetBattleLineupType, TurnBeginType, TurnEndType, UpdateCycleType, UpdateWaveType, VersionType, StatChangeType, UpdateTeamFormationType, Team } from '@/types';
 import { InitializeEnemyType } from '@/types/enemy';
 import { AvatarBattleInfo, AvatarInfo, BattleDataStateJson, EnemyInfo, SkillBattleInfo, TurnBattleInfo } from '@/types/mics';
 import { create } from 'zustand'
@@ -257,23 +257,23 @@ const useBattleDataStore = create<BattleDataState>((set, get) => ({
     onUpdateTeamFormation: (data: UpdateTeamFormationType) => {
         let avatarDetail = get().avatarDetail
         let enemyDetail = get().enemyDetail
-        if (!avatarDetail) {
-            avatarDetail = {} as Record<number, AvatarInfo>
-            for (const entity of data.entities) {
-                if (entity.team === "Player" && avatarDetail[entity.uid]) {
-                    
-                }
-            }
-        }
         if (!enemyDetail) {
             enemyDetail = {} as Record<number, EnemyInfo>
+        }
+
+        if (!avatarDetail) {
+            avatarDetail = {} as Record<number, AvatarInfo>
+        }
+        if (data.team === Team.Enemy) {
             for (let i = 0; i < data.entities.length; i++) {
                 const entity = data.entities[i];
-                if (entity.team === "Enemy" && enemyDetail[entity.uid]) {
+                if (entity.team === Team.Enemy && enemyDetail[entity.uid]) {
                     enemyDetail[entity.uid].positionIndex = i
+                    enemyDetail[entity.uid].waveIndex = get().waveIndex
                 }
             }
         }
+
 
         set({
             avatarDetail: avatarDetail,
@@ -290,7 +290,7 @@ const useBattleDataStore = create<BattleDataState>((set, get) => ({
             isDie: false,
             killer_uid: -1,
             positionIndex: enemyDetail[data.enemy.uid].positionIndex,
-            waveIndex: get().waveIndex,
+            waveIndex: enemyDetail[data.enemy.uid].waveIndex,
             name: data.enemy.name,
             maxHP: data.enemy.base_stats.hp,
             level: data.enemy.base_stats.level,

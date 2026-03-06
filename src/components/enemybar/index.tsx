@@ -16,8 +16,8 @@ export default function EnemyBar() {
     return (
         <div className="p-3 w-full">
             <div className="flex gap-3 overflow-x-auto pb-2">
-                {enemyDetail && Object.values(enemyDetail).filter((enemy) => (enemy.stats?.AV > 0
-                    && enemy.stats.HP <= enemy.maxHP)).map((enemy, uid) => (
+                {enemyDetail && Object.values(enemyDetail).filter((enemy) => (
+                    enemy.stats.HP <= enemy.maxHP)).map((enemy, uid) => (
                         <div key={uid} className="bg-base-200 rounded-lg p-3 border border-gray-700 w-52 shrink-0">
                             <div className="flex items-center justify-between mb-3">
                                 <div className="flex items-center gap-2">

@@ -1,6 +1,8 @@
+import { Team } from "./team";
+
 export interface EntityType {
     uid: number;
-    team: "Player" | "Enemy";
+    team: Team;
 }
 
 export interface EntityDefeatedType {

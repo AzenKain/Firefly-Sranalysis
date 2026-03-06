@@ -1,4 +1,5 @@
 import { EntityType } from "./entity";
+import { Team } from "./team";
 
 export interface AvatarType{
     id: number;
@@ -12,5 +13,5 @@ export interface SetBattleLineupType {
 
 export interface UpdateTeamFormationType {
     entities: EntityType[],
-    team: "Player" | "Enemy"
+    team: Team
 }
