@@ -8,6 +8,7 @@ import { useEffect, useState, useRef } from "react";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { getNameChar } from "@/helper";
+import { useShallow } from "zustand/react/shallow";
 import Image from "next/image";
 import NameAvatar from "../nameAvatar";
 
@@ -15,9 +16,17 @@ export default function ActionBar() {
     const [selectTurn, setSelectTurn] = useState<SkillBattleInfo | null>(null);
     const [selectAvatar, setSelectAvatar] = useState<CharacterBasic | null>(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const { skillHistory, turnHistory, cycleIndex, waveIndex, maxWave } = useBattleDataStore();
-    const { listAvatar } = useAvatarDataStore();
-    const { locale } = useLocaleStore();
+    const { skillHistory, turnHistory, cycleIndex, waveIndex, maxWave } = useBattleDataStore(
+        useShallow(state => ({
+            skillHistory: state.skillHistory,
+            turnHistory: state.turnHistory,
+            cycleIndex: state.cycleIndex,
+            waveIndex: state.waveIndex,
+            maxWave: state.maxWave,
+        }))
+    );
+    const listAvatar = useAvatarDataStore(state => state.listAvatar);
+    const locale = useLocaleStore(state => state.locale);
     const transI18n = useTranslations("DataAnalysisPage");
     const turnListRef = useRef<HTMLDivElement>(null);
 
@@ -39,7 +48,6 @@ export default function ActionBar() {
         }
     };
 
-    // Close modal handler
     const handleCloseModal = (modalId: string) => {
         setIsModalOpen(false);
         setSelectAvatar(null);
@@ -49,7 +57,6 @@ export default function ActionBar() {
         }
     };
 
-    // Handle ESC key to close modal
     useEffect(() => {
         const handleEscKey = (event: KeyboardEvent) => {
             if (event.key === 'Escape' && isModalOpen) {
@@ -61,7 +68,6 @@ export default function ActionBar() {
         return () => window.removeEventListener('keydown', handleEscKey);
     }, [isModalOpen]);
 
-    // Scroll to the bottom when new turns are added
     useEffect(() => {
         if (turnListRef.current && skillHistory.length > 0) {
             turnListRef.current.scrollTop = turnListRef.current.scrollHeight;

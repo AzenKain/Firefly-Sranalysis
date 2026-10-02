@@ -3,11 +3,11 @@ import { Bar } from "react-chartjs-2";
 import { ChartOptions } from "chart.js";
 import { useDamagePerCycleForOne } from "@/hooks/useDamagePerCycle";
 
-import { Chart as ChartJS, BarElement, ArcElement, RadialLinearScale } from "chart.js";
+import { Chart as ChartJS, BarElement, CategoryScale, LinearScale, Tooltip, Legend } from "chart.js";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 
-ChartJS.register(BarElement, ArcElement, RadialLinearScale);
+ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend);
 export function DamagePerCycleForOne({
     avatarId,
 }: {

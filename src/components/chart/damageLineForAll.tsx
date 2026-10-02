@@ -24,24 +24,24 @@ export default function MultiCharLineChart() {
   const [mode, setMode] = useState<1 | 2>(2);
   const dataByAvatar = useDamageLinesForAll(mode);
   const avatarIds = Object.keys(dataByAvatar).map(Number);
-  const { mapAvatar } = useAvatarDataStore()
-  const { locale } = useLocaleStore();
-  const transI18n = useTranslations("DataAnalysisPage")
+  const mapAvatar = useAvatarDataStore(state => state.mapAvatar);
+  const locale = useLocaleStore(state => state.locale);
+  const transI18n = useTranslations("DataAnalysisPage");
 
   const data = {
-    datasets: avatarIds.map((id, idx) => ({
-      label: getNameChar(locale, transI18n, mapAvatar?.[id.toString()]),
-      data: dataByAvatar[id].map(({ x, y }: { x: number; y: number }) => {
-        return {
-          x: x.toFixed(2),
-          y: y.toFixed(2)
-        }
-      }),
-      borderColor: colors[idx % colors.length],
-      backgroundColor: colors[idx % colors.length],
-      fill: false,
-      tension: 0.3,
-    })),
+    datasets: avatarIds
+      .filter(id => id > 0 && mapAvatar?.[id.toString()])
+      .map((id, idx) => ({
+        label: getNameChar(locale, transI18n, mapAvatar?.[id.toString()]),
+        data: dataByAvatar[id].map(({ x, y }: { x: number; y: number }) => ({
+          x: Number(x.toFixed(2)),
+          y: Number(y.toFixed(2))
+        })),
+        borderColor: colors[idx % colors.length],
+        backgroundColor: colors[idx % colors.length],
+        fill: false,
+        tension: 0.3,
+      })),
   };
 
   const options = {

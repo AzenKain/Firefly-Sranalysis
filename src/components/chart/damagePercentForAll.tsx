@@ -27,13 +27,15 @@ export default function DamagePercentChartForAll() {
   const [mode, setMode] = useState<1 | 2>(1);
   const damageByAvatar = useDamagePercentPerAvatar();
   const damageByType = useDamagePercentByType();
-  const { mapAvatar } = useAvatarDataStore();
-  const { locale } = useLocaleStore();
+  const mapAvatar = useAvatarDataStore(state => state.mapAvatar);
+  const locale = useLocaleStore(state => state.locale);
   const transI18n = useTranslations("DataAnalysisPage");
+
+  const filteredDamageByAvatar = damageByAvatar.filter(d => d.avatarId > 0 && mapAvatar?.[d.avatarId.toString()]);
 
   const chartData = {
     labels: (mode === 1
-      ? damageByAvatar.map(d =>
+      ? filteredDamageByAvatar.map(d =>
         getNameChar(locale, transI18n, mapAvatar?.[d.avatarId.toString()])
       )
       : damageByType.map(d => transI18n(d.type.toLowerCase()))
@@ -42,8 +44,8 @@ export default function DamagePercentChartForAll() {
       {
         label: '% ' + transI18n("damage"),
         data: (mode === 1
-          ? damageByAvatar.map(d => d.percent.toFixed(2))
-          : damageByType.map(d => d.percent.toFixed(2))
+          ? filteredDamageByAvatar.map(d => Number(d.percent.toFixed(2)))
+          : damageByType.map(d => Number(d.percent.toFixed(2)))
         ),
         backgroundColor: colors,
         borderWidth: 1,

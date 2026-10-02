@@ -1,4 +1,4 @@
-import { DamageType, AvatarAnalysisJson, UseSkillType, BattleBeginType, BattleEndType, DamageDetailType, EntityDefeatedType, SetBattleLineupType, TurnBeginType, TurnEndType, UpdateCycleType, UpdateWaveType, VersionType, StatChangeType, UpdateTeamFormationType, Team, ParseAttackType } from '@/types';
+import { DamageType, AvatarAnalysisJson, UseSkillType, BattleBeginType, BattleEndType, DamageDetailType, EntityDefeatedType, SetBattleLineupType, TurnBeginType, TurnEndType, UpdateCycleType, UpdateWaveType, VersionType, StatChangeType, UpdateTeamFormationType, Team, ParseAttackType, AttackType } from '@/types';
 import { InitializeEnemyType } from '@/types/enemy';
 import { AvatarBattleInfo, AvatarInfo, BattleDataStateJson, EnemyInfo, SkillBattleInfo, TurnBattleInfo } from '@/types/mics';
 import { create } from 'zustand'
@@ -54,27 +54,33 @@ const useBattleDataStore = create<BattleDataState>((set, get) => ({
     avatarDetail: undefined,
     enemyDetail: undefined,
     loadBattleDataFromJSON: (data: BattleDataStateJson) => {
-        const skillHistory = data.skillHistory.map(it => {
-            it.damageDetail = it.damageDetail.map(it => {
+        const skillHistory = (data.skillHistory || []).map(it => {
+            const rawDetails = it.damageDetail || [];
+            const damageDetail = rawDetails.map(d => {
+                const rawType = d.damage_type !== undefined ? d.damage_type : (d as { type?: AttackType | string }).type;
                 return {
-                    ...it,
-                    damage_type: ParseAttackType(it.damage_type)
-                }
-            })
-            return it
-        })
+                    ...d,
+                    damage_type: ParseAttackType(rawType)
+                };
+            });
+            return {
+                ...it,
+                skillType: ParseAttackType(it.skillType),
+                damageDetail
+            };
+        });
         set({
-            lineup: data.lineup,
-            turnHistory: data.turnHistory,
+            lineup: data.lineup || [],
+            turnHistory: data.turnHistory || [],
             skillHistory: skillHistory,
-            dataAvatar: data.dataAvatar,
-            totalAV: data.totalAV,
-            totalDamage: data.totalDamage,
-            damagePerAV: data.damagePerAV,
-            cycleIndex: data.cycleIndex,
-            waveIndex: data.waveIndex,
-            maxWave: data.maxWave,
-            maxCycle: data.maxCycle,
+            dataAvatar: data.dataAvatar || [],
+            totalAV: data.totalAV || 0,
+            totalDamage: data.totalDamage || 0,
+            damagePerAV: data.damagePerAV || 0,
+            cycleIndex: data.cycleIndex || 0,
+            waveIndex: data.waveIndex || 1,
+            maxWave: data.maxWave ?? Infinity,
+            maxCycle: data.maxCycle ?? Infinity,
             version: data.version,
             avatarDetail: data.avatarDetail,
             enemyDetail: data.enemyDetail

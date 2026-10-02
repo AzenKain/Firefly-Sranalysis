@@ -13,20 +13,31 @@ import { motion } from "framer-motion";
 import { DamageLineForOne } from "../chart/damageLineForOne";
 import { DamagePerCycleForOne } from "../chart/damagePerCycleForOne";
 import { useCalcTotalDmgAvatar, useCalcTotalTurnAvatar } from "@/hooks/useCalcAvatarData";
+import { useShallow } from "zustand/react/shallow";
 import Image from "next/image";
 import NameAvatar from "../nameAvatar";
-// import ShowCaseInfo from "../card/showCaseCard";
 
 export default function LineupBar() {
     const [selectedCharacter, setSelectedCharacter] = useState<CharacterBasic | undefined>(undefined);
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const transI18n = useTranslations("DataAnalysisPage");
-    const { lineup, turnHistory, dataAvatar } = useBattleDataStore();
-    const { listAvatar, mapAvatar } = useAvatarDataStore();
-    const { locale } = useLocaleStore();
+    const { lineup, turnHistory, dataAvatar } = useBattleDataStore(
+        useShallow(state => ({
+            lineup: state.lineup,
+            turnHistory: state.turnHistory,
+            dataAvatar: state.dataAvatar,
+        }))
+    );
+    const { listAvatar, mapAvatar } = useAvatarDataStore(
+        useShallow(state => ({
+            listAvatar: state.listAvatar,
+            mapAvatar: state.mapAvatar,
+        }))
+    );
+    const locale = useLocaleStore(state => state.locale);
     const totalDamage = useCalcTotalDmgAvatar(selectedCharacter ? Number(selectedCharacter.id) : 0);
-    const totalTurn = useCalcTotalTurnAvatar(selectedCharacter ? Number(selectedCharacter.id) : 0)
+    const totalTurn = useCalcTotalTurnAvatar(selectedCharacter ? Number(selectedCharacter.id) : 0);
 
 
     const lineupAvatars = listAvatar?.filter(item =>
@@ -42,7 +53,6 @@ export default function LineupBar() {
         }
     };
 
-    // Close modal handler
     const handleCloseModal = (modalId: string) => {
         setIsModalOpen(false);
         setSelectedCharacter(undefined);
@@ -52,7 +62,6 @@ export default function LineupBar() {
         }
     };
 
-    // Handle ESC key to close modal
     useEffect(() => {
         const handleEscKey = (event: KeyboardEvent) => {
             if (event.key === 'Escape' && isModalOpen) {

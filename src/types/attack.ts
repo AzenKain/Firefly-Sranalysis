@@ -12,6 +12,7 @@ export interface DamageDetailType {
     damage: number;
     overkill_damage?: number;
     damage_type?: AttackType;
+    type?: AttackType | string;
 }
 
 
@@ -35,23 +36,32 @@ export enum AttackType {
 
 
 const attackTypeMap: Record<string, AttackType> = {
-    Talent: AttackType.Unknown,
-    Basic: AttackType.Normal,
-    Skill: AttackType.BPSkill,
-    Ultimate: AttackType.Ultra,
+    Unknown: AttackType.Unknown,
+    Normal: AttackType.Normal,
+    BPSkill: AttackType.BPSkill,
+    Ultra: AttackType.Ultra,
     QTE: AttackType.QTE,
     DOT: AttackType.DOT,
     DoT: AttackType.DOT,
     Pursued: AttackType.Pursued,
+    Maze: AttackType.Maze,
+    MazeNormal: AttackType.MazeNormal,
+    Insert: AttackType.Insert,
+    ElementDamage: AttackType.ElementDamage,
+    Level: AttackType.Level,
+    Servant: AttackType.Servant,
+    TrueDamage: AttackType.TrueDamage,
+    ElationDamage: AttackType.ElationDamage,
+    Talent: AttackType.Unknown,
+    Basic: AttackType.Normal,
+    Skill: AttackType.BPSkill,
+    Ultimate: AttackType.Ultra,
     Additional: AttackType.Pursued,
     Technique: AttackType.Maze,
-    MazeNormal: AttackType.MazeNormal,
     "Follow-up": AttackType.Insert,
     "Follow-Up": AttackType.Insert,
     "Elemental Damage": AttackType.ElementDamage,
     Break: AttackType.ElementDamage,
-    Level: AttackType.Level,
-    Servant: AttackType.Servant,
     "True Damage": AttackType.TrueDamage,
     True: AttackType.TrueDamage,
     "Elation Damage": AttackType.ElationDamage,
@@ -75,12 +85,14 @@ export function ParseAttackType(type: AttackType | string | undefined): AttackTy
     return attackTypeMap[type] ?? AttackType.Unknown;
 }
 
-export function attackTypeToString(type: AttackType | undefined): string {
-    if (type === undefined) {
-        return ""
+export function attackTypeToString(type: AttackType | string | undefined): string {
+    if (type === undefined || type === null) {
+        return "";
     }
 
-    switch (type) {
+    const parsed = typeof type === "string" ? ParseAttackType(type) : type;
+
+    switch (parsed) {
         case AttackType.Unknown: return "Talent";
         case AttackType.Normal: return "Basic";
         case AttackType.BPSkill: return "Skill";

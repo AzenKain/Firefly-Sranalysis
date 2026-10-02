@@ -2,12 +2,13 @@ import useBattleDataStore from "@/stores/battleDataStore";
 import { useMemo } from "react";
 
 export function useDamagePercentPerAvatar() {
-  const { skillHistory } = useBattleDataStore.getState();
+  const skillHistory = useBattleDataStore(state => state.skillHistory);
 
   return useMemo(() => {
     const dmgByAvatar = new Map<number, number>();
 
     skillHistory.forEach(t => {
+      if (!t.avatarId || t.avatarId <= 0) return;
       dmgByAvatar.set(t.avatarId, (dmgByAvatar.get(t.avatarId) || 0) + t.totalDamage);
     });
 

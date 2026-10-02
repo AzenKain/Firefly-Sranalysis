@@ -4,7 +4,7 @@ import useBattleDataStore from "@/stores/battleDataStore";
 import {attackTypeToString} from "@/types";
 
 export function useSkillDamageForAvatar(avatarId: number) {
-  const { skillHistory } = useBattleDataStore.getState();
+  const skillHistory = useBattleDataStore(state => state.skillHistory);
 
   return useMemo(() => {
     const dmgMap = new Map<string, number>();

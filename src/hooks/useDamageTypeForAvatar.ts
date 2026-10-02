@@ -4,7 +4,7 @@ import useBattleDataStore from "@/stores/battleDataStore";
 import {attackTypeToString} from "@/types";
 
 export function useDamageByTypeForAvatar(avatarId: number) {
-  const { skillHistory } = useBattleDataStore.getState();
+  const skillHistory = useBattleDataStore(state => state.skillHistory);
 
   return useMemo(() => {
     const dmgMap = new Map<string, number>();
@@ -14,6 +14,7 @@ export function useDamageByTypeForAvatar(avatarId: number) {
 
       for (const damage of skill.damageDetail) {
         const type = attackTypeToString(damage?.damage_type)?.toLowerCase() || "";
+        if (!type) continue;
         dmgMap.set(type, (dmgMap.get(type) || 0) + damage.damage); 
       }
     }

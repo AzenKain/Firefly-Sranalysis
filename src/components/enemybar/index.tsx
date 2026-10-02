@@ -9,15 +9,22 @@ import useLocaleStore from "@/stores/localeStore";
 import NameAvatar from "../nameAvatar";
 
 export default function EnemyBar() {
-    const { enemyDetail } = useBattleDataStore()
-    const { mapEnemy } = useAvatarDataStore()
-    const { locale } = useLocaleStore()
+    const enemyDetail = useBattleDataStore(state => state.enemyDetail);
+    const mapEnemy = useAvatarDataStore(state => state.mapEnemy);
+    const locale = useLocaleStore(state => state.locale);
 
     return (
         <div className="p-3 w-full">
             <div className="flex gap-3 overflow-x-auto pb-2">
-                {enemyDetail && Object.values(enemyDetail).filter((enemy) => (
-                    enemy.stats.HP <= enemy.maxHP)).map((enemy, uid) => (
+                {enemyDetail && Object.values(enemyDetail).filter((enemy) => {
+                    const hp = enemy.stats?.CurrentHP ?? enemy.stats?.HP ?? 0;
+                    return hp <= enemy.maxHP;
+                }).map((enemy, uid) => {
+                    const hp = enemy.stats?.CurrentHP ?? enemy.stats?.HP ?? 0;
+                    const maxHp = enemy.maxHP || 100;
+                    const hpPercent = Math.round((hp / maxHp) * 100);
+
+                    return (
                         <div key={uid} className="bg-base-200 rounded-lg p-3 border border-gray-700 w-52 shrink-0">
                             <div className="flex items-center justify-between mb-3">
                                 <div className="flex items-center gap-2">
@@ -49,11 +56,11 @@ export default function EnemyBar() {
                                     <div className="text-xs text-base-content/70">HP:</div>
                                     <div className="flex text-xs font-medium">
                                         <div className="text-error">
-                                            {Number(enemy?.stats?.HP ?? 0).toLocaleString(undefined, { maximumFractionDigits: 0 })}
+                                            {Number(hp).toLocaleString(undefined, { maximumFractionDigits: 0 })}
                                         </div>
                                         <div className="text-base-content/50 mx-1">/</div>
                                         <div className="text-base-content/70">
-                                            {Number(enemy?.maxHP ?? 100).toLocaleString(undefined, { maximumFractionDigits: 0 })}
+                                            {Number(maxHp).toLocaleString(undefined, { maximumFractionDigits: 0 })}
                                         </div>
                                     </div>
                                 </div>
@@ -62,17 +69,18 @@ export default function EnemyBar() {
                                     <div
                                         className="bg-error h-2.5 rounded-full transition-all duration-300"
                                         style={{
-                                            width: `${Math.max(0, Math.min(100, ((enemy.stats?.HP || 0) / (enemy.maxHP || 100)) * 100))}%`
+                                            width: `${Math.max(0, Math.min(100, (hp / maxHp) * 100))}%`
                                         }}
                                     />
                                     <div className="absolute inset-0 flex items-center justify-center text-xs text-white font-medium">
-                                        {Math.round(((enemy.stats?.HP || 0) / (enemy.maxHP || 100)) * 100)}%
+                                        {hpPercent}%
                                     </div>
                                 </div>
 
                             </div>
                         </div>
-                    ))}
+                    );
+                })}
             </div>
         </div>
     )

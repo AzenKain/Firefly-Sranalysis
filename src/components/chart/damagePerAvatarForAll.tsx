@@ -16,6 +16,8 @@ import { Bar } from 'react-chartjs-2';
 import { useTranslations } from 'next-intl';
 import {attackTypeToString} from "@/types";
 
+import { useShallow } from 'zustand/react/shallow';
+
 ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend);
 
 const colorPalette = [
@@ -47,9 +49,14 @@ const borderPalette = colorPalette.map((c) => c.replace('0.6', '1'));
 
 export default function DamagePerAvatarForAll() {
     const transI18n = useTranslations("DataAnalysisPage");
-    const { lineup, skillHistory } = useBattleDataStore();
-    const { mapAvatar } = useAvatarDataStore();
-    const { locale } = useLocaleStore();
+    const { lineup, skillHistory } = useBattleDataStore(
+        useShallow(state => ({
+            lineup: state.lineup,
+            skillHistory: state.skillHistory,
+        }))
+    );
+    const mapAvatar = useAvatarDataStore(state => state.mapAvatar);
+    const locale = useLocaleStore(state => state.locale);
 
     const [mode, setMode] = useState<number>(2);
 
@@ -93,7 +100,11 @@ export default function DamagePerAvatarForAll() {
         const damageTypesSet = new Set<string>();
         avatarMap.forEach(({ avatarId }) => {
             skillHistory.filter(s => s.avatarId === avatarId).forEach(s =>
-                s.damageDetail?.forEach(d => d.damage_type && damageTypesSet.add(transI18n(attackTypeToString(d?.damage_type).toLowerCase())))
+                s.damageDetail?.forEach(d => {
+                    if (d?.damage_type !== undefined) {
+                        damageTypesSet.add(transI18n(attackTypeToString(d.damage_type).toLowerCase()));
+                    }
+                })
             );
         });
         const damageTypes = Array.from(damageTypesSet);

@@ -13,6 +13,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { useShallow } from "zustand/react/shallow";
 
 const themes = [
     { label: "Winter" },
@@ -22,12 +23,33 @@ const themes = [
 ];
 
 export default function Header() {
-    const { changeTheme } = useChangeTheme()
-    const { locale, setLocale } = useLocaleStore()
-    const { loadBattleDataFromJSON, version } = useBattleDataStore()
-    const router = useRouter()
-    const transI18n = useTranslations("DataAnalysisPage")
-    const { host, port, status, connectionType, setHost, setPort, setStatus, setConnectionType } = useSocketStore();
+    const { changeTheme } = useChangeTheme();
+    const { locale, setLocale } = useLocaleStore(
+        useShallow(state => ({
+            locale: state.locale,
+            setLocale: state.setLocale,
+        }))
+    );
+    const { loadBattleDataFromJSON, version } = useBattleDataStore(
+        useShallow(state => ({
+            loadBattleDataFromJSON: state.loadBattleDataFromJSON,
+            version: state.version,
+        }))
+    );
+    const router = useRouter();
+    const transI18n = useTranslations("DataAnalysisPage");
+    const { host, port, status, connectionType, setHost, setPort, setStatus, setConnectionType } = useSocketStore(
+        useShallow(state => ({
+            host: state.host,
+            port: state.port,
+            status: state.status,
+            connectionType: state.connectionType,
+            setHost: state.setHost,
+            setPort: state.setPort,
+            setStatus: state.setStatus,
+            setConnectionType: state.setConnectionType,
+        }))
+    );
     const [message, setMessage] = useState({ text: '', type: '' });
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -131,7 +153,6 @@ export default function Header() {
         }
     };
 
-    // Close modal handler
     const handleCloseModal = (modalId: string) => {
         setIsModalOpen(false);
         const modal = document.getElementById(modalId) as HTMLDialogElement | null;
@@ -140,7 +161,6 @@ export default function Header() {
         }
     };
 
-    // Handle ESC key to close modal
     useEffect(() => {
         const handleEscKey = (event: KeyboardEvent) => {
             if (event.key === 'Escape' && isModalOpen) {

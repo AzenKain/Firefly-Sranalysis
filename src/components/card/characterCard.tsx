@@ -13,10 +13,10 @@ interface CharacterCardProps {
 }
 
 export default function CharacterCard({ data }: CharacterCardProps) {
-  const { locale } = useLocaleStore();
-  const { avatarDetail } = useBattleDataStore()
+  const locale = useLocaleStore(state => state.locale);
+  const avatarDetail = useBattleDataStore(state => state.avatarDetail);
   const transI18n = useTranslations("DataAnalysisPage");
-  const text = getNameChar(locale, transI18n, data)
+  const text = getNameChar(locale, transI18n, data);
 
   return (
     <li className="z-10 flex flex-col w-28 items-center p-1 rounded-md shadow-lg bg-linear-to-b from-customStart to-customEnd transform transition-transform duration-300 hover:scale-105 m-1">
@@ -64,33 +64,41 @@ export default function CharacterCard({ data }: CharacterCardProps) {
         className="mt-2 text-center text-base font-normal leading-tight"
       />
       {avatarDetail && (
-        <div className="space-y-2">
-          <div className="flex justify-between items-center">
-            <span className="text-xs text-base-content/70 mx-1">HP:</span>
-            <span className="text-xs font-medium">
-              <span className="text-error">
-                {Number(avatarDetail?.[Number(data.id)]?.stats?.HP ?? 0).toLocaleString(undefined, { maximumFractionDigits: 0 })}
-              </span>
-              <span className="text-base-content/50">/</span>
-              <span className="text-base-content/70">
-                {Number(avatarDetail?.[Number(data.id)]?.stats?.MaxHP ?? 100).toLocaleString(undefined, { maximumFractionDigits: 0 })}
-              </span>
-            </span>
-          </div>
+        (() => {
+          const stats = avatarDetail?.[Number(data.id)]?.stats;
+          const hp = stats?.CurrentHP ?? stats?.HP ?? 0;
+          const maxHp = stats?.MaxHP ?? 100;
+          const hpPercent = Math.round((hp / maxHp) * 100);
 
-          <div className="relative w-full bg-base-300 rounded-full h-2.5">
-            <div
-              className="bg-error h-2.5 rounded-full transition-all duration-300"
-              style={{
-                width: `${Math.max(0, Math.min(100, ((avatarDetail?.[Number(data.id)]?.stats?.HP || 0) / (avatarDetail?.[Number(data.id)]?.stats?.MaxHP || 100)) * 100))}%`
-              }}
-            />
-            <span className="absolute inset-0 flex items-center justify-center text-xs text-white font-medium">
-              {Math.round(((avatarDetail?.[Number(data.id)]?.stats?.HP || 0) / (avatarDetail?.[Number(data.id)]?.stats?.MaxHP || 100)) * 100)}%
-            </span>
-          </div>
+          return (
+            <div className="space-y-2">
+              <div className="flex justify-between items-center">
+                <span className="text-xs text-base-content/70 mx-1">HP:</span>
+                <span className="text-xs font-medium">
+                  <span className="text-error">
+                    {Number(hp).toLocaleString(undefined, { maximumFractionDigits: 0 })}
+                  </span>
+                  <span className="text-base-content/50">/</span>
+                  <span className="text-base-content/70">
+                    {Number(maxHp).toLocaleString(undefined, { maximumFractionDigits: 0 })}
+                  </span>
+                </span>
+              </div>
 
-        </div>
+              <div className="relative w-full bg-base-300 rounded-full h-2.5">
+                <div
+                  className="bg-error h-2.5 rounded-full transition-all duration-300"
+                  style={{
+                    width: `${Math.max(0, Math.min(100, (hp / maxHp) * 100))}%`
+                  }}
+                />
+                <span className="absolute inset-0 flex items-center justify-center text-xs text-white font-medium">
+                  {hpPercent}%
+                </span>
+              </div>
+            </div>
+          );
+        })()
       )}
 
     </li>

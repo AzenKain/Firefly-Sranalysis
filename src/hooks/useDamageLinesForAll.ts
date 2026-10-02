@@ -1,19 +1,30 @@
 import useBattleDataStore from "@/stores/battleDataStore";
+import { useShallow } from "zustand/react/shallow";
 import { useMemo } from "react";
 
 export function useDamageLinesForAll(mode: 1 | 2 = 1) {
-  const { turnHistory, skillHistory } = useBattleDataStore.getState();
+  const { turnHistory, skillHistory } = useBattleDataStore(
+    useShallow(state => ({
+      turnHistory: state.turnHistory,
+      skillHistory: state.skillHistory,
+    }))
+  );
 
   return useMemo(() => {
     const avatarMap = new Map<number, Map<number, number>>();
 
     for (const skill of skillHistory) {
+      if (!skill.avatarId || skill.avatarId <= 0) continue;
+
       if (!avatarMap.has(skill.avatarId)) {
         avatarMap.set(skill.avatarId, new Map());
       }
 
+      const turn = turnHistory[skill.turnBattleId];
+      if (!turn) continue;
+
       const charMap = avatarMap.get(skill.avatarId)!;
-      const actionValue = turnHistory[skill.turnBattleId].actionValue
+      const actionValue = turn.actionValue;
       const prev = charMap.get(actionValue) || 0;
       charMap.set(actionValue, prev + skill.totalDamage);
     }

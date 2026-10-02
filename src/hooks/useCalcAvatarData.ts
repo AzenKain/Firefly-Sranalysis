@@ -2,7 +2,7 @@ import useBattleDataStore from "@/stores/battleDataStore";
 import { useMemo } from "react";
 
 export function useCalcTotalDmgAvatar(avatarId: number) {
-  const { skillHistory } = useBattleDataStore.getState();
+  const skillHistory = useBattleDataStore(state => state.skillHistory);
 
   return useMemo(() => {
     return skillHistory
@@ -13,16 +13,9 @@ export function useCalcTotalDmgAvatar(avatarId: number) {
 
 
 export function useCalcTotalTurnAvatar(avatarId: number) {
-    const { turnHistory } = useBattleDataStore.getState();
+    const turnHistory = useBattleDataStore(state => state.turnHistory);
   
     return useMemo(() => {
-      const uniqueActionValues = new Set<number>(); 
-      turnHistory.forEach(turn => {
-        if (turn.avatarId === avatarId) {
-            uniqueActionValues.add(turn.actionValue);
-        }
-      });
-  
-      return uniqueActionValues.size;
+      return turnHistory.filter(turn => turn.avatarId === avatarId).length;
     }, [avatarId, turnHistory]);
-  }
+}

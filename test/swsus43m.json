@@ -1,0 +1,7775 @@
+{
+  "lineup": [
+    {
+      "avatarId": 1506,
+      "isDie": false
+    },
+    {
+      "avatarId": 1502,
+      "isDie": false
+    },
+    {
+      "avatarId": 1503,
+      "isDie": false
+    },
+    {
+      "avatarId": 1511,
+      "isDie": false
+    }
+  ],
+  "turnHistory": [
+    {
+      "avatarId": -1,
+      "actionValue": 0.0,
+      "waveIndex": 2,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 1511,
+      "actionValue": 33.36076326901093,
+      "waveIndex": 1,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 1502,
+      "actionValue": 49.14681134512648,
+      "waveIndex": 1,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 1506,
+      "actionValue": 49.79286168701947,
+      "waveIndex": 1,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 1506,
+      "actionValue": 49.79286168701947,
+      "waveIndex": 1,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 1503,
+      "actionValue": 56.506113957148045,
+      "waveIndex": 1,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 1511,
+      "actionValue": 72.28165375767276,
+      "waveIndex": 1,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 100017,
+      "actionValue": 76.28367003751919,
+      "waveIndex": 1,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 100013,
+      "actionValue": 76.28367003751919,
+      "waveIndex": 1,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 100015,
+      "actionValue": 86.20894880965352,
+      "waveIndex": 1,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 1502,
+      "actionValue": 98.29362269025296,
+      "waveIndex": 1,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 1506,
+      "actionValue": 99.58572337403893,
+      "waveIndex": 1,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 1503,
+      "actionValue": 113.01222791429609,
+      "waveIndex": 1,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 1511,
+      "actionValue": 127.88292590761557,
+      "waveIndex": 1,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 1502,
+      "actionValue": 132.69639061763883,
+      "waveIndex": 1,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 100013,
+      "actionValue": 142.04545454587787,
+      "waveIndex": 1,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 1506,
+      "actionValue": 149.3785850610584,
+      "waveIndex": 1,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 1502,
+      "actionValue": 198.52539640618488,
+      "waveIndex": 2,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 1506,
+      "actionValue": 198.52539640618488,
+      "waveIndex": 2,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 100038,
+      "actionValue": 201.98801265796646,
+      "waveIndex": 2,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 100040,
+      "actionValue": 201.98801265796646,
+      "waveIndex": 2,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 100042,
+      "actionValue": 201.98801265796646,
+      "waveIndex": 2,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 1511,
+      "actionValue": 204.97985721100122,
+      "waveIndex": 2,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 1503,
+      "actionValue": 205.88469901820645,
+      "waveIndex": 2,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 1511,
+      "actionValue": 243.90074769966304,
+      "waveIndex": 2,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 1502,
+      "actionValue": 247.67220775131136,
+      "waveIndex": 2,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 1506,
+      "actionValue": 248.31825809320435,
+      "waveIndex": 2,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 1503,
+      "actionValue": 262.3908129753545,
+      "waveIndex": 2,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 100038,
+      "actionValue": 280.9021540777758,
+      "waveIndex": 2,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 100042,
+      "actionValue": 291.4240396069363,
+      "waveIndex": 2,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 100040,
+      "actionValue": 291.4240396069363,
+      "waveIndex": 2,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 1511,
+      "actionValue": 291.4240396069363,
+      "waveIndex": 2,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 1502,
+      "actionValue": 296.81901909643784,
+      "waveIndex": 2,
+      "cycleIndex": 0
+    },
+    {
+      "avatarId": 1506,
+      "actionValue": 298.1111197802238,
+      "waveIndex": 2,
+      "cycleIndex": 0
+    }
+  ],
+  "skillHistory": [
+    {
+      "avatarId": 1506,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "Unknown",
+      "skillName": "有我在，把把都是顺风局",
+      "turnBattleId": 0
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "Unknown",
+      "skillName": "欢愉万相★全息幻象",
+      "turnBattleId": 0
+    },
+    {
+      "avatarId": 1502,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "Unknown",
+      "skillName": "屏开千光，遍观自在",
+      "turnBattleId": 0
+    },
+    {
+      "avatarId": 1502,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "Unknown",
+      "skillName": "欢愉万相★心灵感应",
+      "turnBattleId": 0
+    },
+    {
+      "avatarId": 1503,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "Unknown",
+      "skillName": "吞纳沙砾，重塑生机",
+      "turnBattleId": 0
+    },
+    {
+      "avatarId": 1503,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "Unknown",
+      "skillName": "欢愉万相★跃然纸上",
+      "turnBattleId": 0
+    },
+    {
+      "avatarId": 1511,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "Unknown",
+      "skillName": "与祂共演，奇迹新篇",
+      "turnBattleId": 0
+    },
+    {
+      "avatarId": 1511,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "Unknown",
+      "skillName": "欢愉万相★无中生有",
+      "turnBattleId": 0
+    },
+    {
+      "avatarId": 1511,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "Unknown",
+      "skillName": "阿哈正传",
+      "turnBattleId": 0
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 16516.97656821157,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 16516.97656821157,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 16516.97656821157,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6197.292180777062,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 55748.22188541177,
+      "skillType": "Maze",
+      "skillName": "朋友，这才是T0级秘技",
+      "turnBattleId": 0
+    },
+    {
+      "avatarId": 1502,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "Maze",
+      "skillName": "浮光过隙，百无禁忌",
+      "turnBattleId": 0
+    },
+    {
+      "avatarId": 1503,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "Maze",
+      "skillName": "凝润珠光，复刻真迹",
+      "turnBattleId": 0
+    },
+    {
+      "avatarId": 1511,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "Maze",
+      "skillName": "ABRACADABRA！",
+      "turnBattleId": 0
+    },
+    {
+      "avatarId": 0,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "Unknown",
+      "skillName": "",
+      "turnBattleId": 0
+    },
+    {
+      "avatarId": 1502,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "BPSkill",
+      "skillName": "十方光映，万法皆明",
+      "turnBattleId": 0
+    },
+    {
+      "avatarId": 1503,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "ElationDamage",
+      "skillName": "渲染理性，解构欢愉",
+      "turnBattleId": 0
+    },
+    {
+      "avatarId": 1502,
+      "damageDetail": [
+        {
+          "damage": 40573.73393099243,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 40573.73393099243,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 40573.73393099243,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8114.746793754632,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8114.746793754632,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8114.746793754632,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8114.746793754632,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8114.746793754632,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8114.746793754632,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 16229.493587511126,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 16229.493587511126,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 16229.493587511126,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 219098.16331803845,
+      "skillType": "ElationDamage",
+      "skillName": "赠君一卦，火树银花",
+      "turnBattleId": 0
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 18387.865185251925,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 18387.865185251925,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 18387.865185251925,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 55163.595555755775,
+      "skillType": "ElationDamage",
+      "skillName": "殿堂级操作回放",
+      "turnBattleId": 0
+    },
+    {
+      "avatarId": 1511,
+      "damageDetail": [
+        {
+          "damage": 24026.992731648264,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24026.992731648264,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24026.992731648264,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 19411.94278561091,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 19411.94278561091,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 19411.94278561091,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 8008.997577215312,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 16017.995154431555,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 16017.995154431555,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 16017.995154431555,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 186379.7895922875,
+      "skillType": "ElationDamage",
+      "skillName": "满月，是神在的时间",
+      "turnBattleId": 0
+    },
+    {
+      "avatarId": 1511,
+      "damageDetail": [
+        {
+          "damage": 28232.473658544244,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 28232.473658544244,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 28232.473658544244,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 3742.02732384135,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 88439.44829947408,
+      "skillType": "BPSkill",
+      "skillName": "此乃令使，阿哈认证™",
+      "turnBattleId": 1
+    },
+    {
+      "avatarId": 1502,
+      "damageDetail": [
+        {
+          "damage": 515.1553891822696,
+          "overkill_damage": 0.0,
+          "type": "Basic"
+        },
+        {
+          "damage": 171.71846270514652,
+          "overkill_damage": 0.0,
+          "type": "Basic"
+        },
+        {
+          "damage": 171.71846270514652,
+          "overkill_damage": 0.0,
+          "type": "Basic"
+        },
+        {
+          "damage": 515.1553891822696,
+          "overkill_damage": 0.0,
+          "type": "Basic"
+        },
+        {
+          "damage": 171.71846270514652,
+          "overkill_damage": 0.0,
+          "type": "Basic"
+        },
+        {
+          "damage": 171.71846270514652,
+          "overkill_damage": 0.0,
+          "type": "Basic"
+        },
+        {
+          "damage": 515.1553891822696,
+          "overkill_damage": 0.0,
+          "type": "Basic"
+        },
+        {
+          "damage": 171.71846270514652,
+          "overkill_damage": 0.0,
+          "type": "Basic"
+        },
+        {
+          "damage": 171.71846270514652,
+          "overkill_damage": 0.0,
+          "type": "Basic"
+        },
+        {
+          "damage": 515.1553891822696,
+          "overkill_damage": 0.0,
+          "type": "Basic"
+        },
+        {
+          "damage": 171.71846270514652,
+          "overkill_damage": 0.0,
+          "type": "Basic"
+        },
+        {
+          "damage": 171.71846270514652,
+          "overkill_damage": 0.0,
+          "type": "Basic"
+        },
+        {
+          "damage": 11393.867330241483,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 14828.236588611733,
+      "skillType": "Normal",
+      "skillName": "雀翎鸣镝，过招有喜",
+      "turnBattleId": 2
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 4247.6402657977305,
+          "overkill_damage": 0.0,
+          "type": "Skill"
+        },
+        {
+          "damage": 4247.6402657977305,
+          "overkill_damage": 0.0,
+          "type": "Skill"
+        },
+        {
+          "damage": 4247.6402657977305,
+          "overkill_damage": 0.0,
+          "type": "Skill"
+        },
+        {
+          "damage": 37999.45990235382,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 37999.45990235382,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 37999.45990235382,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 18999.72995117563,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 18999.72995117563,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 37999.45990235382,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 37999.45990235382,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 37999.45990235382,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 278739.14011386735,
+      "skillType": "BPSkill",
+      "skillName": "Shoot属性大爆发",
+      "turnBattleId": 3
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "Ultra",
+      "skillName": "无敌玩家，启动！",
+      "turnBattleId": 3
+    },
+    {
+      "avatarId": 1502,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "Ultra",
+      "skillName": "霓裳铁羽，六爻皆吉",
+      "turnBattleId": 3
+    },
+    {
+      "avatarId": 1503,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "Ultra",
+      "skillName": "鉴映灵魂的底色",
+      "turnBattleId": 3
+    },
+    {
+      "avatarId": 1503,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "ElationDamage",
+      "skillName": "渲染理性，解构欢愉",
+      "turnBattleId": 3
+    },
+    {
+      "avatarId": 1502,
+      "damageDetail": [
+        {
+          "damage": 63676.85223925556,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 63676.85223925556,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 63676.85223925556,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 12735.37045971048,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 12735.37045971048,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 12735.37045971048,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 12735.37045971048,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 12735.37045971048,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 15767.608533605235,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 31535.217067213263,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 31535.217067213263,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 31535.217067213263,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 365080.6687515641,
+      "skillType": "ElationDamage",
+      "skillName": "赠君一卦，火树银花",
+      "turnBattleId": 3
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 94915.91330732428,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 94915.91330732428,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 4435.101907937089,
+          "overkill_damage": 0.0,
+          "type": "Break"
+        },
+        {
+          "damage": 105462.12594222394,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 94915.91330732428,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 94915.91330732428,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 105462.12594222394,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 26114.44278792967,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 58032.09510916355,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 52228.88557586307,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 53733.124538213946,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 59703.47173471353,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 53733.124538213946,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 33433.944193365984,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 39802.314520696644,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 39802.314520696644,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 39802.314520696644,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 39802.314520696644,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 1091211.3535819324,
+      "skillType": "ElationDamage",
+      "skillName": "崩坏级伤害演示",
+      "turnBattleId": 3
+    },
+    {
+      "avatarId": 1511,
+      "damageDetail": [
+        {
+          "damage": 40422.291740725515,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 44913.65751482267,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 40422.291740725515,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 85220.02163156634,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 85220.02163156634,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 85220.02163156634,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 16682.223057828378,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 33364.44611565862,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 37071.606815917185,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 33364.44611565862,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 501901.0279960355,
+      "skillType": "ElationDamage",
+      "skillName": "满月，是神在的时间",
+      "turnBattleId": 3
+    },
+    {
+      "avatarId": 1511,
+      "damageDetail": [
+        {
+          "damage": 48656.47577615362,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 4165.19712710008,
+          "overkill_damage": 0.0,
+          "type": "Break"
+        },
+        {
+          "damage": 54062.75089263916,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 48656.47577615362,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 4165.19712710008,
+          "overkill_damage": 0.0,
+          "type": "Break"
+        },
+        {
+          "damage": 21625.100357054267,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 181331.19705620082,
+      "skillType": "BPSkill",
+      "skillName": "此乃令使，阿哈认证™",
+      "turnBattleId": 3
+    },
+    {
+      "avatarId": 1511,
+      "damageDetail": [
+        {
+          "damage": 262276.04491920373,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 262276.04491920373,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 262276.04491920373,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 78682.81354903872,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 78682.81354903872,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 23293.548992689466,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 78682.81354903872,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 78682.81354903872,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 31473.125419614604,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 1156326.0633660702,
+      "skillType": "Ultra",
+      "skillName": "啊哈！宇宙笑点大爆炸",
+      "turnBattleId": 4
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6761.68567193835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 229897.3128459039,
+      "skillType": "Normal",
+      "skillName": "奖励关：「狼尊时刻」",
+      "turnBattleId": 4
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 84935.46443228959,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 84935.46443228959,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 84935.46443228959,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 485830.85628358857,
+      "skillType": "Normal",
+      "skillName": "怪怪怪味豆",
+      "turnBattleId": 4
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 16987.092833719915,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 16987.092833719915,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 16987.092833719915,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 16987.092833719915,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 16987.092833719915,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 16987.092833719915,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 16987.092833719915,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 16987.092833719915,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 16987.092833719915,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 16987.092833719915,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 16987.092833719915,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 16987.092833719915,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 16987.092833719915,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 16987.092833719915,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 16987.092833719915,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 50961.27854862111,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6794.837146668229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 523202.45974780316,
+      "skillType": "Normal",
+      "skillName": "超超超大剑",
+      "turnBattleId": 4
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 85349.85786689678,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 85349.85786689678,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 85349.85786689678,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 94833.17537086015,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 94833.17537086015,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 94833.17537086015,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 68279.88634650945,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 608828.9860597802,
+      "skillType": "Normal",
+      "skillName": "怪怪怪味豆",
+      "turnBattleId": 4
+    },
+    {
+      "avatarId": 1503,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "ElationDamage",
+      "skillName": "渲染理性，解构欢愉",
+      "turnBattleId": 4
+    },
+    {
+      "avatarId": 1502,
+      "damageDetail": [
+        {
+          "damage": 106857.90459846682,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 106857.90459846682,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 106857.90459846682,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21371.580939595355,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21371.580939595355,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21371.580939595355,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21371.580939595355,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21371.580939595355,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24527.38696141448,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 40878.97826902312,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 40878.97826902312,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 40878.97826902312,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 574595.9402618611,
+      "skillType": "ElationDamage",
+      "skillName": "赠君一卦，火树银花",
+      "turnBattleId": 4
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 205943.13419535686,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 205943.13419535686,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 205943.13419535686,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 205943.13419535686,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 205943.13419535686,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 205943.13419535686,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 52522.98948602681,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 60603.43259761669,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 60603.43259761669,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 84344.63745511044,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 84344.63745511044,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 84344.63745511044,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 50606.78252019733,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 79057.28718368895,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 56229.75834704423,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 56229.75834704423,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 56229.75834704423,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 84432.65640121931,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 84432.65640121931,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 84432.65640121931,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 79908.27408469771,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 2293982.1602521073,
+      "skillType": "ElationDamage",
+      "skillName": "崩坏级伤害演示",
+      "turnBattleId": 4
+    },
+    {
+      "avatarId": 1511,
+      "damageDetail": [
+        {
+          "damage": 82270.94656094583,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 82270.94656094583,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 82270.94656094583,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 156752.0109395308,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 156752.0109395308,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 156752.0109395308,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 31473.125419614604,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 52455.20903269132,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 52455.20903269132,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 52455.20903269132,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 905907.6250191184,
+      "skillType": "ElationDamage",
+      "skillName": "满月，是神在的时间",
+      "turnBattleId": 4
+    },
+    {
+      "avatarId": 1503,
+      "damageDetail": [
+        {
+          "damage": 3368.6111799720675,
+          "overkill_damage": 0.0,
+          "type": "Basic"
+        },
+        {
+          "damage": 9139.985363656655,
+          "overkill_damage": 0.0,
+          "type": "Basic"
+        },
+        {
+          "damage": 3368.6111799720675,
+          "overkill_damage": 0.0,
+          "type": "Basic"
+        },
+        {
+          "damage": 4302.941054188181,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 4302.941054188181,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 11675.083930667024,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8997.100017381832,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 11474.509477835381,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 11474.509477835381,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 31133.55714844633,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 71053.89502726286,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 71053.89502726286,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 71053.89502726286,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 312399.53496593167,
+      "skillType": "Normal",
+      "skillName": "行笔，幻造星月",
+      "turnBattleId": 5
+    },
+    {
+      "avatarId": 1511,
+      "damageDetail": [
+        {
+          "damage": 89509.73265356547,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 89509.73265356547,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 89509.73265356547,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 42964.67167371046,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 33677.88395262603,
+          "overkill_damage": 0.0,
+          "type": "Additional"
+        },
+        {
+          "damage": 33677.88395262603,
+          "overkill_damage": 0.0,
+          "type": "Additional"
+        }
+      ],
+      "totalDamage": 378849.6375396589,
+      "skillType": "BPSkill",
+      "skillName": "此乃令使，阿哈认证™",
+      "turnBattleId": 6
+    },
+    {
+      "avatarId": 1502,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "BPSkill",
+      "skillName": "十方光映，万法皆明",
+      "turnBattleId": 10
+    },
+    {
+      "avatarId": 1503,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "Ultra",
+      "skillName": "鉴映灵魂的底色",
+      "turnBattleId": 10
+    },
+    {
+      "avatarId": 1502,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "BPSkill",
+      "skillName": "十方光映，万法皆明",
+      "turnBattleId": 10
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 298553.87275116146,
+      "skillType": "Normal",
+      "skillName": "奖励关：「狼尊时刻」",
+      "turnBattleId": 11
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 21952.49060088047,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21952.49060088047,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21952.49060088047,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21952.49060088047,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21952.49060088047,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21952.49060088047,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21952.49060088047,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21952.49060088047,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21952.49060088047,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21952.49060088047,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21952.49060088047,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21952.49060088047,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21952.49060088047,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21952.49060088047,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21952.49060088047,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 65857.47186397575,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 693698.7036283442,
+      "skillType": "Normal",
+      "skillName": "超超超大剑",
+      "turnBattleId": 11
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 109762.45334517513,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 109762.45334517513,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 109762.45334517513,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8780.996257387102,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 610279.2402719127,
+      "skillType": "Normal",
+      "skillName": "爆爆爆炸蛋",
+      "turnBattleId": 11
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 21952.49060088047,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21952.49060088047,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21952.49060088047,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21952.49060088047,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21952.49060088047,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21952.49060088047,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21952.49060088047,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21952.49060088047,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21952.49060088047,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21952.49060088047,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21952.49060088047,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21952.49060088047,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21952.49060088047,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21952.49060088047,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21952.49060088047,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 65857.47186397575,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 121958.28144731466,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 121958.28144731466,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 121958.28144731466,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 103880.75633243308,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 864900.4315515598,
+      "skillType": "Normal",
+      "skillName": "超超超大剑",
+      "turnBattleId": 11
+    },
+    {
+      "avatarId": 1503,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "ElationDamage",
+      "skillName": "渲染理性，解构欢愉",
+      "turnBattleId": 11
+    },
+    {
+      "avatarId": 1502,
+      "damageDetail": [
+        {
+          "damage": 72687.43366195797,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 72687.43366195797,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 72687.43366195797,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 14537.48674592888,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 14537.48674592888,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 14537.48674592888,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 14537.48674592888,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 14537.48674592888,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 32677.615917498246,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 54462.69319583126,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 54462.69319583126,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 54462.69319583126,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 486815.43022051034,
+      "skillType": "ElationDamage",
+      "skillName": "赠君一卦，火树银花",
+      "turnBattleId": 11
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 159971.72659358056,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 159971.72659358056,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 159971.72659358056,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 159971.72659358056,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 159971.72659358056,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 159971.72659358056,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 79908.27408469771,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 101027.27120507276,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 101027.27120507276,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 101027.27120507276,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 90006.41234524688,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 90006.41234524688,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 90006.41234524688,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 89405.67594184424,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 60004.274943400174,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 66671.41663235147,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 66671.41663235147,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 1895592.4684470873,
+      "skillType": "ElationDamage",
+      "skillName": "崩坏级伤害演示",
+      "turnBattleId": 11
+    },
+    {
+      "avatarId": 1511,
+      "damageDetail": [
+        {
+          "damage": 52659.85419498128,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 52659.85419498128,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 52659.85419498128,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 145096.94630743493,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 145096.94630743493,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 145096.94630743493,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 39456.57915817201,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 18634.085559094325,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 62943.70515043498,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 62943.70515043498,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 777248.4765253849,
+      "skillType": "ElationDamage",
+      "skillName": "满月，是神在的时间",
+      "turnBattleId": 11
+    },
+    {
+      "avatarId": 1503,
+      "damageDetail": [
+        {
+          "damage": 3031.7500602786895,
+          "overkill_damage": 0.0,
+          "type": "Basic"
+        },
+        {
+          "damage": 8225.98682268872,
+          "overkill_damage": 0.0,
+          "type": "Basic"
+        },
+        {
+          "damage": 3031.7500602786895,
+          "overkill_damage": 0.0,
+          "type": "Basic"
+        },
+        {
+          "damage": 3922.697310845135,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 3922.697310845135,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 3922.697310845135,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9434.529312314466,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 64912.80643098964,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 64912.80643098964,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 64912.80643098964,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10460.526162254391,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10460.526162254391,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10460.526162254391,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 261612.10596782807,
+      "skillType": "Normal",
+      "skillName": "行笔，幻造星月",
+      "turnBattleId": 12
+    },
+    {
+      "avatarId": 1511,
+      "damageDetail": [
+        {
+          "damage": 85239.13241234538,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 85239.13241234538,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 5051.68259225809,
+          "overkill_damage": 0.0,
+          "type": "Break"
+        },
+        {
+          "damage": 85239.13241234538,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 5051.68259225809,
+          "overkill_damage": 0.0,
+          "type": "Break"
+        },
+        {
+          "damage": 47105.01581865642,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 312925.77824020875,
+      "skillType": "BPSkill",
+      "skillName": "此乃令使，阿哈认证™",
+      "turnBattleId": 13
+    },
+    {
+      "avatarId": 1502,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "BPSkill",
+      "skillName": "十方光映，万法皆明",
+      "turnBattleId": 14
+    },
+    {
+      "avatarId": 1511,
+      "damageDetail": [
+        {
+          "damage": 175532.8471531286,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 5051.68259225809,
+          "overkill_damage": 0.0,
+          "type": "Break"
+        },
+        {
+          "damage": 195036.4968613463,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 195036.4968613463,
+          "overkill_damage": 152046.44993422297,
+          "type": "Elation"
+        },
+        {
+          "damage": 17321.79618768394,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 58510.94911289518,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 58510.94911289518,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 58510.94911289518,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 58510.94911289518,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 45460.87062563561,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 867483.9867329795,
+      "skillType": "Ultra",
+      "skillName": "啊哈！宇宙笑点大爆炸",
+      "turnBattleId": 16
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 353.99066020036116,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 354983.0443676687,
+      "skillType": "Normal",
+      "skillName": "奖励关：「狼尊时刻」",
+      "turnBattleId": 16
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 78305.08336708695,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 78305.08336708695,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 78305.08336708695,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 78305.08336708695,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 78305.08336708695,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 78305.08344001416,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 824813.5446431176,
+      "skillType": "Normal",
+      "skillName": "超超超大剑",
+      "turnBattleId": 16
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 78305.08336708695,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 78305.08336708695,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 78305.08336708695,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 78305.08336708695,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 78305.08336708695,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 78305.08344001416,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10440.677775519667,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 803932.1890920782,
+      "skillType": "Normal",
+      "skillName": "超超超大剑",
+      "turnBattleId": 16
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 391525.4173419033,
+          "overkill_damage": 99705.66826832457,
+          "type": "Elation"
+        },
+        {
+          "damage": 67779.15041122003,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 67779.15041122003,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 67779.15041122003,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 63005.587932866765,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 657868.4565084302,
+      "skillType": "Normal",
+      "skillName": "爆爆爆炸蛋",
+      "turnBattleId": 16
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 94933.10303718084,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 94933.10303718084,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 94933.10303718084,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 81907.2643303303,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 366706.57344187284,
+      "skillType": "Normal",
+      "skillName": "奖励关：「狼尊时刻」",
+      "turnBattleId": 16
+    },
+    {
+      "avatarId": 1502,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "Ultra",
+      "skillName": "霓裳铁羽，六爻皆吉",
+      "turnBattleId": 16
+    },
+    {
+      "avatarId": 1503,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "ElationDamage",
+      "skillName": "渲染理性，解构欢愉",
+      "turnBattleId": 16
+    },
+    {
+      "avatarId": 1502,
+      "damageDetail": [
+        {
+          "damage": 68386.3883073919,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 68386.3883073919,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 68386.3883073919,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 13677.277674214682,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 13677.277674214682,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 13677.277674214682,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 13677.277674214682,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 13677.277674214682,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 33885.28886636859,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 56475.48144394974,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 56475.48144394974,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 56475.48144394974,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 476857.2864914669,
+      "skillType": "ElationDamage",
+      "skillName": "赠君一卦，火树银花",
+      "turnBattleId": 16
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "ElationDamage",
+      "skillName": "殿堂级操作回放",
+      "turnBattleId": 16
+    },
+    {
+      "avatarId": 1511,
+      "damageDetail": [
+        {
+          "damage": 49543.87651016191,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 49543.87651016191,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 49543.87651016191,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 53964.46611959743,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 53964.46611959743,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 53964.46611959743,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 12112.562735670479,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 35106.56946331961,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 10393.077711302554,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 35106.56946331961,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 403243.8072628903,
+      "skillType": "ElationDamage",
+      "skillName": "满月，是神在的时间",
+      "turnBattleId": 16
+    },
+    {
+      "avatarId": 1503,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "ElationDamage",
+      "skillName": "渲染理性，解构欢愉",
+      "turnBattleId": 16
+    },
+    {
+      "avatarId": 1502,
+      "damageDetail": [
+        {
+          "damage": 69259.8043310144,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 69259.8043310144,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 69259.8043310144,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 13851.960879101884,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 13851.960879101884,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 13851.960879101884,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 13851.960879101884,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 13851.960879101884,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 35737.84745795606,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 59563.079096594825,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 59563.079096594825,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 59563.079096594825,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 491466.30213629315,
+      "skillType": "ElationDamage",
+      "skillName": "赠君一卦，火树银花",
+      "turnBattleId": 16
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "ElationDamage",
+      "skillName": "殿堂级操作回放",
+      "turnBattleId": 16
+    },
+    {
+      "avatarId": 1511,
+      "damageDetail": [
+        {
+          "damage": 50176.64008618053,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 50176.64008618053,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 50176.64008618053,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 48981.00016351347,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 48981.00016351347,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 48981.00016351347,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 43151.654965515016,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 42686.94613462407,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 42686.94613462407,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 42686.94613462407,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 468685.4141184692,
+      "skillType": "ElationDamage",
+      "skillName": "满月，是神在的时间",
+      "turnBattleId": 16
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 74194.64418996568,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 74194.64418996568,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 74194.64418996568,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 44516.78655543877,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 67466.75152958278,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 98926.19233006518,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 98926.19233006518,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 98926.19233006518,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 631346.0476451141,
+      "skillType": "Ultra",
+      "skillName": "无敌玩家，启动！",
+      "turnBattleId": 17
+    },
+    {
+      "avatarId": 1502,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "BPSkill",
+      "skillName": "十方光映，万法皆明",
+      "turnBattleId": 17
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 232080.84678419866,
+      "skillType": "Normal",
+      "skillName": "奖励关：「狼尊时刻」",
+      "turnBattleId": 18
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 85323.84082882525,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 85323.84082882525,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 85323.84082882525,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6825.907258358784,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 488052.3692706744,
+      "skillType": "Normal",
+      "skillName": "爆爆爆炸蛋",
+      "turnBattleId": 18
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 85787.48173248186,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 85787.48173248186,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 85787.48173248186,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6862.998530608136,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6862.998530608136,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6862.998530608136,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6862.998530608136,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6862.998530608136,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6862.998530608136,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6862.998530608136,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6862.998530608136,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6862.998530608136,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6862.998530608136,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6862.998530608136,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6862.998530608136,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6862.998530608136,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6862.998530608136,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6862.998530608136,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6862.998530608136,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6862.998530608136,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6862.998530608136,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6862.998530608136,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6862.998530608136,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6862.998530608136,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6862.998530608136,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6862.998530608136,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6862.998530608136,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6862.998530608136,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6862.998530608136,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6862.998530608136,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6862.998530608136,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6862.998530608136,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6862.998530608136,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6862.998530608136,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 6862.998530608136,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 476978.39817690593,
+      "skillType": "Normal",
+      "skillName": "怪怪怪味豆",
+      "turnBattleId": 18
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 17157.496293230215,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 17157.496293230215,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 17157.496293230215,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 17157.496293230215,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 17157.496293230215,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 17157.496293230215,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 17157.496293230215,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 17157.496293230215,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 17157.496293230215,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 17157.496293230215,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 17157.496293230215,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 17157.496293230215,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 17157.496293230215,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 17157.496293230215,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 17157.496293230215,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 51472.488927627914,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 95319.42411021213,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 95319.42411021213,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 95319.42411021213,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 59893.013089251705,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 37812.561645051,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 37812.561645051,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 37812.561645051,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 41827.415137887,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 46474.90572868078,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 46474.90572868078,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 902901.1302763708,
+      "skillType": "Normal",
+      "skillName": "超超超大剑",
+      "turnBattleId": 18
+    },
+    {
+      "avatarId": 1511,
+      "damageDetail": [
+        {
+          "damage": 61974.82618909096,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 61974.82618909096,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 61974.82618909096,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 34759.35814794828,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 220683.83671522117,
+      "skillType": "BPSkill",
+      "skillName": "此乃令使，阿哈认证™",
+      "turnBattleId": 22
+    },
+    {
+      "avatarId": 1503,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "BPSkill",
+      "skillName": "补缀生命的柔光",
+      "turnBattleId": 23
+    },
+    {
+      "avatarId": 1503,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "Ultra",
+      "skillName": "鉴映灵魂的底色",
+      "turnBattleId": 23
+    },
+    {
+      "avatarId": 1511,
+      "damageDetail": [
+        {
+          "damage": 52916.59979097196,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 52916.59979097196,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 5051.68259225809,
+          "overkill_damage": 0.0,
+          "type": "Break"
+        },
+        {
+          "damage": 52916.59979097196,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 5051.68259225809,
+          "overkill_damage": 0.0,
+          "type": "Break"
+        },
+        {
+          "damage": 38621.50905813463,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 207474.6736155667,
+      "skillType": "BPSkill",
+      "skillName": "此乃令使，阿哈认证™",
+      "turnBattleId": 23
+    },
+    {
+      "avatarId": 1503,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "ElationDamage",
+      "skillName": "渲染理性，解构欢愉",
+      "turnBattleId": 23
+    },
+    {
+      "avatarId": 1502,
+      "damageDetail": [
+        {
+          "damage": 90548.65247881087,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 16660.78849288402,
+          "overkill_damage": 0.0,
+          "type": "Break"
+        },
+        {
+          "damage": 100609.61392163346,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 100609.61392163346,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 20121.922803064575,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 20121.922803064575,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 20121.922803064575,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 20121.922803064575,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 20121.922803064575,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 31986.017709337873,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 53310.029515564675,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 53310.029515564675,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 53310.029515564675,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 600954.3890863166,
+      "skillType": "ElationDamage",
+      "skillName": "赠君一卦，火树银花",
+      "turnBattleId": 23
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 184474.68439386948,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 184474.68439386948,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 184474.68439386948,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 184474.68439386948,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 184474.68439386948,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 184474.68439386948,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 65165.08364971052,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 92949.81145736622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 92949.81145736622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 92949.81145736622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 95614.50491408329,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 95614.50491408329,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 95614.50491408329,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 84252.53744537407,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 63743.003325528465,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 63743.003325528465,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 63743.003325528465,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 2013187.6865492354,
+      "skillType": "ElationDamage",
+      "skillName": "崩坏级伤害演示",
+      "turnBattleId": 23
+    },
+    {
+      "avatarId": 1511,
+      "damageDetail": [
+        {
+          "damage": 72888.63192045665,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 72888.63192045665,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 72888.63192045665,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 162779.69365840708,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 162779.69365840708,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 162779.69365840708,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 38621.50905813463,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 47036.97759789135,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 47036.97759789135,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 47036.97759789135,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 886737.4185883999,
+      "skillType": "ElationDamage",
+      "skillName": "满月，是神在的时间",
+      "turnBattleId": 23
+    },
+    {
+      "avatarId": 1511,
+      "damageDetail": [
+        {
+          "damage": 316143.49849579786,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 316143.49849579786,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 316143.49849579786,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 94843.04963706713,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 94843.04963706713,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 94843.04963706713,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 94843.04963706713,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 94843.04963706713,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 13535.430230154423,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 1436181.1739028837,
+      "skillType": "Ultra",
+      "skillName": "啊哈！宇宙笑点大爆炸",
+      "turnBattleId": 23
+    },
+    {
+      "avatarId": 1511,
+      "damageDetail": [
+        {
+          "damage": 79035.87469755649,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 79035.87469755649,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 79035.87469755649,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 45721.05922714947,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 282828.6833198189,
+      "skillType": "BPSkill",
+      "skillName": "此乃令使，阿哈认证™",
+      "turnBattleId": 24
+    },
+    {
+      "avatarId": 1502,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "BPSkill",
+      "skillName": "十方光映，万法皆明",
+      "turnBattleId": 25
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 336222.6637163791,
+      "skillType": "Normal",
+      "skillName": "奖励关：「狼尊时刻」",
+      "turnBattleId": 26
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 24722.254637071863,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24722.254637071863,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24722.254637071863,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24722.254637071863,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24722.254637071863,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24722.254637071863,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24722.254637071863,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24722.254637071863,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24722.254637071863,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24722.254637071863,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24722.254637071863,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24722.254637071863,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24722.254637071863,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24722.254637071863,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24722.254637071863,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 74166.76398028876,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9888.90187401115,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 781223.2472527458,
+      "skillType": "Normal",
+      "skillName": "超超超大剑",
+      "turnBattleId": 26
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 124152.09201776935,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 124152.09201776935,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 124152.09201776935,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9932.167349852622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9932.167349852622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9932.167349852622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9932.167349852622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9932.167349852622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9932.167349852622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9932.167349852622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9932.167349852622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9932.167349852622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9932.167349852622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9932.167349852622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9932.167349852622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9932.167349852622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9932.167349852622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9932.167349852622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9932.167349852622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9932.167349852622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9932.167349852622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9932.167349852622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9932.167349852622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9932.167349852622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9932.167349852622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9932.167349852622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9932.167349852622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9932.167349852622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9932.167349852622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9932.167349852622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9932.167349852622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9932.167349852622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9932.167349852622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9932.167349852622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9932.167349852622,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 690285.6312485919,
+      "skillType": "Normal",
+      "skillName": "怪怪怪味豆",
+      "turnBattleId": 26
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 24830.418326465646,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24830.418326465646,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24830.418326465646,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24830.418326465646,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24830.418326465646,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24830.418326465646,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24830.418326465646,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24830.418326465646,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24830.418326465646,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24830.418326465646,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24830.418326465646,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24830.418326465646,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24830.418326465646,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24830.418326465646,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24830.418326465646,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 74491.25504877232,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 137946.76885510632,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 137946.76885510632,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 137946.76885510632,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 89520.09635748668,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 950307.9328685626,
+      "skillType": "Normal",
+      "skillName": "超超超大剑",
+      "turnBattleId": 26
+    },
+    {
+      "avatarId": 1503,
+      "damageDetail": [
+        {
+          "damage": 9139.985363656655,
+          "overkill_damage": 0.0,
+          "type": "Basic"
+        },
+        {
+          "damage": 9139.985363656655,
+          "overkill_damage": 0.0,
+          "type": "Basic"
+        },
+        {
+          "damage": 3368.6111799720675,
+          "overkill_damage": 0.0,
+          "type": "Basic"
+        },
+        {
+          "damage": 11675.083930667024,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 4302.941054188181,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 11675.083930667024,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 7752.576618093997,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 11474.509477835381,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 11474.509477835381,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 11474.509477835381,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21035.055945316795,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 71053.89502726286,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 71053.89502726286,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 254620.64187425026,
+      "skillType": "Normal",
+      "skillName": "行笔，幻造星月",
+      "turnBattleId": 27
+    },
+    {
+      "avatarId": 1503,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "ElationDamage",
+      "skillName": "渲染理性，解构欢愉",
+      "turnBattleId": 27
+    },
+    {
+      "avatarId": 1502,
+      "damageDetail": [
+        {
+          "damage": 65181.070947483415,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 65181.070947483415,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 65181.070947483415,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 13036.214201635215,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 13036.214201635215,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 13036.214201635215,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 13036.214201635215,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 13036.214201635215,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 28851.36907762708,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 48085.61512937909,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 48085.61512937909,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 48085.61512937909,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 18511.987224672455,
+          "overkill_damage": 0.0,
+          "type": "DoT"
+        }
+      ],
+      "totalDamage": 452344.4855410631,
+      "skillType": "ElationDamage",
+      "skillName": "赠君一卦，火树银花",
+      "turnBattleId": 27
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 140015.06416571885,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 140015.06416571885,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 140015.06416571885,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 140015.06416571885,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 140015.06416571885,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 140015.06416571885,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 68861.61256788229,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 89438.0156471252,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 89438.0156471252,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 89438.0156471252,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 73300.75517848297,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 73300.75517848297,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 73300.75517848297,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 72384.76799605647,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 48867.17015691288,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 48867.17015691288,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 48867.17015691288,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 73300.75517848297,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 73300.75517848297,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 73300.75517848297,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 43980.45314804977,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 72384.76799605647,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 48867.17015691288,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 48867.17015691288,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 48867.17015691288,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 2099023.585656109,
+      "skillType": "ElationDamage",
+      "skillName": "崩坏级伤害演示",
+      "turnBattleId": 27
+    },
+    {
+      "avatarId": 1511,
+      "damageDetail": [
+        {
+          "damage": 50183.544444894185,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 50183.544444894185,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 50183.544444894185,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 129425.44132096693,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 129425.44132096693,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 129425.44132096693,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 37021.58566406835,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 58393.532113387715,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 58393.532113387715,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 17287.035628074547,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 33677.88395262603,
+          "overkill_damage": 0.0,
+          "type": "Additional"
+        },
+        {
+          "damage": 33677.88395262603,
+          "overkill_damage": 0.0,
+          "type": "Additional"
+        }
+      ],
+      "totalDamage": 777278.4107217537,
+      "skillType": "ElationDamage",
+      "skillName": "满月，是神在的时间",
+      "turnBattleId": 27
+    },
+    {
+      "avatarId": 1503,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "Ultra",
+      "skillName": "鉴映灵魂的底色",
+      "turnBattleId": 30
+    },
+    {
+      "avatarId": 1511,
+      "damageDetail": [
+        {
+          "damage": 71342.98564765486,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 71342.98564765486,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 21120.639393921243,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 35427.91562563693,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 199234.5263148679,
+      "skillType": "BPSkill",
+      "skillName": "此乃令使，阿哈认证™",
+      "turnBattleId": 30
+    },
+    {
+      "avatarId": 1511,
+      "damageDetail": [
+        {
+          "damage": 71342.98564765486,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 71342.98564765486,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 71342.98564765486,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 35427.91562563693,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 249456.8725686015,
+      "skillType": "BPSkill",
+      "skillName": "此乃令使，阿哈认证™",
+      "turnBattleId": 31
+    },
+    {
+      "avatarId": 1502,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "BPSkill",
+      "skillName": "十方光映，万法皆明",
+      "turnBattleId": 32
+    },
+    {
+      "avatarId": 1502,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "Ultra",
+      "skillName": "霓裳铁羽，六爻皆吉",
+      "turnBattleId": 32
+    },
+    {
+      "avatarId": 1503,
+      "damageDetail": [],
+      "totalDamage": 0.0,
+      "skillType": "ElationDamage",
+      "skillName": "渲染理性，解构欢愉",
+      "turnBattleId": 32
+    },
+    {
+      "avatarId": 1502,
+      "damageDetail": [
+        {
+          "damage": 63676.85223925556,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 63676.85223925556,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 63676.85223925556,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 12735.37045971048,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 12735.37045971048,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 12735.37045971048,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 12735.37045971048,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 12735.37045971048,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 27609.402746761683,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 46015.67124460428,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 46015.67124460428,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 46015.67124460428,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 420363.8254968936,
+      "skillType": "ElationDamage",
+      "skillName": "赠君一卦，火树银花",
+      "turnBattleId": 32
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 151838.84394446062,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 151838.84394446062,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 151838.84394446062,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 151838.84394446062,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 151838.84394446062,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 151838.84394446062,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 73150.24819746101,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 98767.8961927651,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 98767.8961927651,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 98767.8961927651,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 1280487.00044252,
+      "skillType": "ElationDamage",
+      "skillName": "崩坏级伤害演示",
+      "turnBattleId": 32
+    },
+    {
+      "avatarId": 1511,
+      "damageDetail": [
+        {
+          "damage": 49025.43176101241,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 49025.43176101241,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 49025.43176101241,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 134601.52057478204,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 134601.52057478204,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 134601.52057478204,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 35427.91562563693,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 41890.28933244478,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 41890.28933244478,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 41890.28933244478,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 711979.6406303546,
+      "skillType": "ElationDamage",
+      "skillName": "满月，是神在的时间",
+      "turnBattleId": 32
+    },
+    {
+      "avatarId": 1511,
+      "damageDetail": [
+        {
+          "damage": 242260.29121765867,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 242260.29121765867,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 71719.62602665066,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 72678.08743298356,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 72678.08743298356,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 72678.08743298356,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 72678.08743298356,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 5051.68259225809,
+          "overkill_damage": 0.0,
+          "type": "Break"
+        },
+        {
+          "damage": 72678.08743298356,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 42397.683310755994,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 967080.0115298999,
+      "skillType": "Ultra",
+      "skillName": "啊哈！宇宙笑点大爆炸",
+      "turnBattleId": 32
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 320521.01346236235,
+      "skillType": "Normal",
+      "skillName": "奖励关：「狼尊时刻」",
+      "turnBattleId": 33
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 24885.171809756663,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 22396.654619183857,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 22396.654619183857,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24885.171809756663,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 22396.654619183857,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 22396.654619183857,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24885.171809756663,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 22396.654619183857,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 22396.654619183857,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24885.171809756663,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 22396.654619183857,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 22396.654619183857,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24885.171809756663,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 22396.654619183857,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 22396.654619183857,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 69678.4811130173,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 732619.4585470355,
+      "skillType": "Normal",
+      "skillName": "超超超大剑",
+      "turnBattleId": 33
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 124425.8594350759,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 111983.27344357641,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 5765.632481557317,
+          "overkill_damage": 0.0,
+          "type": "Break"
+        },
+        {
+          "damage": 111983.27344357641,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 8958.661865052534,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 9954.068743213546,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 661738.7629268484,
+      "skillType": "Normal",
+      "skillName": "爆爆爆炸蛋",
+      "turnBattleId": 33
+    },
+    {
+      "avatarId": 1506,
+      "damageDetail": [
+        {
+          "damage": 24885.171809756663,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24885.171809756663,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 22396.654619183857,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24885.171809756663,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24885.171809756663,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 22396.654619183857,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24885.171809756663,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24885.171809756663,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 22396.654619183857,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24885.171809756663,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24885.171809756663,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 22396.654619183857,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24885.171809756663,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 24885.171809756663,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 22396.654619183857,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 72166.9983059077,
+          "overkill_damage": 0.0,
+          "type": "True"
+        },
+        {
+          "damage": 138250.95487421844,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 138250.95487421844,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 124425.85933347233,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        },
+        {
+          "damage": 5765.632481557317,
+          "overkill_damage": 0.0,
+          "type": "Break"
+        },
+        {
+          "damage": 99540.68762531527,
+          "overkill_damage": 0.0,
+          "type": "Elation"
+        }
+      ],
+      "totalDamage": 939236.0786881754,
+      "skillType": "Normal",
+      "skillName": "超超超大剑",
+      "turnBattleId": 33
+    }
+  ],
+  "dataAvatar": [],
+  "totalAV": 299.37858510762453,
+  "totalDamage": 43628838.97489811,
+  "damagePerAV": 145731.32864267443,
+  "cycleIndex": 0,
+  "waveIndex": 2,
+  "maxWave": 2,
+  "maxCycle": 0,
+  "version": "0.2.52",
+  "avatarDetail": {
+    "1503": {
+      "id": 1503,
+      "isDie": false,
+      "killer_uid": -1,
+      "stats": {
+        "ActionDelay": 19.518341824878007,
+        "Speed": 176.97200001659803,
+        "CurrentHP": 3865.8379067655187,
+        "MaxHP": 3865.8379067655187
+      },
+      "statsHistory": [
+        {
+          "stats": {
+            "ActionDelay": 19.518341824878007,
+            "Speed": 176.97200001659803,
+            "CurrentHP": 3865.8379067655187,
+            "MaxHP": 3865.8379067655187
+          },
+          "turnBattleId": 0
+        }
+      ]
+    },
+    "1506": {
+      "id": 1506,
+      "isDie": false,
+      "killer_uid": -1,
+      "stats": {
+        "CurrentHP": 3477.5384317808785,
+        "MaxHP": 3873.2642080904916,
+        "ActionDelay": 48.52539635961875,
+        "Speed": 200.83200003230013
+      },
+      "statsHistory": [
+        {
+          "stats": {
+            "CurrentHP": 3477.5384317808785,
+            "MaxHP": 3873.2642080904916,
+            "ActionDelay": 48.52539635961875,
+            "Speed": 200.83200003230013
+          },
+          "turnBattleId": 0
+        }
+      ]
+    },
+    "1511": {
+      "id": 1511,
+      "isDie": false,
+      "killer_uid": -1,
+      "stats": {
+        "CurrentHP": 4892.306988912169,
+        "Speed": 179.8520000220742,
+        "ActionDelay": 47.64672664925456,
+        "MaxHP": 4892.306988912169
+      },
+      "statsHistory": [
+        {
+          "stats": {
+            "CurrentHP": 4892.306988912169,
+            "Speed": 179.8520000220742,
+            "ActionDelay": 47.64672664925456,
+            "MaxHP": 4892.306988912169
+          },
+          "turnBattleId": 0
+        }
+      ]
+    },
+    "1502": {
+      "id": 1502,
+      "isDie": false,
+      "killer_uid": -1,
+      "stats": {
+        "ActionDelay": 46.58724533393979,
+        "MaxHP": 4903.843261117581,
+        "CurrentHP": 4903.843261117581,
+        "Speed": 203.4720000375528
+      },
+      "statsHistory": [
+        {
+          "stats": {
+            "ActionDelay": 46.58724533393979,
+            "MaxHP": 4903.843261117581,
+            "CurrentHP": 4903.843261117581,
+            "Speed": 203.4720000375528
+          },
+          "turnBattleId": 0
+        }
+      ]
+    }
+  },
+  "enemyDetail": {
+    "100038": {
+      "id": 1013020,
+      "isDie": false,
+      "killer_uid": -1,
+      "positionIndex": 3,
+      "waveIndex": 2,
+      "name": "自动机兵•齿狼",
+      "maxHP": 2000000000.0,
+      "level": 95,
+      "stats": {
+        "CurrentHP": 1992169877.224643,
+        "MaxHP": 2000000000.0,
+        "ActionDelay": 57.80723900767043
+      },
+      "statsHistory": [
+        {
+          "stats": {
+            "CurrentHP": 1992169877.224643,
+            "MaxHP": 2000000000.0,
+            "ActionDelay": 57.80723900767043
+          },
+          "turnBattleId": 0
+        }
+      ]
+    },
+    "100042": {
+      "id": 1013020,
+      "isDie": false,
+      "killer_uid": -1,
+      "positionIndex": 5,
+      "waveIndex": 2,
+      "name": "自动机兵•齿狼",
+      "maxHP": 2000000000.0,
+      "level": 95,
+      "stats": {
+        "CurrentHP": 1992264001.2189848,
+        "Speed": 171.07200002088211,
+        "ActionDelay": 83.04393459344283,
+        "MaxHP": 2000000000.0
+      },
+      "statsHistory": [
+        {
+          "stats": {
+            "CurrentHP": 1992264001.2189848,
+            "Speed": 171.07200002088211,
+            "ActionDelay": 83.04393459344283,
+            "MaxHP": 2000000000.0
+          },
+          "turnBattleId": 0
+        }
+      ]
+    },
+    "100015": {
+      "id": 1013020,
+      "isDie": false,
+      "killer_uid": -1,
+      "positionIndex": 1,
+      "waveIndex": 2,
+      "name": "自动机兵•齿狼",
+      "maxHP": 6000000.0,
+      "level": 95,
+      "stats": {
+        "CurrentHP": 0.0,
+        "ActionDelay": 26.26639069756493,
+        "Speed": 190.08000004291534,
+        "MaxHP": 6000000.0
+      },
+      "statsHistory": [
+        {
+          "stats": {
+            "CurrentHP": 0.0,
+            "ActionDelay": 26.26639069756493,
+            "Speed": 190.08000004291534,
+            "MaxHP": 6000000.0
+          },
+          "turnBattleId": 0
+        }
+      ]
+    },
+    "100040": {
+      "id": 1013020,
+      "isDie": false,
+      "killer_uid": -1,
+      "positionIndex": 4,
+      "waveIndex": 2,
+      "name": "自动机兵•齿狼",
+      "maxHP": 2000000000.0,
+      "level": 95,
+      "stats": {
+        "CurrentHP": 1991889388.690328,
+        "Speed": 171.07200002088211,
+        "MaxHP": 2000000000.0,
+        "ActionDelay": 83.04393459344283
+      },
+      "statsHistory": [
+        {
+          "stats": {
+            "CurrentHP": 1991889388.690328,
+            "Speed": 171.07200002088211,
+            "MaxHP": 2000000000.0,
+            "ActionDelay": 83.04393459344283
+          },
+          "turnBattleId": 0
+        }
+      ]
+    },
+    "100017": {
+      "id": 1013020,
+      "isDie": false,
+      "killer_uid": -1,
+      "positionIndex": 2,
+      "waveIndex": 2,
+      "name": "自动机兵•齿狼",
+      "maxHP": 6000000.0,
+      "level": 95,
+      "stats": {
+        "CurrentHP": 0.0,
+        "MaxHP": 6000000.0,
+        "ActionDelay": 16.341111925430596
+      },
+      "statsHistory": [
+        {
+          "stats": {
+            "CurrentHP": 0.0,
+            "MaxHP": 6000000.0,
+            "ActionDelay": 16.341111925430596
+          },
+          "turnBattleId": 0
+        }
+      ]
+    },
+    "100013": {
+      "id": 1013020,
+      "isDie": false,
+      "killer_uid": -1,
+      "positionIndex": 0,
+      "waveIndex": 2,
+      "name": "自动机兵•齿狼",
+      "maxHP": 7700000.0,
+      "level": 95,
+      "stats": {
+        "CurrentHP": 0.0,
+        "MaxHP": 7700000.0,
+        "ActionDelay": 13.152356911450624
+      },
+      "statsHistory": [
+        {
+          "stats": {
+            "CurrentHP": 0.0,
+            "MaxHP": 7700000.0,
+            "ActionDelay": 13.152356911450624
+          },
+          "turnBattleId": 0
+        }
+      ]
+    }
+  }
+}

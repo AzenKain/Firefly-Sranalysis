@@ -1,4 +1,5 @@
 import useBattleDataStore from "@/stores/battleDataStore";
+import { useShallow } from "zustand/react/shallow";
 import { useTranslations } from "next-intl";
 import { useMemo } from "react";
 
@@ -6,7 +7,12 @@ import { useMemo } from "react";
 type Mode = 0 | 1 | 2;
 
 export function useDamagePerCycleForOne(avatarId: number, mode: Mode) {
-  const { skillHistory, turnHistory } = useBattleDataStore.getState();
+  const { skillHistory, turnHistory } = useBattleDataStore(
+    useShallow(state => ({
+      skillHistory: state.skillHistory,
+      turnHistory: state.turnHistory,
+    }))
+  );
   const transI18n = useTranslations("DataAnalysisPage");
   return useMemo(() => {
     const damageMap = new Map<string, number>();
@@ -39,7 +45,12 @@ export function useDamagePerCycleForOne(avatarId: number, mode: Mode) {
 
 
 export function useDamagePerCycleForAll(mode: Mode) {
-  const { skillHistory, turnHistory } = useBattleDataStore.getState();
+  const { skillHistory, turnHistory } = useBattleDataStore(
+    useShallow(state => ({
+      skillHistory: state.skillHistory,
+      turnHistory: state.turnHistory,
+    }))
+  );
   const transI18n = useTranslations("DataAnalysisPage");
   return useMemo(() => {
     const damageMap = new Map<string, number>();

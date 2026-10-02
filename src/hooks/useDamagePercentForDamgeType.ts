@@ -3,7 +3,7 @@ import useBattleDataStore from "@/stores/battleDataStore";
 import {attackTypeToString} from "@/types";
 
 export function useDamagePercentByType() {
-  const { skillHistory } = useBattleDataStore.getState();
+  const skillHistory = useBattleDataStore(state => state.skillHistory);
 
   return useMemo(() => {
     const dmgByType = new Map<string, number>();
@@ -11,7 +11,7 @@ export function useDamagePercentByType() {
     skillHistory.forEach(skill => {
       skill.damageDetail.forEach(detail => {
         const type = detail.damage_type; 
-        if (!type) return;
+        if (type === undefined) return;
         dmgByType.set(attackTypeToString(type), (dmgByType.get(attackTypeToString(type)) || 0) + detail.damage);
       });
     });

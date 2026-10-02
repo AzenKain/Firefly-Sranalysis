@@ -11,18 +11,34 @@ import MultiCharLineChart from "@/components/chart/damageLineForAll";
 import DamagePerCycleForAll from "@/components/chart/damagePerCycleForAll";
 import DamagePercentChartForAll from "@/components/chart/damagePercentForAll";
 import EnemyBar from "@/components/enemybar";
+import { useShallow } from "zustand/react/shallow";
 import { CharacterBasic, MonsterBasic } from "@/types";
 
 export default function Home() {
   const transI18n = useTranslations("DataAnalysisPage");
-  const { setListAvatar, setMapAvatar, setListEnemy, setMapEnemy } = useAvatarDataStore();
+  const { setListAvatar, setMapAvatar, setListEnemy, setMapEnemy } = useAvatarDataStore(
+    useShallow(state => ({
+      setListAvatar: state.setListAvatar,
+      setMapAvatar: state.setMapAvatar,
+      setListEnemy: state.setListEnemy,
+      setMapEnemy: state.setMapEnemy,
+    }))
+  );
   const {
     totalAV,
     totalDamage,
     damagePerAV,
     turnHistory,
     enemyDetail
-  } = useBattleDataStore();
+  } = useBattleDataStore(
+    useShallow(state => ({
+      totalAV: state.totalAV,
+      totalDamage: state.totalDamage,
+      damagePerAV: state.damagePerAV,
+      turnHistory: state.turnHistory,
+      enemyDetail: state.enemyDetail,
+    }))
+  );
   const [expandedCharts, setExpandedCharts] = useState<string[]>([]);
 
   const toggleExpand = (chartId: string) => {
